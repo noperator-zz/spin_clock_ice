@@ -1,0 +1,2904 @@
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Warning: VCP2590 ../../testbench.v : (19, 1): Undefined port frame_sync in module top.
+# Warning: VCP2605 ../../testbench.v : (21, 1): Port connection for port tlc_sin violates IEEE 1364. Only net expression can be connected to output/inout port.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2978 ../../testbench.v : (13, 16): Variable 'sin' initialized in declaration cannot be used in continuous assignment.
+# Compile failure 1 Errors 2 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Warning: VCP2590 ../../testbench.v : (19, 1): Undefined port frame_sync in module top.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Warning: VCP2590 ../../testbench.v : (19, 1): Undefined port frame_sync_sys in module top.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench pll.
+# $root top modules: testbench pll.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench pll.
+# $root top modules: testbench pll.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 top.v (41): Design unit smi_fifo instantiated in simulation.top not found in searched libraries: simulation, osvvm, ovi_ice40up_timing, ovi_ice40up.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 top.v (41): Design unit smi_fifo instantiated in simulation.top not found in searched libraries: simulation, osvvm, ovi_ice40up_timing, ovi_ice40up.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench pll.
+# $root top modules: testbench pll.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 top.v (54): Design unit TLC5957 instantiated in simulation.top not found in searched libraries: simulation, osvvm, ovi_ice40up_timing, ovi_ice40up.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 top.v (54): Design unit TLC5957 instantiated in simulation.top not found in searched libraries: simulation, osvvm, ovi_ice40up_timing, ovi_ice40up.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench pll.
+# $root top modules: testbench pll.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 -L ovi_ice40up -L ovi_ice40up_timing -PL osvvm -PL ovi_ice40up_timing +access +r testbench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "line_sync_sys" (8) on instance "/testbench/dut/tlc0".
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "sclk" (8) on instance "/testbench/dut/tlc0".
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "sin" (8) on instance "/testbench/dut/tlc0".
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "fifo_empty" (8) on instance "/testbench/dut/tlc0".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 1 (0.21%) primitives and 475 (99.79%) other processes in SLP
+# SLP: 758 (98.96%) signals in SLP and 5 (0.65%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6913 kB (elbread=1282 elab2=5481 kernel=148 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:34 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+run
+# KERNEL: stopped at time: 13278093424 ps
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+# Warning: Cannot display signals from waveform file (AWC). The file does not match associated simulation database (ASDB).
+# Warning: Open 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb' file to view simulation results.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 1 (0.21%) primitives and 475 (99.79%) other processes in SLP
+# SLP: 758 (98.96%) signals in SLP and 5 (0.65%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6913 kB (elbread=1282 elab2=5481 kernel=148 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:35 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 1 (0.21%) primitives and 475 (99.79%) other processes in SLP
+# SLP: 758 (98.96%) signals in SLP and 5 (0.65%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6913 kB (elbread=1282 elab2=5481 kernel=148 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:37 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: stopped at time: 39780349728 ps
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+run
+# KERNEL: stopped at time: 48176354016 ps
+# 1 signal(s) traced.
+run
+# KERNEL: stopped at time: 53812337040 ps
+# KERNEL: Warning: KERNEL_0291 Signal '/testbench/dut/smi_nwe_pi' has already been traced.
+# 0 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 1 (0.21%) primitives and 475 (99.79%) other processes in SLP
+# SLP: 758 (98.96%) signals in SLP and 5 (0.65%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6913 kB (elbread=1282 elab2=5481 kernel=148 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:40 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../top.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module smi_fifo found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench pll.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "line_sync_sys" (8) on instance "/testbench/dut/tlc0".
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "sclk" (8) on instance "/testbench/dut/tlc0".
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "sin" (8) on instance "/testbench/dut/tlc0".
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "fifo_empty" (8) on instance "/testbench/dut/tlc0".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 1 (0.21%) primitives and 475 (99.79%) other processes in SLP
+# SLP: 758 (98.96%) signals in SLP and 5 (0.65%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6913 kB (elbread=1282 elab2=5481 kernel=148 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:40 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: stopped at time: 19019615440 ps
+# KERNEL: Warning: KERNEL_0291 Signal '/testbench/dut/smi_data_pi' has already been traced.
+# 0 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 1 (0.21%) primitives and 475 (99.79%) other processes in SLP
+# SLP: 758 (98.96%) signals in SLP and 5 (0.65%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6913 kB (elbread=1282 elab2=5481 kernel=148 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:42 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../TLC5957.v $dsn/../top.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module smi_fifo found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench pll.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "line_sync_sys" (8) on instance "/testbench/dut/tlc0".
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "sclk" (8) on instance "/testbench/dut/tlc0".
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "sin" (8) on instance "/testbench/dut/tlc0".
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "fifo_empty" (8) on instance "/testbench/dut/tlc0".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 1 (0.21%) primitives and 475 (99.79%) other processes in SLP
+# SLP: 758 (98.96%) signals in SLP and 5 (0.65%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6913 kB (elbread=1282 elab2=5481 kernel=148 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:42 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: stopped at time: 23120322288 ps
+# 1 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 1 (0.21%) primitives and 475 (99.79%) other processes in SLP
+# SLP: 758 (98.96%) signals in SLP and 5 (0.65%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6913 kB (elbread=1282 elab2=5481 kernel=148 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:45 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench pll.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "line_sync_sys" (8) on instance "/testbench/dut/tlc0".
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "sclk" (8) on instance "/testbench/dut/tlc0".
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "sin" (8) on instance "/testbench/dut/tlc0".
+# SLP: Warning: top.v (54): Length of connection (1) does not match the length of port "fifo_empty" (8) on instance "/testbench/dut/tlc0".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 1 (0.21%) primitives and 475 (99.79%) other processes in SLP
+# SLP: 758 (98.96%) signals in SLP and 5 (0.65%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6913 kB (elbread=1282 elab2=5481 kernel=148 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:45 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: stopped at time: 24240166472 ps
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 1 (0.21%) primitives and 475 (99.79%) other processes in SLP
+# SLP: 758 (98.96%) signals in SLP and 5 (0.65%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6913 kB (elbread=1282 elab2=5481 kernel=148 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:47 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: stopped at time: 20101936176 ps
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 1 (0.21%) primitives and 475 (99.79%) other processes in SLP
+# SLP: 758 (98.96%) signals in SLP and 5 (0.65%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6913 kB (elbread=1282 elab2=5481 kernel=148 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:50 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../top.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module pll found in current working library.
+# Info: VCP2113 Module smi_fifo found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: top.v (51): Length of connection (1) does not match the length of port "line_sync_sys" (8) on instance "/testbench/dut/tlc0".
+# SLP: Warning: top.v (51): Length of connection (1) does not match the length of port "sclk" (8) on instance "/testbench/dut/tlc0".
+# SLP: Warning: top.v (51): Length of connection (1) does not match the length of port "sin" (8) on instance "/testbench/dut/tlc0".
+# SLP: Warning: top.v (51): Length of connection (1) does not match the length of port "fifo_empty" (8) on instance "/testbench/dut/tlc0".
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.82%) primitives and 544 (89.18%) other processes in SLP
+# SLP: 1181 (99.24%) signals in SLP and 5 (0.42%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7108 kB (elbread=1283 elab2=5675 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:50 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 3585059864 ps
+run
+# KERNEL: stopped at time: 6502656778 ps
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.82%) primitives and 544 (89.18%) other processes in SLP
+# SLP: 1181 (99.24%) signals in SLP and 5 (0.42%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7108 kB (elbread=1283 elab2=5675 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:56 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../TLC5957.v $dsn/../top.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 ../../TLC5957.v : (3, 10): Syntax error. Unexpected token: input[_INPUT].
+# Error: VCP2565 ../../TLC5957.v : (1, 25): Undefined direction of external port fifo_data.
+# Error: VCP2567 ../../TLC5957.v : (1, 25): Undefined direction of internal port fifo_data.
+# Info: VCP2113 Module pll found in current working library.
+# Info: VCP2113 Module smi_fifo found in current working library.
+# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.82%) primitives and 544 (89.18%) other processes in SLP
+# SLP: 1181 (99.24%) signals in SLP and 5 (0.42%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7108 kB (elbread=1283 elab2=5675 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:56 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.82%) primitives and 544 (89.18%) other processes in SLP
+# SLP: 1181 (99.24%) signals in SLP and 5 (0.42%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7108 kB (elbread=1283 elab2=5675 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:56 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.82%) primitives and 544 (89.18%) other processes in SLP
+# SLP: 1181 (99.24%) signals in SLP and 5 (0.42%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7108 kB (elbread=1283 elab2=5675 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:56 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.82%) primitives and 544 (89.18%) other processes in SLP
+# SLP: 1181 (99.24%) signals in SLP and 5 (0.42%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7108 kB (elbread=1283 elab2=5675 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:56 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 8091248955 ps
+# 1 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.82%) primitives and 544 (89.18%) other processes in SLP
+# SLP: 1181 (99.24%) signals in SLP and 5 (0.42%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7108 kB (elbread=1283 elab2=5675 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  9:57 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 6276398291 ps
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.82%) primitives and 544 (89.18%) other processes in SLP
+# SLP: 1181 (99.24%) signals in SLP and 5 (0.42%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7108 kB (elbread=1283 elab2=5675 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  10:00 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../top.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module pll found in current working library.
+# Info: VCP2113 Module smi_fifo found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP5202 ../../top.v : (54, 98): Integer expression expected as a repetition multiplier: smi_cdc.
+# Error: VCP2858 ../../top.v : (54, 99): {{smi_nwe,smi_noe,smi_data},smi_cdc} is not a valid left-hand side of a procedural assignment.
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.82%) primitives and 544 (89.18%) other processes in SLP
+# SLP: 1181 (99.24%) signals in SLP and 5 (0.42%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7108 kB (elbread=1283 elab2=5675 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  10:00 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Warning: VCP5200 ../../top.v : (20, 38): Only a sized object can be concatenated - assuming 32 bit: 0.
+# Warning: VCP5200 ../../top.v : (20, 38): Only a sized object can be concatenated - assuming 32 bit: 0.
+# Warning: VCP5200 ../../top.v : (20, 38): Only a sized object can be concatenated - assuming 32 bit: 0.
+# Error: VCP2852 ../../top.v : (20, 15): Incompatible types at assignment: .smi_cdc<reg[9:0]$[2:0]> <- 96'h0<bit[95:0]>.
+# Error: VCP5202 ../../top.v : (57, 98): Integer expression expected as a repetition multiplier: smi_cdc.
+# Compile failure 2 Errors 3 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2852 ../../top.v : (20, 15): Incompatible types at assignment: .smi_cdc<reg[9:0]$[2:0]> <- 30'h0<bit[29:0]>.
+# Error: VCP5202 ../../top.v : (57, 98): Integer expression expected as a repetition multiplier: smi_cdc.
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP5202 ../../top.v : (57, 98): Integer expression expected as a repetition multiplier: smi_cdc.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1181 (99.24%) signals in SLP and 5 (0.42%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5674 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  10:05 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 3307947138 ps
+run
+# KERNEL: stopped at time: 6218147012 ps
+# KERNEL: Warning: KERNEL_0291 Signal '/testbench/dut/smi_cdc' has already been traced.
+# 0 signal(s) traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testbench/dut/smi_data_pi' has already been traced.
+# 0 signal(s) traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testbench/dut/smi_nwe_pi' has already been traced.
+# 0 signal(s) traced.
+run
+# KERNEL: stopped at time: 6887191204 ps
+run
+# KERNEL: stopped at time: 12966588058 ps
+# KERNEL: Warning: KERNEL_0291 Signal '/testbench/dut/smi_data_pi' has already been traced.
+# 0 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1181 (99.24%) signals in SLP and 5 (0.42%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5674 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  10:10 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../top.v $dsn/../testbench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module pll found in current working library.
+# Info: VCP2113 Module smi_fifo found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1182 (99.24%) signals in SLP and 4 (0.34%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5673 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  10:11 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 7502780275 ps
+# KERNEL: Warning: KERNEL_0291 Signal '/testbench/dut/smi_nwe_pi' has already been traced.
+# 0 signal(s) traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testbench/dut/smi_data_pi' has already been traced.
+# 0 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1182 (99.24%) signals in SLP and 4 (0.34%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5673 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  10:17 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../TLC5957.v $dsn/../testbench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module top found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1182 (99.24%) signals in SLP and 4 (0.34%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5673 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  10:17 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 10210724195 ps
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 ../../TLC5957.v : (6, 20): Invalid syntax in Verilog'95/2001/2005 mode. Unexpected token: packed array .
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP5000 ../../TLC5957.v : (6, 1): Name of macro is not specified.
+# Error: VCP2000 ../../TLC5957.v : (6, 20): Invalid syntax in Verilog'95/2001/2005 mode. Unexpected token: packed array .
+# Error: VCP2000 ../../TLC5957.v : (6, 30): Syntax error. Unexpected token: `.
+# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
+# Adding file c:\development\FPGA\spin_clock_ice\sim\src\wave.awc ... Done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1182 (99.24%) signals in SLP and 4 (0.34%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5673 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  10:29 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.sv
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP5350 ../../TLC5957.sv : (6, 35): Unpacked array concatenation size does not match array size.
+# Error: VCP5350 ../../TLC5957.sv : (8, 38): Unpacked array concatenation size does not match array size.
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.sv
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 ../../TLC5957.sv : (6, 43): Syntax error. Unexpected token: ).
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.sv
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2852 ../../TLC5957.sv : (6, 16): Incompatible types at assignment: .gamma<reg[10:0]$[255:0]> <- 2560'h0<bit[2559:0]>.
+# Error: VCP5350 ../../TLC5957.sv : (8, 38): Unpacked array concatenation size does not match array size.
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.sv
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP5018 ../../TLC5957.sv : (6, 31): Macro S is not defined.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.sv
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP5000 ../../TLC5957.sv : (6, 1): Name of macro is not specified.
+# Error: VCP2000 ../../TLC5957.sv : (6, 33): Syntax error. Unexpected token: `.
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.sv
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP5000 ../../TLC5957.sv : (6, 1): Name of macro is not specified.
+# Error: VCP2000 ../../TLC5957.sv : (6, 32): Syntax error. Unexpected token: `.
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.sv
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP5350 ../../TLC5957.sv : (8, 38): Unpacked array concatenation size does not match array size.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.sv
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1182 (99.24%) signals in SLP and 4 (0.34%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7109 kB (elbread=1283 elab2=5676 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  10:33 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 15909056942 ps
+# 1 signal(s) traced.
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.sv
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1182 (99.24%) signals in SLP and 4 (0.34%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7109 kB (elbread=1283 elab2=5676 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  10:37 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 11133860304 ps
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1182 (99.24%) signals in SLP and 4 (0.34%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7109 kB (elbread=1283 elab2=5676 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  10:40 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.sv
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1182 (99.24%) signals in SLP and 4 (0.34%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7109 kB (elbread=1283 elab2=5676 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  10:40 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 9501773821 ps
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1182 (99.24%) signals in SLP and 4 (0.34%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7109 kB (elbread=1283 elab2=5676 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  10:44 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1182 (99.24%) signals in SLP and 4 (0.34%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7109 kB (elbread=1283 elab2=5676 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  10:44 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module top found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.sv
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: TLC5957.
+# $root top modules: testbench TLC5957.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1182 (99.24%) signals in SLP and 4 (0.34%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7109 kB (elbread=1283 elab2=5676 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  10:44 AM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 36828635064 ps
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 ../../TLC5957.v : (6, 22): Invalid syntax in Verilog'95/2001/2005 mode. Unexpected token: packed array .
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 ../../TLC5957.v : (6, 22): Invalid syntax in Verilog'95/2001/2005 mode. Unexpected token: packed array .
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v $dsn/../top.v $dsn/../pll/rtl/pll.v $dsn/../smi_fifo/rtl/smi_fifo.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1185 (99.41%) signals in SLP and 2 (0.17%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7105 kB (elbread=1283 elab2=5671 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  1:14 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /testbench/dut/tlc0/data not found in c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 4553561421 ps
+# 1 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1185 (99.41%) signals in SLP and 2 (0.17%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7105 kB (elbread=1283 elab2=5671 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  1:15 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 2010605103 ps
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1185 (99.41%) signals in SLP and 2 (0.17%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7105 kB (elbread=1283 elab2=5671 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  1:16 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 4146526473 ps
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1185 (99.41%) signals in SLP and 2 (0.17%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7105 kB (elbread=1283 elab2=5671 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  1:17 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../testbench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module top found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1185 (99.41%) signals in SLP and 2 (0.17%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7105 kB (elbread=1283 elab2=5671 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  1:17 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# Error: Cannot trace signals while simulation is running.
+# Error: Cannot trace signals while simulation is running.
+# Error: Cannot trace signals while simulation is running.
+# Error: Cannot trace signals while simulation is running.
+# Error: Cannot trace signals while simulation is running.
+# KERNEL: stopped at time: 21946168446 ps
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1185 (99.41%) signals in SLP and 2 (0.17%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7105 kB (elbread=1283 elab2=5671 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  1:18 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 6379427033 ps
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1185 (99.41%) signals in SLP and 2 (0.17%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7105 kB (elbread=1283 elab2=5671 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  1:19 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../top.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module pll found in current working library.
+# Info: VCP2113 Module smi_fifo found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1185 (99.41%) signals in SLP and 2 (0.17%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7104 kB (elbread=1283 elab2=5671 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  1:19 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 82382249533 ps
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.89%) primitives and 540 (89.11%) other processes in SLP
+# SLP: 1185 (99.41%) signals in SLP and 2 (0.17%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7104 kB (elbread=1283 elab2=5671 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  2:22 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -v2k5 -work simulation $dsn/../top.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module pll found in current working library.
+# Info: VCP2113 Module smi_fifo found in current working library.
+# Info: VCP2113 Module TLC5957 found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.84%) primitives and 543 (89.16%) other processes in SLP
+# SLP: 1189 (99.33%) signals in SLP and 3 (0.25%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5673 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  2:22 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 24416784437 ps
+# 1 signal(s) traced.
+run
+# Error: Cannot trace signals while simulation is running.
+# KERNEL: stopped at time: 78998740998 ps
+# 1 signal(s) traced.
+run
+# KERNEL: stopped at time: 80140897409 ps
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.84%) primitives and 543 (89.16%) other processes in SLP
+# SLP: 1189 (99.33%) signals in SLP and 3 (0.25%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5673 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  2:30 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.84%) primitives and 543 (89.16%) other processes in SLP
+# SLP: 1189 (99.33%) signals in SLP and 3 (0.25%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5673 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  2:30 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 8245690992 ps
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.84%) primitives and 543 (89.16%) other processes in SLP
+# SLP: 1189 (99.33%) signals in SLP and 3 (0.25%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5673 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  2:32 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.84%) primitives and 543 (89.16%) other processes in SLP
+# SLP: 1189 (99.33%) signals in SLP and 3 (0.25%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5673 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  2:32 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 1474499808 ps
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.84%) primitives and 543 (89.16%) other processes in SLP
+# SLP: 1189 (99.33%) signals in SLP and 3 (0.25%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5673 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  2:33 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.86%) primitives and 542 (89.14%) other processes in SLP
+# SLP: 1188 (99.25%) signals in SLP and 4 (0.33%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5674 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  2:33 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 1474827728 ps
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.86%) primitives and 542 (89.14%) other processes in SLP
+# SLP: 1188 (99.25%) signals in SLP and 4 (0.33%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5674 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  2:34 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.86%) primitives and 542 (89.14%) other processes in SLP
+# SLP: 1188 (99.25%) signals in SLP and 4 (0.33%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5674 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  2:34 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 2391088668 ps
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 66 (10.86%) primitives and 542 (89.14%) other processes in SLP
+# SLP: 1188 (99.25%) signals in SLP and 4 (0.33%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7107 kB (elbread=1283 elab2=5674 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  2:35 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+alog -O2 -sve -msg 5 -sv2k12 -work simulation $dsn/../TLC5957.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'TLC5957' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\lscc\radiant\1.1\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Warning: smi_fifo.v (2118): Index of bit-select [1] is out of range [0:0] of 'ben_i'.
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 66 (10.86%) primitives and 542 (89.14%) other processes in SLP
+# SLP: 1188 (99.17%) signals in SLP and 5 (0.42%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7109 kB (elbread=1283 elab2=5676 kernel=150 sdf=0)
+# KERNEL: ASDB file was created in location c:\development\FPGA\spin_clock_ice\sim\src\wave.asdb
+#  2:35 PM, Sunday, August 25, 2019
+#  Simulation has been initialized
+# Waveform file 'c:/development/FPGA/spin_clock_ice/sim/src/wave.awc' connected to 'c:/development/FPGA/spin_clock_ice/sim/src/wave.asdb'.
+run
+# KERNEL: ************************SBT : Info*****************************
+# KERNEL: Note that signal connection to the EXTFEEDBACK port of the PLL must come from INTFBOUT port of PLL.
+# KERNEL: ***************************************************************
+# KERNEL: ************************SBT : Attention***************************
+# KERNEL: Since FEEDBACK_PATH="SIMPLE", the FDA_FEEDBACK value will be ignored
+# KERNEL: ******************************************************************
+# KERNEL: stopped at time: 4290797622 ps
+run
+# KERNEL: stopped at time: 8142409661 ps

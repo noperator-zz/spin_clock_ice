@@ -1,1 +1,46 @@
-                   
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="2" build_time="1566777566">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1566777566"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1566777568"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1566777569"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1566777547">
+            <Task name="Map" build_result="2" update_result="0" update_time="1566777547"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1566777548"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1566777561">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1566777561"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1566777563"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1566777565"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1566777356">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1566777356"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1566777381"/>
+            <Task name="SynTrace" build_result="2" update_result="0" update_time="1566777357"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1566759763"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="1566757478"/>
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1566758329"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1566758329"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="1566757478"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="1566757478"/>
+        </Milestone>
+        <Report name="IBIS/spin_clock_impl_1.ibs" last_build_time="1566777568" last_build_size="54477"/>
+        <Report name="spin_clock_impl_1.bgn" last_build_time="1566777566" last_build_size="924"/>
+        <Report name="spin_clock_impl_1.bin" last_build_time="1566777566" last_build_size="104156"/>
+        <Report name="spin_clock_impl_1.ior.html" last_build_time="1566777565" last_build_size="3342"/>
+        <Report name="spin_clock_impl_1.lsedata" last_build_time="1566777231" last_build_size="19584697"/>
+        <Report name="spin_clock_impl_1.tw1.html" last_build_time="1566777548" last_build_size="452427"/>
+        <Report name="spin_clock_impl_1.twr.html" last_build_time="1566777563" last_build_size="360311"/>
+        <Report name="spin_clock_impl_1.tws.html" last_build_time="1566777357" last_build_size="375372"/>
+        <Report name="spin_clock_impl_1.udb::log" last_build_time="1566777355" last_build_size="12213266"/>
+        <Report name="spin_clock_impl_1.udb::phy_par" last_build_time="1566777561" last_build_size="12546146"/>
+        <Report name="spin_clock_impl_1.udb::rtl" last_build_time="1566777231" last_build_size="12551469"/>
+        <Report name="spin_clock_impl_1_map.udb" last_build_time="1566777548" last_build_size="12495156"/>
+        <Report name="spin_clock_impl_1_vo.sdf" last_build_time="1566777569" last_build_size="281085"/>
+        <Report name="spin_clock_impl_1_vo.vo" last_build_time="1566777569" last_build_size="344307"/>
+    </Strategy>
+</BuildStatus>
