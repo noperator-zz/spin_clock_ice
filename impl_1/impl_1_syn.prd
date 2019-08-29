@@ -1,0 +1,13 @@
+#--  Synopsys, Inc.
+#--  Version N-2018.03LR-SP1
+#--  Project file C:\development\FPGA\spin_clock_ice\impl_1\impl_1_syn.prd
+#--  Written on Sun Aug 25 11:38:58 2019
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

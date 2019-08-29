@@ -1,0 +1,10 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: BN362 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":431:24:431:29|Removing sequential instance afull_flag_impl\.sync\.afull_flag_r (in view: work.smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+@N: BN225 |Writing default property annotation file C:\development\FPGA\spin_clock_ice\impl_1\spin_clock_impl_1.sap.

@@ -1,0 +1,4 @@
+@E: CG285 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":79:3:79:9|Expecting statement
+@E: CS187 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":85:0:85:8|Expecting endmodule
+@E::Verilog compiler failed
+

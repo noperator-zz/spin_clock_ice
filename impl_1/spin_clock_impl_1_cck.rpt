@@ -1,0 +1,98 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03LR-SP1
+Install: C:\lscc\radiant\1.1\synpbase
+OS: Windows 6.1
+
+Hostname: IVAN-PC
+
+Implementation : impl_1
+
+# Written on Sun Aug 25 12:01:14 2019
+
+##### DESIGN INFO #######################################################
+
+Top View:                "top"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                                                    Ending                                                      |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                      System                                                      |     1000.000         |     No paths         |     No paths         |     No paths                         
+System                                                      pll_ipgen_lscc_pll_Z1_layer0|outglobal_o_inferred_clock     |     8.605            |     No paths         |     No paths         |     No paths                         
+top|osc_clk_inferred_clock                                  top|osc_clk_inferred_clock                                  |     5.327            |     No paths         |     No paths         |     No paths                         
+top|osc_clk_inferred_clock                                  pll_ipgen_lscc_pll_Z1_layer0|outglobal_o_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+pll_ipgen_lscc_pll_Z1_layer0|outglobal_o_inferred_clock     System                                                      |     8.605            |     No paths         |     No paths         |     No paths                         
+pll_ipgen_lscc_pll_Z1_layer0|outglobal_o_inferred_clock     pll_ipgen_lscc_pll_Z1_layer0|outglobal_o_inferred_clock     |     8.605            |     No paths         |     No paths         |     No paths                         
+pll_ipgen_lscc_pll_Z1_layer0|outglobal_o_inferred_clock     top|smi_nwe_pi                                              |     No paths         |     No paths         |     Diff grp         |     No paths                         
+top|smi_nwe_pi                                              System                                                      |     No paths         |     No paths         |     No paths         |     5.833                            
+top|smi_nwe_pi                                              pll_ipgen_lscc_pll_Z1_layer0|outglobal_o_inferred_clock     |     No paths         |     No paths         |     No paths         |     Diff grp                         
+top|smi_nwe_pi                                              top|smi_nwe_pi                                              |     No paths         |     5.833            |     No paths         |     No paths                         
+===================================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:frame_sync_pi
+p:global_rst
+p:line_sync
+p:smi_data_pi[0]
+p:smi_data_pi[1]
+p:smi_data_pi[2]
+p:smi_data_pi[3]
+p:smi_data_pi[4]
+p:smi_data_pi[5]
+p:smi_data_pi[6]
+p:smi_data_pi[7]
+p:smi_noe_pi
+p:tlc_gclk
+p:tlc_lat
+p:tlc_sin
+p:tlc_sout
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

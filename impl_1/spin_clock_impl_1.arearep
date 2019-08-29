@@ -1,0 +1,67 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  193 of 5280 (3.655%)
+I/O cells:      16
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        59          100.0
+                            FD1P3XZ       193          100.0
+                         HSOSC_CORE         1          100.0
+                                 IB        11          100.0
+                                INV         1          100.0
+                              IOL_B         1          100.0
+                               LUT4       321          100.0
+                                 OB         5          100.0
+                              PLL_B         1          100.0
+SUB MODULES
+                            TLC5957         1
+                                pll         1
+pll_ipgen_lscc_pll(DIVR="0",DIVF="87",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                           smi_fifo         1
+smi_fifo_ipgen_lscc_fifo_dc(WADDR_DEPTH=1024,WADDR_WIDTH=10,WDATA_WIDTH=8,RADDR_DEPTH=1024,RADDR_WIDTH=10,RDATA_WIDTH=8,REGMODE="noreg",RESETMODE="sync",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=832,ALMOST_FULL_DEASSERT_LVL=831,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=191,ALMOST_EMPTY_DEASSERT_LVL=192,FAMILY="iCE40UP")         1
+                              TOTAL       598
+----------------------------------------------------------------------
+Report for cell smi_fifo.v1
+Instance Path : tlc_data_7__I_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        24           40.7
+                            FD1P3XZ        85           44.0
+                               LUT4        99           30.8
+SUB MODULES
+smi_fifo_ipgen_lscc_fifo_dc(WADDR_DEPTH=1024,WADDR_WIDTH=10,WDATA_WIDTH=8,RADDR_DEPTH=1024,RADDR_WIDTH=10,RDATA_WIDTH=8,REGMODE="noreg",RESETMODE="sync",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=832,ALMOST_FULL_DEASSERT_LVL=831,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=191,ALMOST_EMPTY_DEASSERT_LVL=192,FAMILY="iCE40UP")         1
+                              TOTAL       209
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_dc(WADDR_DEPTH=1024,WADDR_WIDTH=10,WDATA_WIDTH=8,RADDR_DEPTH=1024,RADDR_WIDTH=10,RDATA_WIDTH=8,REGMODE="noreg",RESETMODE="sync",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=832,ALMOST_FULL_DEASSERT_LVL=831,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=191,ALMOST_EMPTY_DEASSERT_LVL=192,FAMILY="iCE40UP").v1
+Instance Path : tlc_data_7__I_0.lscc_fifo_dc_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        24           40.7
+                            FD1P3XZ        85           44.0
+                               LUT4        99           30.8
+                              TOTAL       208
+----------------------------------------------------------------------
+Report for cell TLC5957.v1
+Instance Path : tlc0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        13           22.0
+                            FD1P3XZ        46           23.8
+                               LUT4       106           33.0
+                              TOTAL       165
+----------------------------------------------------------------------
+Report for cell pll.v1
+Instance Path : tlc_sclk_I_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+SUB MODULES
+pll_ipgen_lscc_pll(DIVR="0",DIVF="87",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell pll_ipgen_lscc_pll(DIVR="0",DIVF="87",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000").v1
+Instance Path : tlc_sclk_I_0.lscc_pll_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+                              TOTAL         1

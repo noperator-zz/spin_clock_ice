@@ -1,0 +1,2996 @@
+Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 1.1.0.165.1
+
+Sun Aug 25 16:55:57 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:    timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt spin_clock_impl_1.tws spin_clock_impl_1_syn.udb -gui
+
+-----------------------------------------
+Design:          top
+Family:          iCE40UP
+Device:          iCE40UP5K
+Package:         SG48
+Performance:     High-Performance_1.2V
+-----------------------------------------
+
+
+=====================================================================
+                    Table of Contents
+=====================================================================
+    1  DESIGN CHECKING
+        1.1  SDC Constraints
+        1.2  Combinational Loop
+    2  CLOCK SUMMARY
+        2.1  Clock tlc_sclk_I_0/lscc_pll_inst/clk_in_c
+        2.2  Clock sys_clk
+        2.3  Clock tlc_sclk_c
+    3  TIMING ANALYSIS SUMMARY
+        3.1  Overall (Setup and Hold)
+            3.1.1  Constraint Coverage
+            3.1.2  Timing Errors
+            3.1.3  Total Timing Score
+        3.2  Setup Summary Report
+            3.2.1  Setup Constraint Slack Summary
+            3.2.2  Setup Critical Endpoint Summary 
+        3.3  Hold Summary Report
+            3.3.1  Hold Constraint Slack Summary
+            3.3.2  Hold Critical Endpoint Summary 
+        3.4  Unconstrained Report
+            3.4.1  Unconstrained Start/End Points
+            3.4.2  Start/End Points Without Timing Constraints
+    4  DETAILED REPORT
+        4.1  Setup Detailed Report
+            4.1.1  Setup Path Details For Constraint: create_clock -name {tlc_sclk_I_0/lscc_pll_inst/clk_in_c} -period 83.3333333333333 [get_nets clk_in_c]
+            4.1.2  Setup Path Details For Constraint: create_clock -name {sys_clk} -period 20.8333 [get_pins {OSCInst0/CLKHF }] 
+            4.1.3  Setup Path Details For Constraint: create_generated_clock -name {tlc_sclk_c} -source [get_pins {tlc_sclk_I_0/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 11 -divide_by 4 [get_pins {tlc_sclk_I_0/lscc_pll_inst/u_PLL_B/OUTCORE }] 
+        4.2  Hold Detailed Report
+            4.2.1  Hold Path Details For Constraint: create_clock -name {tlc_sclk_I_0/lscc_pll_inst/clk_in_c} -period 83.3333333333333 [get_nets clk_in_c]
+            4.2.2  Hold Path Details For Constraint: create_clock -name {sys_clk} -period 20.8333 [get_pins {OSCInst0/CLKHF }] 
+            4.2.3  Hold Path Details For Constraint: create_generated_clock -name {tlc_sclk_c} -source [get_pins {tlc_sclk_I_0/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 11 -divide_by 4 [get_pins {tlc_sclk_I_0/lscc_pll_inst/u_PLL_B/OUTCORE }] 
+
+=====================================================================
+                    End of Table of Contents
+=====================================================================
+
+==============================================
+1  DESIGN CHECKING
+==============================================
+
+1.1  SDC Constraints
+=====================
+create_clock -name {tlc_sclk_I_0/lscc_pll_inst/clk_in_c} -period 83.3333333333333 [get_nets clk_in_c]
+create_clock -name {sys_clk} -period 20.8333 [get_pins {OSCInst0/CLKHF }] 
+create_generated_clock -name {tlc_sclk_c} -source [get_pins {tlc_sclk_I_0/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 11 -divide_by 4 [get_pins {tlc_sclk_I_0/lscc_pll_inst/u_PLL_B/OUTCORE }] 
+
+1.2  Combinational Loop
+========================
+None
+
+==============================================
+2  CLOCK SUMMARY
+==============================================
+
+2.1 Clock "tlc_sclk_I_0/lscc_pll_inst/clk_in_c"
+=======================
+create_clock -name {tlc_sclk_I_0/lscc_pll_inst/clk_in_c} -period 83.3333333333333 [get_nets clk_in_c]
+
+Single Clock Domain
+--------------------------------------------------------------------------------------------------------
+Clock tlc_sclk_I_0/lscc_pll_inst/clk_in_c|                    |       Period       |     Frequency      
+--------------------------------------------------------------------------------------------------------
+ From tlc_sclk_I_0/lscc_pll_inst/clk_in_c|             Target |          83.333 ns |         12.000 MHz 
+                                         | Actual (all paths) |               ---- |               ---- 
+--------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+-------------------------------------------------------------------------------------------------------
+Clock tlc_sclk_I_0/lscc_pll_inst/clk_in_c|   Worst Time Between Edges   |           Comment            
+-------------------------------------------------------------------------------------------------------
+ From sys_clk                            |                         ---- |                      No path 
+ From tlc_sclk_c                         |                         ---- |                      No path 
+-------------------------------------------------------------------------------------------------------
+
+2.2 Clock "sys_clk"
+=======================
+create_clock -name {sys_clk} -period 20.8333 [get_pins {OSCInst0/CLKHF }] 
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+             Clock sys_clk              |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From sys_clk                           |             Target |          20.833 ns |         48.001 MHz 
+                                        | Actual (all paths) |          20.830 ns |         48.008 MHz 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+             Clock sys_clk              |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From tlc_sclk_I_0/lscc_pll_inst/clk_in_c                                                              
+                                        |                         ---- |                      No path 
+ From tlc_sclk_c                        |                         ---- |                      No path 
+------------------------------------------------------------------------------------------------------
+
+2.3 Clock "tlc_sclk_c"
+=======================
+create_generated_clock -name {tlc_sclk_c} -source [get_pins {tlc_sclk_I_0/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 11 -divide_by 4 [get_pins {tlc_sclk_I_0/lscc_pll_inst/u_PLL_B/OUTCORE }] 
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+            Clock tlc_sclk_c            |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From tlc_sclk_c                        |             Target |          30.303 ns |         33.000 MHz 
+                                        | Actual (all paths) |          27.150 ns |         36.832 MHz 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+            Clock tlc_sclk_c            |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From tlc_sclk_I_0/lscc_pll_inst/clk_in_c                                                              
+                                        |                         ---- |                      No path 
+ From sys_clk                           |                     1.893 ns |            slack = -4.930 ns 
+------------------------------------------------------------------------------------------------------
+
+==============================================
+3  TIMING ANALYSIS SUMMARY
+==============================================
+
+3.1  Overall (Setup and Hold)
+==============================
+
+3.1.1  Constraint Coverage
+---------------------------
+Constraint Coverage: 76.8322%
+
+3.1.2  Timing Errors
+---------------------
+Timing Errors: 43 endpoints (setup), 1 endpoints (hold)
+
+3.1.3  Total Timing Score
+--------------------------
+Total Negative Slack: 95.358 ns (setup), 0.554 ns (hold)
+
+3.2  Setup Summary Report
+==========================
+
+3.2.1  Setup Constraint Slack Summary
+--------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------
+                                        |             |             |        |   Actual (flop to flop)   |                |                
+             SDC Constraint             |   Target    |    Slack    | Levels |   Period    |  Frequency  |  Items Scored  |  Timing Error  
+-------------------------------------------------------------------------------------------------------------------------------------------
+                                        |             |             |        |             |             |                |                
+create_clock -name {tlc_sclk_I_0/lscc_p                                                                                                    
+ll_inst/clk_in_c} -period 83.3333333333                                                                                                    
+333 [get_nets clk_in_c]                 |    -----    |    -----    |   ---- |        ---- |        ---- |        0       |        0       
+                                        |             |             |        |             |             |                |                
+create_clock -name {sys_clk} -period 20                                                                                                    
+.8333 [get_pins {OSCInst0/CLKHF }]      |   20.833 ns |    1.158 ns |   26   |   20.830 ns |  48.008 MHz |       130      |        0       
+                                        |             |             |        |             |             |                |                
+create_generated_clock -name {tlc_sclk_                                                                                                    
+c} -source [get_pins {tlc_sclk_I_0/lscc                                                                                                    
+_pll_inst/u_PLL_B/REFERENCECLK}] -multi                                                                                                    
+ply_by 11 -divide_by 4 [get_pins {tlc_s                                                                                                    
+clk_I_0/lscc_pll_inst/u_PLL_B/OUTCORE }                                                                                                    
+]                                       |    1.893 ns |   -4.930 ns |    3   |   27.150 ns |  36.832 MHz |       158      |       43       
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+3.2.2  Setup Critical Endpoint Summary 
+----------------------------------------
+-------------------------------------------------------
+          Listing 10 End Points          |    Slack    
+-------------------------------------------------------
+tlc_data_7__I_0/lscc_fifo_dc_inst/rd_addr_r_i0/D              
+                                         |   -4.930 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i11/D              
+                                         |   -4.930 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/rd_addr_r_i2/D              
+                                         |   -4.930 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/rd_addr_r_i4/D              
+                                         |   -4.930 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/rd_addr_r_i6/D              
+                                         |   -4.930 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/rd_addr_r_i8/D              
+                                         |   -4.930 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync1_r__i2/D              
+                                         |   -2.378 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync1_r__i3/D              
+                                         |   -2.378 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync1_r__i4/D              
+                                         |   -2.378 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync1_r__i5/D              
+                                         |   -2.378 ns 
+-------------------------------------------------------
+                                         |             
+Setup # of endpoints with negative slack:|          43 
+                                         |             
+-------------------------------------------------------
+
+3.3  Hold Summary Report
+=========================
+
+3.3.1  Hold Constraint Slack Summary
+-------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------
+                                        |             |             |        |   Actual (flop to flop)   |                |                
+             SDC Constraint             |   Target    |    Slack    | Levels |   Period    |  Frequency  |  Items Scored  |  Timing Error  
+-------------------------------------------------------------------------------------------------------------------------------------------
+                                        |             |             |        |             |             |                |                
+create_clock -name {tlc_sclk_I_0/lscc_p                                                                                                    
+ll_inst/clk_in_c} -period 83.3333333333                                                                                                    
+333 [get_nets clk_in_c]                 |    -----    |    -----    |   ---- |        ---- |        ---- |        0       |        0       
+                                        |             |             |        |             |             |                |                
+create_clock -name {sys_clk} -period 20                                                                                                    
+.8333 [get_pins {OSCInst0/CLKHF }]      |    0.000 ns |    4.196 ns |    2   |        ---- |        ---- |       130      |        0       
+                                        |             |             |        |             |             |                |                
+create_generated_clock -name {tlc_sclk_                                                                                                    
+c} -source [get_pins {tlc_sclk_I_0/lscc                                                                                                    
+_pll_inst/u_PLL_B/REFERENCECLK}] -multi                                                                                                    
+ply_by 11 -divide_by 4 [get_pins {tlc_s                                                                                                    
+clk_I_0/lscc_pll_inst/u_PLL_B/OUTCORE }                                                                                                    
+]                                       |    0.000 ns |   -0.554 ns |    1   |        ---- |        ---- |       158      |        1       
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+3.3.2  Hold Critical Endpoint Summary 
+---------------------------------------
+
+-------------------------------------------------------
+          Listing 10 End Points          |    Slack    
+-------------------------------------------------------
+tlc0/line_cdc_i0/D                       |   -0.554 ns 
+tlc0/line_prev_c/D                       |    1.671 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i1/SR              
+                                         |    1.998 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/empty_r/SR              
+                                         |    1.998 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/aempty_flag_impl.aempty_flag_r/SR              
+                                         |    1.998 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i10/SR              
+                                         |    1.998 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i9/SR              
+                                         |    1.998 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i7/SR              
+                                         |    1.998 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i6/SR              
+                                         |    1.998 ns 
+tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i5/SR              
+                                         |    1.998 ns 
+-------------------------------------------------------
+                                         |             
+Hold # of endpoints with negative slack: |           1 
+                                         |             
+-------------------------------------------------------
+
+3.4  Unconstrained Report
+===========================
+
+3.4.1  Unconstrained Start/End Points
+--------------------------------------
+
+Clocked but unconstrained timing start points
+-------------------------------------------------------------------
+        Listing 10 Start Points         |           Type           
+-------------------------------------------------------------------
+tlc_data_7__I_0/lscc_fifo_dc_inst/rp_sync2_r__i4/Q                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/rp_sync2_r__i3/Q                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/rp_sync2_r__i2/Q                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/rp_sync2_r__i1/Q                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/rp_sync2_r__i8/Q                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/rp_sync2_r__i7/Q                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/rp_sync2_r__i6/Q                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/rp_sync2_r__i5/Q                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/rp_sync2_r__i11/Q                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/rp_sync2_r__i10/Q                           
+                                        |    No arrival or required
+-------------------------------------------------------------------
+                                        |                          
+Number of unconstrained timing start po |                          
+ints                                    |                        52
+                                        |                          
+-------------------------------------------------------------------
+
+Clocked but unconstrained timing end points
+-------------------------------------------------------------------
+         Listing 10 End Points          |           Type           
+-------------------------------------------------------------------
+tlc_data_7__I_0/lscc_fifo_dc_inst/wr_grey_sync_r_i1/D                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/wr_addr_r_i0/D                           
+                                        |    No arrival or required
+frame_cdc_i0_i0/PADDI                   |           No arrival time
+tlc_data_7__I_0/lscc_fifo_dc_inst/wr_grey_sync_r_i1/SR                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/wr_grey_sync_r_i10/SR                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/wr_grey_sync_r_i9/SR                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/wr_grey_sync_r_i7/SR                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/wr_grey_sync_r_i6/SR                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/wr_grey_sync_r_i5/SR                           
+                                        |    No arrival or required
+tlc_data_7__I_0/lscc_fifo_dc_inst/wr_grey_sync_r_i3/SR                           
+                                        |    No arrival or required
+-------------------------------------------------------------------
+                                        |                          
+Number of unconstrained timing end poin |                          
+ts                                      |                        51
+                                        |                          
+-------------------------------------------------------------------
+
+3.4.2  Start/End Points Without Timing Constraints
+---------------------------------------------------
+
+I/O ports without constraint
+----------------------------
+Possible constraints to use on I/O ports are:
+set_input_delay,
+set_output_delay,
+set_max_delay,
+create_clock,
+create_generated_clock,
+...
+
+-------------------------------------------------------------------
+     Listing 10 Start or End Points     |           Type           
+-------------------------------------------------------------------
+clk_in                                  |                     input
+frame_sync_pi                           |                     input
+smi_nwe_pi                              |                     input
+smi_data_pi[7]                          |                     input
+smi_data_pi[6]                          |                     input
+smi_data_pi[5]                          |                     input
+smi_data_pi[4]                          |                     input
+smi_data_pi[3]                          |                     input
+smi_data_pi[2]                          |                     input
+smi_data_pi[1]                          |                     input
+-------------------------------------------------------------------
+                                        |                          
+Number of I/O ports without constraint  |                        18
+                                        |                          
+-------------------------------------------------------------------
+
+Registers without clock definition
+Define the clock for these registers.
+--------------------------------------------------
+There is no instance satisfying reporting criteria
+
+
+==============================================
+4  DETAILED REPORT
+==============================================
+
+4.1  Setup Detailed Report
+===========================
+4.1.1  Setup path details for constraint: create_clock -name {tlc_sclk_I_0/lscc_pll_inst/clk_in_c} -period 83.3333333333333 [get_nets clk_in_c]
+----------------------------------------------------------------------
+0 endpoints scored, 0 timing errors detected.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                    Detailed Report for timing paths 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                    End of Detailed Report for timing paths 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+4.1.2  Setup path details for constraint: create_clock -name {sys_clk} -period 20.8333 [get_pins {OSCInst0/CLKHF }] 
+----------------------------------------------------------------------
+130 endpoints scored, 0 timing errors detected.
+
+Minimum Pulse Width Report
+--------------------------
+MPW Cell         : HSOSC_CORE
+MPW Pin          : CLKHF
+MPW Period       : 20.83 ns
+Clock Period     : 20.8333 ns
+Period margin    : 0.003333 ns  (Passed)
+--------------------------
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    Detailed Report for timing paths 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : frame_time_counter_122254__i1/Q
+Path End         : frame_time_counter_122254__i25/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 26
+Delay Ratio      : 55.8% (route), 44.2% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 20.833 ns 
+Path Slack       : 1.158 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#2)    20.833
++ Destination Clock Source Latency                 0.000
+- Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
+- Setup Time                                       0.199
+----------------------------------------------   -------
+End-of-path required time( ns )                   24.784
+
+  Source Clock Arrival Time (sys_clk:R#1)    0.000
++ Source Clock Source Latency                0.000
++ Source Clock Path Delay                    4.150
++ Data Path Delay                           19.476
+-----------------------------------------   ------
+End-of-path arrival time( ns )              23.626
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+frame_time_counter_122254__i1/CK->frame_time_counter_122254__i1/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY     1.391         5.541  1       
+n25                                                       NET DELAY         2.075         7.616  1       
+frame_time_counter_122254_add_4_1/C1->frame_time_counter_122254_add_4_1/CO1
+                                          FA2             C1_TO_CO1_DELAY   0.344         7.960  2       
+n155583                                                   NET DELAY         0.280         8.240  1       
+frame_time_counter_122254_add_4_3/CI0->frame_time_counter_122254_add_4_3/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278         8.518  2       
+n157501                                                   NET DELAY         0.280         8.798  1       
+frame_time_counter_122254_add_4_3/CI1->frame_time_counter_122254_add_4_3/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278         9.076  2       
+n155585                                                   NET DELAY         0.280         9.356  1       
+frame_time_counter_122254_add_4_5/CI0->frame_time_counter_122254_add_4_5/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278         9.634  2       
+n157504                                                   NET DELAY         0.280         9.914  1       
+frame_time_counter_122254_add_4_5/CI1->frame_time_counter_122254_add_4_5/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        10.192  2       
+n155587                                                   NET DELAY         0.280        10.472  1       
+frame_time_counter_122254_add_4_7/CI0->frame_time_counter_122254_add_4_7/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        10.750  2       
+n157507                                                   NET DELAY         0.280        11.030  1       
+frame_time_counter_122254_add_4_7/CI1->frame_time_counter_122254_add_4_7/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        11.308  2       
+n155589                                                   NET DELAY         0.280        11.588  1       
+frame_time_counter_122254_add_4_9/CI0->frame_time_counter_122254_add_4_9/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        11.866  2       
+n157510                                                   NET DELAY         0.280        12.146  1       
+frame_time_counter_122254_add_4_9/CI1->frame_time_counter_122254_add_4_9/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        12.424  2       
+n155591                                                   NET DELAY         0.280        12.704  1       
+frame_time_counter_122254_add_4_11/CI0->frame_time_counter_122254_add_4_11/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        12.982  2       
+n157513                                                   NET DELAY         0.280        13.262  1       
+frame_time_counter_122254_add_4_11/CI1->frame_time_counter_122254_add_4_11/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        13.540  2       
+n155593                                                   NET DELAY         0.280        13.820  1       
+frame_time_counter_122254_add_4_13/CI0->frame_time_counter_122254_add_4_13/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        14.098  2       
+n157516                                                   NET DELAY         0.280        14.378  1       
+frame_time_counter_122254_add_4_13/CI1->frame_time_counter_122254_add_4_13/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        14.656  2       
+n155595                                                   NET DELAY         0.280        14.936  1       
+frame_time_counter_122254_add_4_15/CI0->frame_time_counter_122254_add_4_15/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        15.214  2       
+n157519                                                   NET DELAY         0.280        15.494  1       
+frame_time_counter_122254_add_4_15/CI1->frame_time_counter_122254_add_4_15/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        15.772  2       
+n155597                                                   NET DELAY         0.280        16.052  1       
+frame_time_counter_122254_add_4_17/CI0->frame_time_counter_122254_add_4_17/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        16.330  2       
+n157522                                                   NET DELAY         0.280        16.610  1       
+frame_time_counter_122254_add_4_17/CI1->frame_time_counter_122254_add_4_17/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        16.888  2       
+n155599                                                   NET DELAY         0.280        17.168  1       
+frame_time_counter_122254_add_4_19/CI0->frame_time_counter_122254_add_4_19/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        17.446  2       
+n157525                                                   NET DELAY         0.280        17.726  1       
+frame_time_counter_122254_add_4_19/CI1->frame_time_counter_122254_add_4_19/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        18.004  2       
+n155601                                                   NET DELAY         0.280        18.284  1       
+frame_time_counter_122254_add_4_21/CI0->frame_time_counter_122254_add_4_21/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        18.562  2       
+n157564                                                   NET DELAY         0.280        18.842  1       
+frame_time_counter_122254_add_4_21/CI1->frame_time_counter_122254_add_4_21/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        19.120  2       
+n155603                                                   NET DELAY         0.280        19.400  1       
+frame_time_counter_122254_add_4_23/CI0->frame_time_counter_122254_add_4_23/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        19.678  2       
+n157630                                                   NET DELAY         0.280        19.958  1       
+frame_time_counter_122254_add_4_23/CI1->frame_time_counter_122254_add_4_23/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        20.236  2       
+n155605                                                   NET DELAY         0.280        20.516  1       
+frame_time_counter_122254_add_4_25/CI0->frame_time_counter_122254_add_4_25/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        20.794  2       
+n157660                                                   NET DELAY         0.280        21.074  1       
+frame_time_counter_122254_add_4_25/D1->frame_time_counter_122254_add_4_25/S1
+                                          FA2             D1_TO_S1_DELAY    0.477        21.551  1       
+n106                                                      NET DELAY         2.075        23.626  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : frame_time_counter_122254__i1/Q
+Path End         : frame_time_counter_122254__i24/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 25
+Delay Ratio      : 56.0% (route), 44.0% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 20.833 ns 
+Path Slack       : 1.716 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#2)    20.833
++ Destination Clock Source Latency                 0.000
+- Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
+- Setup Time                                       0.199
+----------------------------------------------   -------
+End-of-path required time( ns )                   24.784
+
+  Source Clock Arrival Time (sys_clk:R#1)    0.000
++ Source Clock Source Latency                0.000
++ Source Clock Path Delay                    4.150
++ Data Path Delay                           18.918
+-----------------------------------------   ------
+End-of-path arrival time( ns )              23.068
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+frame_time_counter_122254__i1/CK->frame_time_counter_122254__i1/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY     1.391         5.541  1       
+n25                                                       NET DELAY         2.075         7.616  1       
+frame_time_counter_122254_add_4_1/C1->frame_time_counter_122254_add_4_1/CO1
+                                          FA2             C1_TO_CO1_DELAY   0.344         7.960  2       
+n155583                                                   NET DELAY         0.280         8.240  1       
+frame_time_counter_122254_add_4_3/CI0->frame_time_counter_122254_add_4_3/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278         8.518  2       
+n157501                                                   NET DELAY         0.280         8.798  1       
+frame_time_counter_122254_add_4_3/CI1->frame_time_counter_122254_add_4_3/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278         9.076  2       
+n155585                                                   NET DELAY         0.280         9.356  1       
+frame_time_counter_122254_add_4_5/CI0->frame_time_counter_122254_add_4_5/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278         9.634  2       
+n157504                                                   NET DELAY         0.280         9.914  1       
+frame_time_counter_122254_add_4_5/CI1->frame_time_counter_122254_add_4_5/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        10.192  2       
+n155587                                                   NET DELAY         0.280        10.472  1       
+frame_time_counter_122254_add_4_7/CI0->frame_time_counter_122254_add_4_7/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        10.750  2       
+n157507                                                   NET DELAY         0.280        11.030  1       
+frame_time_counter_122254_add_4_7/CI1->frame_time_counter_122254_add_4_7/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        11.308  2       
+n155589                                                   NET DELAY         0.280        11.588  1       
+frame_time_counter_122254_add_4_9/CI0->frame_time_counter_122254_add_4_9/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        11.866  2       
+n157510                                                   NET DELAY         0.280        12.146  1       
+frame_time_counter_122254_add_4_9/CI1->frame_time_counter_122254_add_4_9/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        12.424  2       
+n155591                                                   NET DELAY         0.280        12.704  1       
+frame_time_counter_122254_add_4_11/CI0->frame_time_counter_122254_add_4_11/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        12.982  2       
+n157513                                                   NET DELAY         0.280        13.262  1       
+frame_time_counter_122254_add_4_11/CI1->frame_time_counter_122254_add_4_11/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        13.540  2       
+n155593                                                   NET DELAY         0.280        13.820  1       
+frame_time_counter_122254_add_4_13/CI0->frame_time_counter_122254_add_4_13/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        14.098  2       
+n157516                                                   NET DELAY         0.280        14.378  1       
+frame_time_counter_122254_add_4_13/CI1->frame_time_counter_122254_add_4_13/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        14.656  2       
+n155595                                                   NET DELAY         0.280        14.936  1       
+frame_time_counter_122254_add_4_15/CI0->frame_time_counter_122254_add_4_15/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        15.214  2       
+n157519                                                   NET DELAY         0.280        15.494  1       
+frame_time_counter_122254_add_4_15/CI1->frame_time_counter_122254_add_4_15/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        15.772  2       
+n155597                                                   NET DELAY         0.280        16.052  1       
+frame_time_counter_122254_add_4_17/CI0->frame_time_counter_122254_add_4_17/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        16.330  2       
+n157522                                                   NET DELAY         0.280        16.610  1       
+frame_time_counter_122254_add_4_17/CI1->frame_time_counter_122254_add_4_17/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        16.888  2       
+n155599                                                   NET DELAY         0.280        17.168  1       
+frame_time_counter_122254_add_4_19/CI0->frame_time_counter_122254_add_4_19/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        17.446  2       
+n157525                                                   NET DELAY         0.280        17.726  1       
+frame_time_counter_122254_add_4_19/CI1->frame_time_counter_122254_add_4_19/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        18.004  2       
+n155601                                                   NET DELAY         0.280        18.284  1       
+frame_time_counter_122254_add_4_21/CI0->frame_time_counter_122254_add_4_21/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        18.562  2       
+n157564                                                   NET DELAY         0.280        18.842  1       
+frame_time_counter_122254_add_4_21/CI1->frame_time_counter_122254_add_4_21/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        19.120  2       
+n155603                                                   NET DELAY         0.280        19.400  1       
+frame_time_counter_122254_add_4_23/CI0->frame_time_counter_122254_add_4_23/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        19.678  2       
+n157630                                                   NET DELAY         0.280        19.958  1       
+frame_time_counter_122254_add_4_23/CI1->frame_time_counter_122254_add_4_23/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        20.236  2       
+n155605                                                   NET DELAY         0.280        20.516  1       
+frame_time_counter_122254_add_4_25/D0->frame_time_counter_122254_add_4_25/S0
+                                          FA2             D0_TO_S0_DELAY    0.477        20.993  1       
+n107                                                      NET DELAY         2.075        23.068  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : frame_time_counter_122254__i1/Q
+Path End         : frame_time_counter_122254__i23/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 24
+Delay Ratio      : 56.2% (route), 43.8% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 20.833 ns 
+Path Slack       : 2.274 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#2)    20.833
++ Destination Clock Source Latency                 0.000
+- Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
+- Setup Time                                       0.199
+----------------------------------------------   -------
+End-of-path required time( ns )                   24.784
+
+  Source Clock Arrival Time (sys_clk:R#1)    0.000
++ Source Clock Source Latency                0.000
++ Source Clock Path Delay                    4.150
++ Data Path Delay                           18.360
+-----------------------------------------   ------
+End-of-path arrival time( ns )              22.510
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+frame_time_counter_122254__i1/CK->frame_time_counter_122254__i1/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY     1.391         5.541  1       
+n25                                                       NET DELAY         2.075         7.616  1       
+frame_time_counter_122254_add_4_1/C1->frame_time_counter_122254_add_4_1/CO1
+                                          FA2             C1_TO_CO1_DELAY   0.344         7.960  2       
+n155583                                                   NET DELAY         0.280         8.240  1       
+frame_time_counter_122254_add_4_3/CI0->frame_time_counter_122254_add_4_3/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278         8.518  2       
+n157501                                                   NET DELAY         0.280         8.798  1       
+frame_time_counter_122254_add_4_3/CI1->frame_time_counter_122254_add_4_3/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278         9.076  2       
+n155585                                                   NET DELAY         0.280         9.356  1       
+frame_time_counter_122254_add_4_5/CI0->frame_time_counter_122254_add_4_5/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278         9.634  2       
+n157504                                                   NET DELAY         0.280         9.914  1       
+frame_time_counter_122254_add_4_5/CI1->frame_time_counter_122254_add_4_5/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        10.192  2       
+n155587                                                   NET DELAY         0.280        10.472  1       
+frame_time_counter_122254_add_4_7/CI0->frame_time_counter_122254_add_4_7/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        10.750  2       
+n157507                                                   NET DELAY         0.280        11.030  1       
+frame_time_counter_122254_add_4_7/CI1->frame_time_counter_122254_add_4_7/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        11.308  2       
+n155589                                                   NET DELAY         0.280        11.588  1       
+frame_time_counter_122254_add_4_9/CI0->frame_time_counter_122254_add_4_9/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        11.866  2       
+n157510                                                   NET DELAY         0.280        12.146  1       
+frame_time_counter_122254_add_4_9/CI1->frame_time_counter_122254_add_4_9/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        12.424  2       
+n155591                                                   NET DELAY         0.280        12.704  1       
+frame_time_counter_122254_add_4_11/CI0->frame_time_counter_122254_add_4_11/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        12.982  2       
+n157513                                                   NET DELAY         0.280        13.262  1       
+frame_time_counter_122254_add_4_11/CI1->frame_time_counter_122254_add_4_11/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        13.540  2       
+n155593                                                   NET DELAY         0.280        13.820  1       
+frame_time_counter_122254_add_4_13/CI0->frame_time_counter_122254_add_4_13/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        14.098  2       
+n157516                                                   NET DELAY         0.280        14.378  1       
+frame_time_counter_122254_add_4_13/CI1->frame_time_counter_122254_add_4_13/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        14.656  2       
+n155595                                                   NET DELAY         0.280        14.936  1       
+frame_time_counter_122254_add_4_15/CI0->frame_time_counter_122254_add_4_15/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        15.214  2       
+n157519                                                   NET DELAY         0.280        15.494  1       
+frame_time_counter_122254_add_4_15/CI1->frame_time_counter_122254_add_4_15/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        15.772  2       
+n155597                                                   NET DELAY         0.280        16.052  1       
+frame_time_counter_122254_add_4_17/CI0->frame_time_counter_122254_add_4_17/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        16.330  2       
+n157522                                                   NET DELAY         0.280        16.610  1       
+frame_time_counter_122254_add_4_17/CI1->frame_time_counter_122254_add_4_17/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        16.888  2       
+n155599                                                   NET DELAY         0.280        17.168  1       
+frame_time_counter_122254_add_4_19/CI0->frame_time_counter_122254_add_4_19/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        17.446  2       
+n157525                                                   NET DELAY         0.280        17.726  1       
+frame_time_counter_122254_add_4_19/CI1->frame_time_counter_122254_add_4_19/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        18.004  2       
+n155601                                                   NET DELAY         0.280        18.284  1       
+frame_time_counter_122254_add_4_21/CI0->frame_time_counter_122254_add_4_21/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        18.562  2       
+n157564                                                   NET DELAY         0.280        18.842  1       
+frame_time_counter_122254_add_4_21/CI1->frame_time_counter_122254_add_4_21/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        19.120  2       
+n155603                                                   NET DELAY         0.280        19.400  1       
+frame_time_counter_122254_add_4_23/CI0->frame_time_counter_122254_add_4_23/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        19.678  2       
+n157630                                                   NET DELAY         0.280        19.958  1       
+frame_time_counter_122254_add_4_23/D1->frame_time_counter_122254_add_4_23/S1
+                                          FA2             D1_TO_S1_DELAY    0.477        20.435  1       
+n108                                                      NET DELAY         2.075        22.510  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : frame_time_counter_122254__i1/Q
+Path End         : frame_time_counter_122254__i22/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 23
+Delay Ratio      : 56.3% (route), 43.7% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 20.833 ns 
+Path Slack       : 2.832 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#2)    20.833
++ Destination Clock Source Latency                 0.000
+- Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
+- Setup Time                                       0.199
+----------------------------------------------   -------
+End-of-path required time( ns )                   24.784
+
+  Source Clock Arrival Time (sys_clk:R#1)    0.000
++ Source Clock Source Latency                0.000
++ Source Clock Path Delay                    4.150
++ Data Path Delay                           17.802
+-----------------------------------------   ------
+End-of-path arrival time( ns )              21.952
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+frame_time_counter_122254__i1/CK->frame_time_counter_122254__i1/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY     1.391         5.541  1       
+n25                                                       NET DELAY         2.075         7.616  1       
+frame_time_counter_122254_add_4_1/C1->frame_time_counter_122254_add_4_1/CO1
+                                          FA2             C1_TO_CO1_DELAY   0.344         7.960  2       
+n155583                                                   NET DELAY         0.280         8.240  1       
+frame_time_counter_122254_add_4_3/CI0->frame_time_counter_122254_add_4_3/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278         8.518  2       
+n157501                                                   NET DELAY         0.280         8.798  1       
+frame_time_counter_122254_add_4_3/CI1->frame_time_counter_122254_add_4_3/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278         9.076  2       
+n155585                                                   NET DELAY         0.280         9.356  1       
+frame_time_counter_122254_add_4_5/CI0->frame_time_counter_122254_add_4_5/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278         9.634  2       
+n157504                                                   NET DELAY         0.280         9.914  1       
+frame_time_counter_122254_add_4_5/CI1->frame_time_counter_122254_add_4_5/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        10.192  2       
+n155587                                                   NET DELAY         0.280        10.472  1       
+frame_time_counter_122254_add_4_7/CI0->frame_time_counter_122254_add_4_7/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        10.750  2       
+n157507                                                   NET DELAY         0.280        11.030  1       
+frame_time_counter_122254_add_4_7/CI1->frame_time_counter_122254_add_4_7/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        11.308  2       
+n155589                                                   NET DELAY         0.280        11.588  1       
+frame_time_counter_122254_add_4_9/CI0->frame_time_counter_122254_add_4_9/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        11.866  2       
+n157510                                                   NET DELAY         0.280        12.146  1       
+frame_time_counter_122254_add_4_9/CI1->frame_time_counter_122254_add_4_9/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        12.424  2       
+n155591                                                   NET DELAY         0.280        12.704  1       
+frame_time_counter_122254_add_4_11/CI0->frame_time_counter_122254_add_4_11/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        12.982  2       
+n157513                                                   NET DELAY         0.280        13.262  1       
+frame_time_counter_122254_add_4_11/CI1->frame_time_counter_122254_add_4_11/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        13.540  2       
+n155593                                                   NET DELAY         0.280        13.820  1       
+frame_time_counter_122254_add_4_13/CI0->frame_time_counter_122254_add_4_13/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        14.098  2       
+n157516                                                   NET DELAY         0.280        14.378  1       
+frame_time_counter_122254_add_4_13/CI1->frame_time_counter_122254_add_4_13/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        14.656  2       
+n155595                                                   NET DELAY         0.280        14.936  1       
+frame_time_counter_122254_add_4_15/CI0->frame_time_counter_122254_add_4_15/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        15.214  2       
+n157519                                                   NET DELAY         0.280        15.494  1       
+frame_time_counter_122254_add_4_15/CI1->frame_time_counter_122254_add_4_15/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        15.772  2       
+n155597                                                   NET DELAY         0.280        16.052  1       
+frame_time_counter_122254_add_4_17/CI0->frame_time_counter_122254_add_4_17/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        16.330  2       
+n157522                                                   NET DELAY         0.280        16.610  1       
+frame_time_counter_122254_add_4_17/CI1->frame_time_counter_122254_add_4_17/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        16.888  2       
+n155599                                                   NET DELAY         0.280        17.168  1       
+frame_time_counter_122254_add_4_19/CI0->frame_time_counter_122254_add_4_19/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        17.446  2       
+n157525                                                   NET DELAY         0.280        17.726  1       
+frame_time_counter_122254_add_4_19/CI1->frame_time_counter_122254_add_4_19/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        18.004  2       
+n155601                                                   NET DELAY         0.280        18.284  1       
+frame_time_counter_122254_add_4_21/CI0->frame_time_counter_122254_add_4_21/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        18.562  2       
+n157564                                                   NET DELAY         0.280        18.842  1       
+frame_time_counter_122254_add_4_21/CI1->frame_time_counter_122254_add_4_21/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        19.120  2       
+n155603                                                   NET DELAY         0.280        19.400  1       
+frame_time_counter_122254_add_4_23/D0->frame_time_counter_122254_add_4_23/S0
+                                          FA2             D0_TO_S0_DELAY    0.477        19.877  1       
+n109                                                      NET DELAY         2.075        21.952  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : frame_time_counter_122254__i1/Q
+Path End         : frame_time_counter_122254__i21/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 22
+Delay Ratio      : 56.5% (route), 43.5% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 20.833 ns 
+Path Slack       : 3.390 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#2)    20.833
++ Destination Clock Source Latency                 0.000
+- Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
+- Setup Time                                       0.199
+----------------------------------------------   -------
+End-of-path required time( ns )                   24.784
+
+  Source Clock Arrival Time (sys_clk:R#1)    0.000
++ Source Clock Source Latency                0.000
++ Source Clock Path Delay                    4.150
++ Data Path Delay                           17.244
+-----------------------------------------   ------
+End-of-path arrival time( ns )              21.394
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+frame_time_counter_122254__i1/CK->frame_time_counter_122254__i1/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY     1.391         5.541  1       
+n25                                                       NET DELAY         2.075         7.616  1       
+frame_time_counter_122254_add_4_1/C1->frame_time_counter_122254_add_4_1/CO1
+                                          FA2             C1_TO_CO1_DELAY   0.344         7.960  2       
+n155583                                                   NET DELAY         0.280         8.240  1       
+frame_time_counter_122254_add_4_3/CI0->frame_time_counter_122254_add_4_3/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278         8.518  2       
+n157501                                                   NET DELAY         0.280         8.798  1       
+frame_time_counter_122254_add_4_3/CI1->frame_time_counter_122254_add_4_3/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278         9.076  2       
+n155585                                                   NET DELAY         0.280         9.356  1       
+frame_time_counter_122254_add_4_5/CI0->frame_time_counter_122254_add_4_5/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278         9.634  2       
+n157504                                                   NET DELAY         0.280         9.914  1       
+frame_time_counter_122254_add_4_5/CI1->frame_time_counter_122254_add_4_5/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        10.192  2       
+n155587                                                   NET DELAY         0.280        10.472  1       
+frame_time_counter_122254_add_4_7/CI0->frame_time_counter_122254_add_4_7/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        10.750  2       
+n157507                                                   NET DELAY         0.280        11.030  1       
+frame_time_counter_122254_add_4_7/CI1->frame_time_counter_122254_add_4_7/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        11.308  2       
+n155589                                                   NET DELAY         0.280        11.588  1       
+frame_time_counter_122254_add_4_9/CI0->frame_time_counter_122254_add_4_9/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        11.866  2       
+n157510                                                   NET DELAY         0.280        12.146  1       
+frame_time_counter_122254_add_4_9/CI1->frame_time_counter_122254_add_4_9/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        12.424  2       
+n155591                                                   NET DELAY         0.280        12.704  1       
+frame_time_counter_122254_add_4_11/CI0->frame_time_counter_122254_add_4_11/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        12.982  2       
+n157513                                                   NET DELAY         0.280        13.262  1       
+frame_time_counter_122254_add_4_11/CI1->frame_time_counter_122254_add_4_11/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        13.540  2       
+n155593                                                   NET DELAY         0.280        13.820  1       
+frame_time_counter_122254_add_4_13/CI0->frame_time_counter_122254_add_4_13/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        14.098  2       
+n157516                                                   NET DELAY         0.280        14.378  1       
+frame_time_counter_122254_add_4_13/CI1->frame_time_counter_122254_add_4_13/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        14.656  2       
+n155595                                                   NET DELAY         0.280        14.936  1       
+frame_time_counter_122254_add_4_15/CI0->frame_time_counter_122254_add_4_15/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        15.214  2       
+n157519                                                   NET DELAY         0.280        15.494  1       
+frame_time_counter_122254_add_4_15/CI1->frame_time_counter_122254_add_4_15/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        15.772  2       
+n155597                                                   NET DELAY         0.280        16.052  1       
+frame_time_counter_122254_add_4_17/CI0->frame_time_counter_122254_add_4_17/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        16.330  2       
+n157522                                                   NET DELAY         0.280        16.610  1       
+frame_time_counter_122254_add_4_17/CI1->frame_time_counter_122254_add_4_17/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        16.888  2       
+n155599                                                   NET DELAY         0.280        17.168  1       
+frame_time_counter_122254_add_4_19/CI0->frame_time_counter_122254_add_4_19/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        17.446  2       
+n157525                                                   NET DELAY         0.280        17.726  1       
+frame_time_counter_122254_add_4_19/CI1->frame_time_counter_122254_add_4_19/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        18.004  2       
+n155601                                                   NET DELAY         0.280        18.284  1       
+frame_time_counter_122254_add_4_21/CI0->frame_time_counter_122254_add_4_21/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        18.562  2       
+n157564                                                   NET DELAY         0.280        18.842  1       
+frame_time_counter_122254_add_4_21/D1->frame_time_counter_122254_add_4_21/S1
+                                          FA2             D1_TO_S1_DELAY    0.477        19.319  1       
+n110                                                      NET DELAY         2.075        21.394  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : line_time_counter_122253__i14/Q
+Path End         : line_time_counter_122253__i0/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 7
+Delay Ratio      : 75.0% (route), 25.0% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 20.833 ns 
+Path Slack       : 3.651 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#2)    20.833
++ Destination Clock Source Latency                 0.000
+- Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
+- Setup Time                                       0.199
+----------------------------------------------   -------
+End-of-path required time( ns )                   24.784
+
+  Source Clock Arrival Time (sys_clk:R#1)    0.000
++ Source Clock Source Latency                0.000
++ Source Clock Path Delay                    4.150
++ Data Path Delay                           16.983
+-----------------------------------------   ------
+End-of-path arrival time( ns )              21.133
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+line_time_counter_122253__i14/CK->line_time_counter_122253__i14/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+line_time_counter[14]                                     NET DELAY      0.280         5.821  1       
+i7_4_lut/C->i7_4_lut/Z                    LUT4            C_TO_Z_DELAY   0.477         6.298  1       
+n18                                                       NET DELAY      2.075         8.373  1       
+i9_4_lut/B->i9_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         8.850  1       
+n20                                                       NET DELAY      2.075        10.925  1       
+i10_4_lut/B->i10_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477        11.402  2       
+n152755                                                   NET DELAY      2.075        13.477  1       
+i4_4_lut/A->i4_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.477        13.954  1       
+n10                                                       NET DELAY      2.075        16.029  1       
+i5_3_lut/B->i5_3_lut/Z                    LUT4            B_TO_Z_DELAY   0.477        16.506  16      
+n15                                                       NET DELAY      2.075        18.581  1       
+line_time_counter_122253_mux_6_i1_3_lut/C->line_time_counter_122253_mux_6_i1_3_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477        19.058  1       
+n103                                                      NET DELAY      2.075        21.133  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : line_time_counter_122253__i14/Q
+Path End         : line_time_counter_122253__i15/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 7
+Delay Ratio      : 75.0% (route), 25.0% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 20.833 ns 
+Path Slack       : 3.651 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#2)    20.833
++ Destination Clock Source Latency                 0.000
+- Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
+- Setup Time                                       0.199
+----------------------------------------------   -------
+End-of-path required time( ns )                   24.784
+
+  Source Clock Arrival Time (sys_clk:R#1)    0.000
++ Source Clock Source Latency                0.000
++ Source Clock Path Delay                    4.150
++ Data Path Delay                           16.983
+-----------------------------------------   ------
+End-of-path arrival time( ns )              21.133
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+line_time_counter_122253__i14/CK->line_time_counter_122253__i14/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+line_time_counter[14]                                     NET DELAY      0.280         5.821  1       
+i7_4_lut/C->i7_4_lut/Z                    LUT4            C_TO_Z_DELAY   0.477         6.298  1       
+n18                                                       NET DELAY      2.075         8.373  1       
+i9_4_lut/B->i9_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         8.850  1       
+n20                                                       NET DELAY      2.075        10.925  1       
+i10_4_lut/B->i10_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477        11.402  2       
+n152755                                                   NET DELAY      2.075        13.477  1       
+i4_4_lut/A->i4_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.477        13.954  1       
+n10                                                       NET DELAY      2.075        16.029  1       
+i5_3_lut/B->i5_3_lut/Z                    LUT4            B_TO_Z_DELAY   0.477        16.506  16      
+n15                                                       NET DELAY      2.075        18.581  1       
+line_time_counter_122253_mux_6_i16_3_lut/C->line_time_counter_122253_mux_6_i16_3_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477        19.058  1       
+n88                                                       NET DELAY      2.075        21.133  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : line_time_counter_122253__i14/Q
+Path End         : line_time_counter_122253__i14/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 7
+Delay Ratio      : 75.0% (route), 25.0% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 20.833 ns 
+Path Slack       : 3.651 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#2)    20.833
++ Destination Clock Source Latency                 0.000
+- Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
+- Setup Time                                       0.199
+----------------------------------------------   -------
+End-of-path required time( ns )                   24.784
+
+  Source Clock Arrival Time (sys_clk:R#1)    0.000
++ Source Clock Source Latency                0.000
++ Source Clock Path Delay                    4.150
++ Data Path Delay                           16.983
+-----------------------------------------   ------
+End-of-path arrival time( ns )              21.133
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+line_time_counter_122253__i14/CK->line_time_counter_122253__i14/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+line_time_counter[14]                                     NET DELAY      0.280         5.821  1       
+i7_4_lut/C->i7_4_lut/Z                    LUT4            C_TO_Z_DELAY   0.477         6.298  1       
+n18                                                       NET DELAY      2.075         8.373  1       
+i9_4_lut/B->i9_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         8.850  1       
+n20                                                       NET DELAY      2.075        10.925  1       
+i10_4_lut/B->i10_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477        11.402  2       
+n152755                                                   NET DELAY      2.075        13.477  1       
+i4_4_lut/A->i4_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.477        13.954  1       
+n10                                                       NET DELAY      2.075        16.029  1       
+i5_3_lut/B->i5_3_lut/Z                    LUT4            B_TO_Z_DELAY   0.477        16.506  16      
+n15                                                       NET DELAY      2.075        18.581  1       
+line_time_counter_122253_mux_6_i15_3_lut/C->line_time_counter_122253_mux_6_i15_3_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477        19.058  1       
+n89                                                       NET DELAY      2.075        21.133  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : line_time_counter_122253__i14/Q
+Path End         : line_time_counter_122253__i13/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 7
+Delay Ratio      : 75.0% (route), 25.0% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 20.833 ns 
+Path Slack       : 3.651 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#2)    20.833
++ Destination Clock Source Latency                 0.000
+- Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
+- Setup Time                                       0.199
+----------------------------------------------   -------
+End-of-path required time( ns )                   24.784
+
+  Source Clock Arrival Time (sys_clk:R#1)    0.000
++ Source Clock Source Latency                0.000
++ Source Clock Path Delay                    4.150
++ Data Path Delay                           16.983
+-----------------------------------------   ------
+End-of-path arrival time( ns )              21.133
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+line_time_counter_122253__i14/CK->line_time_counter_122253__i14/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+line_time_counter[14]                                     NET DELAY      0.280         5.821  1       
+i7_4_lut/C->i7_4_lut/Z                    LUT4            C_TO_Z_DELAY   0.477         6.298  1       
+n18                                                       NET DELAY      2.075         8.373  1       
+i9_4_lut/B->i9_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         8.850  1       
+n20                                                       NET DELAY      2.075        10.925  1       
+i10_4_lut/B->i10_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477        11.402  2       
+n152755                                                   NET DELAY      2.075        13.477  1       
+i4_4_lut/A->i4_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.477        13.954  1       
+n10                                                       NET DELAY      2.075        16.029  1       
+i5_3_lut/B->i5_3_lut/Z                    LUT4            B_TO_Z_DELAY   0.477        16.506  16      
+n15                                                       NET DELAY      2.075        18.581  1       
+line_time_counter_122253_mux_6_i14_3_lut/C->line_time_counter_122253_mux_6_i14_3_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477        19.058  1       
+n90                                                       NET DELAY      2.075        21.133  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : line_time_counter_122253__i14/Q
+Path End         : line_time_counter_122253__i12/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 7
+Delay Ratio      : 75.0% (route), 25.0% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 20.833 ns 
+Path Slack       : 3.651 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#2)    20.833
++ Destination Clock Source Latency                 0.000
+- Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
+- Setup Time                                       0.199
+----------------------------------------------   -------
+End-of-path required time( ns )                   24.784
+
+  Source Clock Arrival Time (sys_clk:R#1)    0.000
++ Source Clock Source Latency                0.000
++ Source Clock Path Delay                    4.150
++ Data Path Delay                           16.983
+-----------------------------------------   ------
+End-of-path arrival time( ns )              21.133
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+line_time_counter_122253__i14/CK->line_time_counter_122253__i14/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+line_time_counter[14]                                     NET DELAY      0.280         5.821  1       
+i7_4_lut/C->i7_4_lut/Z                    LUT4            C_TO_Z_DELAY   0.477         6.298  1       
+n18                                                       NET DELAY      2.075         8.373  1       
+i9_4_lut/B->i9_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         8.850  1       
+n20                                                       NET DELAY      2.075        10.925  1       
+i10_4_lut/B->i10_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477        11.402  2       
+n152755                                                   NET DELAY      2.075        13.477  1       
+i4_4_lut/A->i4_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.477        13.954  1       
+n10                                                       NET DELAY      2.075        16.029  1       
+i5_3_lut/B->i5_3_lut/Z                    LUT4            B_TO_Z_DELAY   0.477        16.506  16      
+n15                                                       NET DELAY      2.075        18.581  1       
+line_time_counter_122253_mux_6_i13_3_lut/C->line_time_counter_122253_mux_6_i13_3_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477        19.058  1       
+n91                                                       NET DELAY      2.075        21.133  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    End of Detailed Report for timing paths 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+4.1.3  Setup path details for constraint: create_generated_clock -name {tlc_sclk_c} -source [get_pins {tlc_sclk_I_0/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 11 -divide_by 4 [get_pins {tlc_sclk_I_0/lscc_pll_inst/u_PLL_B/OUTCORE }] 
+----------------------------------------------------------------------
+158 endpoints scored, 43 timing errors detected.
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    Detailed Report for timing paths 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/rd_addr_r_i8/D
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 3
+Delay Ratio      : 73.5% (route), 26.5% (logic)
+Clock Skew       : 2.225 ns
+Setup Constraint : 1.893 ns 
+Path Slack       : -4.930 ns  (Failed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#10)   272.727
++ Generated Clock Source Latency                       2.225
+- Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
+- Setup Time                                           0.199
+--------------------------------------------------   -------
+End-of-path required time( ns )                      278.903
+
+  Source Clock Arrival Time (sys_clk:R#14)   270.833
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              8.850
+------------------------------------------   -------
+End-of-path arrival time( ns )               283.833
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+i1_1_lut/A->i1_1_lut/Z                    LUT4            A_TO_Z_DELAY   0.477         8.373  50      
+global_rst_N_122                                          NET DELAY      2.075        10.448  1       
+tlc_data_7__I_0/lscc_fifo_dc_inst/i127424_2_lut_4_lut/D->tlc_data_7__I_0/lscc_fifo_dc_inst/i127424_2_lut_4_lut/Z
+                                          LUT4            D_TO_Z_DELAY   0.477        10.925  1       
+tlc_data_7__I_0/lscc_fifo_dc_inst/n154067
+                                                          NET DELAY      2.075        13.000  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/rd_addr_r_i6/D
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 3
+Delay Ratio      : 73.5% (route), 26.5% (logic)
+Clock Skew       : 2.225 ns
+Setup Constraint : 1.893 ns 
+Path Slack       : -4.930 ns  (Failed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#10)   272.727
++ Generated Clock Source Latency                       2.225
+- Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
+- Setup Time                                           0.199
+--------------------------------------------------   -------
+End-of-path required time( ns )                      278.903
+
+  Source Clock Arrival Time (sys_clk:R#14)   270.833
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              8.850
+------------------------------------------   -------
+End-of-path arrival time( ns )               283.833
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+i1_1_lut/A->i1_1_lut/Z                    LUT4            A_TO_Z_DELAY   0.477         8.373  50      
+global_rst_N_122                                          NET DELAY      2.075        10.448  1       
+tlc_data_7__I_0/lscc_fifo_dc_inst/i127425_2_lut_4_lut/D->tlc_data_7__I_0/lscc_fifo_dc_inst/i127425_2_lut_4_lut/Z
+                                          LUT4            D_TO_Z_DELAY   0.477        10.925  1       
+tlc_data_7__I_0/lscc_fifo_dc_inst/n154068
+                                                          NET DELAY      2.075        13.000  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/rd_addr_r_i4/D
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 3
+Delay Ratio      : 73.5% (route), 26.5% (logic)
+Clock Skew       : 2.225 ns
+Setup Constraint : 1.893 ns 
+Path Slack       : -4.930 ns  (Failed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#10)   272.727
++ Generated Clock Source Latency                       2.225
+- Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
+- Setup Time                                           0.199
+--------------------------------------------------   -------
+End-of-path required time( ns )                      278.903
+
+  Source Clock Arrival Time (sys_clk:R#14)   270.833
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              8.850
+------------------------------------------   -------
+End-of-path arrival time( ns )               283.833
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+i1_1_lut/A->i1_1_lut/Z                    LUT4            A_TO_Z_DELAY   0.477         8.373  50      
+global_rst_N_122                                          NET DELAY      2.075        10.448  1       
+tlc_data_7__I_0/lscc_fifo_dc_inst/i127427_2_lut_4_lut/D->tlc_data_7__I_0/lscc_fifo_dc_inst/i127427_2_lut_4_lut/Z
+                                          LUT4            D_TO_Z_DELAY   0.477        10.925  1       
+tlc_data_7__I_0/lscc_fifo_dc_inst/n154070
+                                                          NET DELAY      2.075        13.000  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/rd_addr_r_i2/D
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 3
+Delay Ratio      : 73.5% (route), 26.5% (logic)
+Clock Skew       : 2.225 ns
+Setup Constraint : 1.893 ns 
+Path Slack       : -4.930 ns  (Failed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#10)   272.727
++ Generated Clock Source Latency                       2.225
+- Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
+- Setup Time                                           0.199
+--------------------------------------------------   -------
+End-of-path required time( ns )                      278.903
+
+  Source Clock Arrival Time (sys_clk:R#14)   270.833
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              8.850
+------------------------------------------   -------
+End-of-path arrival time( ns )               283.833
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+i1_1_lut/A->i1_1_lut/Z                    LUT4            A_TO_Z_DELAY   0.477         8.373  50      
+global_rst_N_122                                          NET DELAY      2.075        10.448  1       
+tlc_data_7__I_0/lscc_fifo_dc_inst/i127428_2_lut_4_lut/D->tlc_data_7__I_0/lscc_fifo_dc_inst/i127428_2_lut_4_lut/Z
+                                          LUT4            D_TO_Z_DELAY   0.477        10.925  1       
+tlc_data_7__I_0/lscc_fifo_dc_inst/n154071
+                                                          NET DELAY      2.075        13.000  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/rd_addr_r_i0/D
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 3
+Delay Ratio      : 73.5% (route), 26.5% (logic)
+Clock Skew       : 2.225 ns
+Setup Constraint : 1.893 ns 
+Path Slack       : -4.930 ns  (Failed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#10)   272.727
++ Generated Clock Source Latency                       2.225
+- Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
+- Setup Time                                           0.199
+--------------------------------------------------   -------
+End-of-path required time( ns )                      278.903
+
+  Source Clock Arrival Time (sys_clk:R#14)   270.833
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              8.850
+------------------------------------------   -------
+End-of-path arrival time( ns )               283.833
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+i1_1_lut/A->i1_1_lut/Z                    LUT4            A_TO_Z_DELAY   0.477         8.373  50      
+global_rst_N_122                                          NET DELAY      2.075        10.448  1       
+tlc_data_7__I_0/lscc_fifo_dc_inst/i127362_2_lut_4_lut/D->tlc_data_7__I_0/lscc_fifo_dc_inst/i127362_2_lut_4_lut/Z
+                                          LUT4            D_TO_Z_DELAY   0.477        10.925  1       
+tlc_data_7__I_0/lscc_fifo_dc_inst/n154005
+                                                          NET DELAY      2.075        13.000  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i11/D
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 3
+Delay Ratio      : 73.5% (route), 26.5% (logic)
+Clock Skew       : 2.225 ns
+Setup Constraint : 1.893 ns 
+Path Slack       : -4.930 ns  (Failed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#10)   272.727
++ Generated Clock Source Latency                       2.225
+- Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
+- Setup Time                                           0.199
+--------------------------------------------------   -------
+End-of-path required time( ns )                      278.903
+
+  Source Clock Arrival Time (sys_clk:R#14)   270.833
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              8.850
+------------------------------------------   -------
+End-of-path arrival time( ns )               283.833
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+i1_1_lut/A->i1_1_lut/Z                    LUT4            A_TO_Z_DELAY   0.477         8.373  50      
+global_rst_N_122                                          NET DELAY      2.075        10.448  1       
+tlc_data_7__I_0/lscc_fifo_dc_inst/i127382_2_lut_4_lut/D->tlc_data_7__I_0/lscc_fifo_dc_inst/i127382_2_lut_4_lut/Z
+                                          LUT4            D_TO_Z_DELAY   0.477        10.925  1       
+tlc_data_7__I_0/lscc_fifo_dc_inst/n154025
+                                                          NET DELAY      2.075        13.000  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync1_r__i4/D
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 2
+Delay Ratio      : 70.3% (route), 29.7% (logic)
+Clock Skew       : 2.225 ns
+Setup Constraint : 1.893 ns 
+Path Slack       : -2.378 ns  (Failed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#10)   272.727
++ Generated Clock Source Latency                       2.225
+- Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
+- Setup Time                                           0.199
+--------------------------------------------------   -------
+End-of-path required time( ns )                      278.903
+
+  Source Clock Arrival Time (sys_clk:R#14)   270.833
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              6.298
+------------------------------------------   -------
+End-of-path arrival time( ns )               281.281
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+i127402_2_lut/A->i127402_2_lut/Z          LUT4            A_TO_Z_DELAY   0.477         8.373  1       
+n154045                                                   NET DELAY      2.075        10.448  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync1_r__i2/D
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 2
+Delay Ratio      : 70.3% (route), 29.7% (logic)
+Clock Skew       : 2.225 ns
+Setup Constraint : 1.893 ns 
+Path Slack       : -2.378 ns  (Failed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#10)   272.727
++ Generated Clock Source Latency                       2.225
+- Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
+- Setup Time                                           0.199
+--------------------------------------------------   -------
+End-of-path required time( ns )                      278.903
+
+  Source Clock Arrival Time (sys_clk:R#14)   270.833
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              6.298
+------------------------------------------   -------
+End-of-path arrival time( ns )               281.281
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+i127404_2_lut_2_lut/A->i127404_2_lut_2_lut/Z
+                                          LUT4            A_TO_Z_DELAY   0.477         8.373  1       
+n154047                                                   NET DELAY      2.075        10.448  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync1_r__i3/D
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 2
+Delay Ratio      : 70.3% (route), 29.7% (logic)
+Clock Skew       : 2.225 ns
+Setup Constraint : 1.893 ns 
+Path Slack       : -2.378 ns  (Failed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#10)   272.727
++ Generated Clock Source Latency                       2.225
+- Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
+- Setup Time                                           0.199
+--------------------------------------------------   -------
+End-of-path required time( ns )                      278.903
+
+  Source Clock Arrival Time (sys_clk:R#14)   270.833
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              6.298
+------------------------------------------   -------
+End-of-path arrival time( ns )               281.281
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+i127403_2_lut_2_lut/A->i127403_2_lut_2_lut/Z
+                                          LUT4            A_TO_Z_DELAY   0.477         8.373  1       
+n154046                                                   NET DELAY      2.075        10.448  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/rd_addr_r_i9/D
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 2
+Delay Ratio      : 70.3% (route), 29.7% (logic)
+Clock Skew       : 2.225 ns
+Setup Constraint : 1.893 ns 
+Path Slack       : -2.378 ns  (Failed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#10)   272.727
++ Generated Clock Source Latency                       2.225
+- Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
+- Setup Time                                           0.199
+--------------------------------------------------   -------
+End-of-path required time( ns )                      278.903
+
+  Source Clock Arrival Time (sys_clk:R#14)   270.833
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              6.298
+------------------------------------------   -------
+End-of-path arrival time( ns )               281.281
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+i127423_2_lut_2_lut/A->i127423_2_lut_2_lut/Z
+                                          LUT4            A_TO_Z_DELAY   0.477         8.373  1       
+n154066                                                   NET DELAY      2.075        10.448  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    End of Detailed Report for timing paths 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+4.2  Hold Detailed Report
+==========================
+4.2.1  Hold path details for constraint: create_clock -name {tlc_sclk_I_0/lscc_pll_inst/clk_in_c} -period 83.3333333333333 [get_nets clk_in_c]
+----------------------------------------------------------------------
+0 endpoints scored, 0 timing errors detected.
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    Detailed Report for timing paths 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    End of Detailed Report for timing paths 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+4.2.2  Hold path details for constraint: create_clock -name {sys_clk} -period 20.8333 [get_pins {OSCInst0/CLKHF }] 
+----------------------------------------------------------------------
+130 endpoints scored, 0 timing errors detected.
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    Detailed Report for timing paths 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : frame_cdc_i0_i1/Q
+Path End         : frame_cdc_i0_i1/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 2
+Delay Ratio      : 56.1% (route), 43.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 4.196 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#1)     0.000
++ Destination Clock Source Latency                 0.000
++ Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
++ Hold Time                                       -0.000
+----------------------------------------------   -------
+End-of-path required time( ns )                    4.150
+
+  Source Clock Arrival Time (sys_clk:R#1)   0.000
++ Source Clock Source Latency               0.000
++ Source Clock Path Delay                   4.150
++ Data Path Delay                           4.196
+-----------------------------------------   -----
+End-of-path arrival time( ns )              8.346
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+frame_cdc_i0_i1/CK->frame_cdc_i0_i1/Q     FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+frame_cdc[1]                                              NET DELAY      0.280         5.821  1       
+i127440_3_lut_3_lut/A->i127440_3_lut_3_lut/Z
+                                          LUT4            A_TO_Z_DELAY   0.450         6.271  1       
+n154083                                                   NET DELAY      2.075         8.346  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : frame_sync_c/Q
+Path End         : frame_sync_c/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 2
+Delay Ratio      : 56.1% (route), 43.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 4.196 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#1)     0.000
++ Destination Clock Source Latency                 0.000
++ Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
++ Hold Time                                       -0.000
+----------------------------------------------   -------
+End-of-path required time( ns )                    4.150
+
+  Source Clock Arrival Time (sys_clk:R#1)   0.000
++ Source Clock Source Latency               0.000
++ Source Clock Path Delay                   4.150
++ Data Path Delay                           4.196
+-----------------------------------------   -----
+End-of-path arrival time( ns )              8.346
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+frame_sync_c/CK->frame_sync_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  3       
+frame_sync                                                NET DELAY      0.280         5.821  1       
+i127364_3_lut_3_lut/A->i127364_3_lut_3_lut/Z
+                                          LUT4            A_TO_Z_DELAY   0.450         6.271  1       
+n154007                                                   NET DELAY      2.075         8.346  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : prev_frame_sync_c/Q
+Path End         : prev_frame_sync_c/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 2
+Delay Ratio      : 56.1% (route), 43.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 4.196 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#1)     0.000
++ Destination Clock Source Latency                 0.000
++ Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
++ Hold Time                                       -0.000
+----------------------------------------------   -------
+End-of-path required time( ns )                    4.150
+
+  Source Clock Arrival Time (sys_clk:R#1)   0.000
++ Source Clock Source Latency               0.000
++ Source Clock Path Delay                   4.150
++ Data Path Delay                           4.196
+-----------------------------------------   -----
+End-of-path arrival time( ns )              8.346
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+prev_frame_sync_c/CK->prev_frame_sync_c/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+prev_frame_sync                                           NET DELAY      0.280         5.821  1       
+i127365_3_lut_3_lut/A->i127365_3_lut_3_lut/Z
+                                          LUT4            A_TO_Z_DELAY   0.450         6.271  1       
+n154008                                                   NET DELAY      2.075         8.346  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : frame_time_counter_122254__i10/Q
+Path End         : line_time_i0_i0/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 2
+Delay Ratio      : 56.1% (route), 43.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 4.196 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#1)     0.000
++ Destination Clock Source Latency                 0.000
++ Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
++ Hold Time                                       -0.000
+----------------------------------------------   -------
+End-of-path required time( ns )                    4.150
+
+  Source Clock Arrival Time (sys_clk:R#1)   0.000
++ Source Clock Source Latency               0.000
++ Source Clock Path Delay                   4.150
++ Data Path Delay                           4.196
+-----------------------------------------   -----
+End-of-path arrival time( ns )              8.346
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+frame_time_counter_122254__i10/CK->frame_time_counter_122254__i10/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+frame_time_counter[9]                                     NET DELAY      0.280         5.821  1       
+i127441_3_lut/B->i127441_3_lut/Z          LUT4            B_TO_Z_DELAY   0.450         6.271  1       
+n154084                                                   NET DELAY      2.075         8.346  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : frame_time_counter_122254__i11/Q
+Path End         : line_time_i0_i1/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 2
+Delay Ratio      : 56.1% (route), 43.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 4.196 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#1)     0.000
++ Destination Clock Source Latency                 0.000
++ Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
++ Hold Time                                       -0.000
+----------------------------------------------   -------
+End-of-path required time( ns )                    4.150
+
+  Source Clock Arrival Time (sys_clk:R#1)   0.000
++ Source Clock Source Latency               0.000
++ Source Clock Path Delay                   4.150
++ Data Path Delay                           4.196
+-----------------------------------------   -----
+End-of-path arrival time( ns )              8.346
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+frame_time_counter_122254__i11/CK->frame_time_counter_122254__i11/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+frame_time_counter[10]                                    NET DELAY      0.280         5.821  1       
+i127366_3_lut/B->i127366_3_lut/Z          LUT4            B_TO_Z_DELAY   0.450         6.271  1       
+n154009                                                   NET DELAY      2.075         8.346  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : frame_time_counter_122254__i12/Q
+Path End         : line_time_i0_i2/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 2
+Delay Ratio      : 56.1% (route), 43.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 4.196 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#1)     0.000
++ Destination Clock Source Latency                 0.000
++ Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
++ Hold Time                                       -0.000
+----------------------------------------------   -------
+End-of-path required time( ns )                    4.150
+
+  Source Clock Arrival Time (sys_clk:R#1)   0.000
++ Source Clock Source Latency               0.000
++ Source Clock Path Delay                   4.150
++ Data Path Delay                           4.196
+-----------------------------------------   -----
+End-of-path arrival time( ns )              8.346
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+frame_time_counter_122254__i12/CK->frame_time_counter_122254__i12/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+frame_time_counter[11]                                    NET DELAY      0.280         5.821  1       
+i127367_3_lut/B->i127367_3_lut/Z          LUT4            B_TO_Z_DELAY   0.450         6.271  1       
+n154010                                                   NET DELAY      2.075         8.346  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : frame_time_counter_122254__i13/Q
+Path End         : line_time_i0_i3/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 2
+Delay Ratio      : 56.1% (route), 43.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 4.196 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#1)     0.000
++ Destination Clock Source Latency                 0.000
++ Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
++ Hold Time                                       -0.000
+----------------------------------------------   -------
+End-of-path required time( ns )                    4.150
+
+  Source Clock Arrival Time (sys_clk:R#1)   0.000
++ Source Clock Source Latency               0.000
++ Source Clock Path Delay                   4.150
++ Data Path Delay                           4.196
+-----------------------------------------   -----
+End-of-path arrival time( ns )              8.346
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+frame_time_counter_122254__i13/CK->frame_time_counter_122254__i13/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+frame_time_counter[12]                                    NET DELAY      0.280         5.821  1       
+i127368_3_lut/B->i127368_3_lut/Z          LUT4            B_TO_Z_DELAY   0.450         6.271  1       
+n154011                                                   NET DELAY      2.075         8.346  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : frame_time_counter_122254__i14/Q
+Path End         : line_time_i0_i4/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 2
+Delay Ratio      : 56.1% (route), 43.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 4.196 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#1)     0.000
++ Destination Clock Source Latency                 0.000
++ Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
++ Hold Time                                       -0.000
+----------------------------------------------   -------
+End-of-path required time( ns )                    4.150
+
+  Source Clock Arrival Time (sys_clk:R#1)   0.000
++ Source Clock Source Latency               0.000
++ Source Clock Path Delay                   4.150
++ Data Path Delay                           4.196
+-----------------------------------------   -----
+End-of-path arrival time( ns )              8.346
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+frame_time_counter_122254__i14/CK->frame_time_counter_122254__i14/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+frame_time_counter[13]                                    NET DELAY      0.280         5.821  1       
+i127369_3_lut/B->i127369_3_lut/Z          LUT4            B_TO_Z_DELAY   0.450         6.271  1       
+n154012                                                   NET DELAY      2.075         8.346  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : frame_time_counter_122254__i15/Q
+Path End         : line_time_i0_i5/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 2
+Delay Ratio      : 56.1% (route), 43.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 4.196 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#1)     0.000
++ Destination Clock Source Latency                 0.000
++ Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
++ Hold Time                                       -0.000
+----------------------------------------------   -------
+End-of-path required time( ns )                    4.150
+
+  Source Clock Arrival Time (sys_clk:R#1)   0.000
++ Source Clock Source Latency               0.000
++ Source Clock Path Delay                   4.150
++ Data Path Delay                           4.196
+-----------------------------------------   -----
+End-of-path arrival time( ns )              8.346
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+frame_time_counter_122254__i15/CK->frame_time_counter_122254__i15/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+frame_time_counter[14]                                    NET DELAY      0.280         5.821  1       
+i127370_3_lut/B->i127370_3_lut/Z          LUT4            B_TO_Z_DELAY   0.450         6.271  1       
+n154013                                                   NET DELAY      2.075         8.346  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+
+ ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : frame_time_counter_122254__i16/Q
+Path End         : line_time_i0_i6/D
+Source Clock     : sys_clk
+Destination Clock: sys_clk
+Logic Level      : 2
+Delay Ratio      : 56.1% (route), 43.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 4.196 ns  (Passed)
+
+  Destination Clock Arrival Time (sys_clk:R#1)     0.000
++ Destination Clock Source Latency                 0.000
++ Destination Clock Uncertainty                    0.000
++ Destination Clock Path Delay                     4.150
++ Hold Time                                       -0.000
+----------------------------------------------   -------
+End-of-path required time( ns )                    4.150
+
+  Source Clock Arrival Time (sys_clk:R#1)   0.000
++ Source Clock Source Latency               0.000
++ Source Clock Path Delay                   4.150
++ Data Path Delay                           4.196
+-----------------------------------------   -----
+End-of-path arrival time( ns )              8.346
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+frame_time_counter_122254__i16/CK->frame_time_counter_122254__i16/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+frame_time_counter[15]                                    NET DELAY      0.280         5.821  1       
+i127371_3_lut/B->i127371_3_lut/Z          LUT4            B_TO_Z_DELAY   0.450         6.271  1       
+n154014                                                   NET DELAY      2.075         8.346  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    End of Detailed Report for timing paths 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+4.2.3  Hold path details for constraint: create_generated_clock -name {tlc_sclk_c} -source [get_pins {tlc_sclk_I_0/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 11 -divide_by 4 [get_pins {tlc_sclk_I_0/lscc_pll_inst/u_PLL_B/OUTCORE }] 
+----------------------------------------------------------------------
+158 endpoints scored, 1 timing errors detected.
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    Detailed Report for timing paths 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : line_sync_i0/Q
+Path End         : tlc0/line_cdc_i0/D
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 1
+Delay Ratio      : 16.8% (route), 83.2% (logic)
+Clock Skew       : 2.225 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : -0.554 ns  (Failed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#12)   333.333
++ Generated Clock Source Latency                       2.225
++ Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
++ Hold Time                                           -0.000
+--------------------------------------------------   -------
+End-of-path required time( ns )                      339.708
+
+  Source Clock Arrival Time (sys_clk:R#17)   333.333
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              1.671
+------------------------------------------   -------
+End-of-path arrival time( ns )               339.154
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+line_sync_i0/CK->line_sync_i0/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+line_sync_c                                               NET DELAY      0.280         5.821  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : tlc0/line_sync_c_c/Q
+Path End         : tlc0/line_prev_c/D
+Source Clock     : tlc_sclk_c
+Destination Clock: tlc_sclk_c
+Logic Level      : 1
+Delay Ratio      : 16.8% (route), 83.2% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 1.671 ns  (Passed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#1)     0.000
++ Generated Clock Source Latency                      2.225
++ Destination Clock Uncertainty                       0.000
++ Destination Clock Path Delay                        4.150
++ Hold Time                                          -0.000
+-------------------------------------------------   -------
+End-of-path required time( ns )                       6.375
+
+  Source Clock Arrival Time (tlc_sclk_c:R#1)   0.000
++ Generated Clock Source Latency               2.225
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              1.671
+--------------------------------------------   -----
+End-of-path arrival time( ns )                 8.046
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+tlc0/line_sync_c_c/CK->tlc0/line_sync_c_c/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         7.766  2       
+line_sync_adj_49066                                       NET DELAY      0.280         8.046  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i2/SR
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 1
+Delay Ratio      : 62.9% (route), 37.1% (logic)
+Clock Skew       : 2.225 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 1.997 ns  (Passed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#12)   333.333
++ Generated Clock Source Latency                       2.225
++ Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
++ Hold Time                                            0.477
+--------------------------------------------------   -------
+End-of-path required time( ns )                      339.231
+
+  Source Clock Arrival Time (sys_clk:R#17)   333.333
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              3.746
+------------------------------------------   -------
+End-of-path arrival time( ns )               341.229
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i3/SR
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 1
+Delay Ratio      : 62.9% (route), 37.1% (logic)
+Clock Skew       : 2.225 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 1.997 ns  (Passed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#12)   333.333
++ Generated Clock Source Latency                       2.225
++ Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
++ Hold Time                                            0.477
+--------------------------------------------------   -------
+End-of-path required time( ns )                      339.231
+
+  Source Clock Arrival Time (sys_clk:R#17)   333.333
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              3.746
+------------------------------------------   -------
+End-of-path arrival time( ns )               341.229
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i5/SR
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 1
+Delay Ratio      : 62.9% (route), 37.1% (logic)
+Clock Skew       : 2.225 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 1.997 ns  (Passed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#12)   333.333
++ Generated Clock Source Latency                       2.225
++ Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
++ Hold Time                                            0.477
+--------------------------------------------------   -------
+End-of-path required time( ns )                      339.231
+
+  Source Clock Arrival Time (sys_clk:R#17)   333.333
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              3.746
+------------------------------------------   -------
+End-of-path arrival time( ns )               341.229
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i6/SR
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 1
+Delay Ratio      : 62.9% (route), 37.1% (logic)
+Clock Skew       : 2.225 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 1.997 ns  (Passed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#12)   333.333
++ Generated Clock Source Latency                       2.225
++ Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
++ Hold Time                                            0.477
+--------------------------------------------------   -------
+End-of-path required time( ns )                      339.231
+
+  Source Clock Arrival Time (sys_clk:R#17)   333.333
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              3.746
+------------------------------------------   -------
+End-of-path arrival time( ns )               341.229
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i7/SR
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 1
+Delay Ratio      : 62.9% (route), 37.1% (logic)
+Clock Skew       : 2.225 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 1.997 ns  (Passed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#12)   333.333
++ Generated Clock Source Latency                       2.225
++ Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
++ Hold Time                                            0.477
+--------------------------------------------------   -------
+End-of-path required time( ns )                      339.231
+
+  Source Clock Arrival Time (sys_clk:R#17)   333.333
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              3.746
+------------------------------------------   -------
+End-of-path arrival time( ns )               341.229
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i9/SR
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 1
+Delay Ratio      : 62.9% (route), 37.1% (logic)
+Clock Skew       : 2.225 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 1.997 ns  (Passed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#12)   333.333
++ Generated Clock Source Latency                       2.225
++ Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
++ Hold Time                                            0.477
+--------------------------------------------------   -------
+End-of-path required time( ns )                      339.231
+
+  Source Clock Arrival Time (sys_clk:R#17)   333.333
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              3.746
+------------------------------------------   -------
+End-of-path arrival time( ns )               341.229
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i10/SR
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 1
+Delay Ratio      : 62.9% (route), 37.1% (logic)
+Clock Skew       : 2.225 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 1.997 ns  (Passed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#12)   333.333
++ Generated Clock Source Latency                       2.225
++ Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
++ Hold Time                                            0.477
+--------------------------------------------------   -------
+End-of-path required time( ns )                      339.231
+
+  Source Clock Arrival Time (sys_clk:R#17)   333.333
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              3.746
+------------------------------------------   -------
+End-of-path arrival time( ns )               341.229
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+
+ ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : global_rst_c/Q
+Path End         : tlc_data_7__I_0/lscc_fifo_dc_inst/aempty_flag_impl.aempty_flag_r/SR
+Source Clock     : sys_clk
+Destination Clock: tlc_sclk_c
+Logic Level      : 1
+Delay Ratio      : 62.9% (route), 37.1% (logic)
+Clock Skew       : 2.225 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 1.997 ns  (Passed)
+
+  Destination Clock Arrival Time (tlc_sclk_c:R#12)   333.333
++ Generated Clock Source Latency                       2.225
++ Destination Clock Uncertainty                        0.000
++ Destination Clock Path Delay                         4.150
++ Hold Time                                            0.477
+--------------------------------------------------   -------
+End-of-path required time( ns )                      339.231
+
+  Source Clock Arrival Time (sys_clk:R#17)   333.333
++ Source Clock Source Latency                  0.000
++ Source Clock Path Delay                      4.150
++ Data Path Delay                              3.746
+------------------------------------------   -------
+End-of-path arrival time( ns )               341.229
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst0/CLKHF                            HSOSC_CORE      CLOCK LATENCY  0.000         0.000  63      
+sys_clk                                                   NET DELAY      4.150         4.150  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+global_rst_c/CK->global_rst_c/Q           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  85      
+global_rst                                                NET DELAY      2.355         7.896  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTCORE                           PLL_B           CLOCK LATENCY  2.225         2.225  90      
+tlc_sclk_c                                                NET DELAY      4.150         6.375  1       
+
+
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    End of Detailed Report for timing paths 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+

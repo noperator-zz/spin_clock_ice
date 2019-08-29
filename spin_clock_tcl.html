@@ -1,0 +1,204 @@
+<HTML>
+<HEAD>
+<TITLE>Lattice TCL Log</TITLE>
+<link href="file:///C:/lscc/radiant/1.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/1.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<HTML>
+<HEAD>
+<TITLE>Lattice TCL Log</TITLE>
+<link href="file:///C:/lscc/radiant/1.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/1.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+</HEAD>
+<PRE><A name="pn190825002147"></A><B><U><big>pn190825002147</big></U></B>
+#Start recording tcl command: 8/12/2019 00:24:55
+#Project Location: C:/development/FPGA/spin_clock_ice; Project name: spin_clock
+prj_create -name "spin_clock" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "synplify"
+prj_save 
+prj_add_source "C:/development/FPGA/spin_clock_ice/top.sv"
+prj_remove_source "C:/development/FPGA/spin_clock_ice/top.sv"
+prj_add_source "C:/development/FPGA/spin_clock_ice/top.v"
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 8/25/2019 00:21:47
+
+
+
+<A name="pn190825110634"></A><B><U><big>pn190825110634</big></U></B>
+#Start recording tcl command: 8/25/2019 00:24:50
+#Project Location: C:/development/FPGA/spin_clock_ice; Project name: spin_clock
+prj_open "C:/development/FPGA/spin_clock_ice/spin_clock.rdf"
+prj_add_source "C:/development/FPGA/spin_clock_ice/testbench.v"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_syn_sim_source -src "C:/development/FPGA/spin_clock_ice/testbench.v" SimulateOnly
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/development/FPGA/spin_clock_ice/timing.ldc"
+prj_enable_source "C:/development/FPGA/spin_clock_ice/timing.ldc"
+prj_add_source "C:/development/FPGA/spin_clock_ice/pll/pll.ipx"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_add_source "C:/development/FPGA/spin_clock_ice/TLC5957.v"
+prj_add_source "C:/development/FPGA/spin_clock_ice/smi_fifo/smi_fifo.ipx"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_add_source "C:/development/FPGA/spin_clock_ice/TLC5957.sv"
+prj_remove_source "C:/development/FPGA/spin_clock_ice/TLC5957.v"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_set_strategy_value -strategy Strategy1 syn_resolved_mixed_drivers=True
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+#Stop recording: 8/25/2019 11:06:34
+
+
+
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#pn190825002147>pn190825002147</A></LI>
+<LI><A href=#pn190825110634>pn190825110634</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

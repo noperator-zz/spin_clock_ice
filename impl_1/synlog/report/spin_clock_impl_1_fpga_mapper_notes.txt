@@ -1,0 +1,17 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MT206 |Auto Constrain mode is enabled
+@N: MO106 :"c:\development\fpga\spin_clock_ice\tlc5957.sv":47:17:47:33|Found ROM cvt_color_2[0] (in view: work.TLC5957(verilog)) with 256 words by 1 bit.
+@N: MF236 :"c:\development\fpga\spin_clock_ice\top.sv":67:16:67:42|Generating a type div divider 
+@N: MO231 :"c:\development\fpga\spin_clock_ice\top.sv":57:1:57:6|Found counter in view:work.top(verilog) instance line_time_counter[31:0] 
+@N: BN362 :"c:\development\fpga\spin_clock_ice\top.sv":57:1:57:6|Removing sequential instance line_time[28] (in view: work.top(verilog)) because it does not drive other instances.
+@N: MF179 :|Found 11 by 11 bit equality operator ('==') empty_nxt_r4 (in view: work.smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0(verilog))
+@N: MF179 :|Found 11 by 11 bit equality operator ('==') un1_sync_wr_controller\.wr_addr_r_2 (in view: work.smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0(verilog))
+@N: MF179 :|Found 10 by 10 bit equality operator ('==') full_nxt_r7 (in view: work.smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0(verilog))
+@N: MF179 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":300:29:300:63|Found 10 by 10 bit equality operator ('==') un1_bin_val_1 (in view: work.smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0(verilog))
+@N: MF179 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":613:29:613:63|Found 10 by 10 bit equality operator ('==') un1_bin_val_2 (in view: work.smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0(verilog))
+@N: BN362 :"c:\development\fpga\spin_clock_ice\top.sv":57:1:57:6|Removing sequential instance line_time[27] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\development\fpga\spin_clock_ice\top.sv":57:1:57:6|Removing sequential instance line_time[26] (in view: work.top(verilog)) because it does not drive other instances.

@@ -1,0 +1,19 @@
+i my_pll.lscc_pll_inst.outglobal_o_i
+m 0 0
+u 20 77
+p {t:my_pll.lscc_pll_inst.u_PLL_B.OUTGLOBAL}{t:my_pll.lscc_pll_inst.outglobal_o_inferred_clock.I[0]}{t:my_pll.lscc_pll_inst.outglobal_o_inferred_clock.OUT[0]}{p:my_pll.lscc_pll_inst.outglobal_o}{t:my_pll.lscc_pll_inst.outglobal_o}{p:my_pll.outglobal_o}{t:my_pll.outglobal_o}{t:tlc0.sclk}{p:tlc0.sclk}{t:tlc0.state[1:0].C}
+e ckid0_0 {t:tlc0.state[1:0].C} dff
+d ckid0_0 {t:my_pll.lscc_pll_inst.u_PLL_B.OUTGLOBAL} PLL_B Black box on clock path
+i smi_nwe_pi
+m 0 0
+u 7 47
+p {p:smi_nwe_pi}{t:un1_smi_nwe_pi.I[0]}{t:un1_smi_nwe_pi.OUT[0]}{t:color_fifo.wr_clk_i}{p:color_fifo.wr_clk_i}{t:color_fifo.lscc_fifo_dc_inst.wr_clk_i}{p:color_fifo.lscc_fifo_dc_inst.wr_clk_i}{t:color_fifo.lscc_fifo_dc_inst.sync_wr_controller\.full_r.C}
+e ckid0_1 {t:color_fifo.lscc_fifo_dc_inst.sync_wr_controller\.full_r.C} sdffre
+c ckid0_1 {p:smi_nwe_pi} Unconstrained_port Inferred clock from port
+i osc_clk_i
+m 0 0
+u 5 98
+p {t:OSCInst0.CLKHF}{t:osc_clk_inferred_clock.I[0]}{t:osc_clk_inferred_clock.OUT[0]}{t:line_time_counter[31:0].C}
+e ckid0_2 {t:line_time_counter[31:0].C} dff
+d ckid0_2 {t:OSCInst0.CLKHF} HSOSC Black box on clock path
+l 0 0 0 0 0

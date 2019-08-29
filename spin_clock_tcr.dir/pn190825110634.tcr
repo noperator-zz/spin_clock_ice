@@ -1,0 +1,76 @@
+#Start recording tcl command: 8/25/2019 00:24:50
+#Project Location: C:/development/FPGA/spin_clock_ice; Project name: spin_clock
+prj_open "C:/development/FPGA/spin_clock_ice/spin_clock.rdf"
+prj_add_source "C:/development/FPGA/spin_clock_ice/testbench.v"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_syn_sim_source -src "C:/development/FPGA/spin_clock_ice/testbench.v" SimulateOnly
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/development/FPGA/spin_clock_ice/timing.ldc"
+prj_enable_source "C:/development/FPGA/spin_clock_ice/timing.ldc"
+prj_add_source "C:/development/FPGA/spin_clock_ice/pll/pll.ipx"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_add_source "C:/development/FPGA/spin_clock_ice/TLC5957.v"
+prj_add_source "C:/development/FPGA/spin_clock_ice/smi_fifo/smi_fifo.ipx"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_add_source "C:/development/FPGA/spin_clock_ice/TLC5957.sv"
+prj_remove_source "C:/development/FPGA/spin_clock_ice/TLC5957.v"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_set_strategy_value -strategy Strategy1 syn_resolved_mixed_drivers=True
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+#Stop recording: 8/25/2019 11:06:34

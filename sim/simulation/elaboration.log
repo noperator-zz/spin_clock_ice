@@ -1,0 +1,49 @@
+Active-HDL 10.5.216.6767 2019-08-25 14:35:47
+
+Elaboration top modules:
+Verilog Module                testbench
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Verilog Module                    | Library            | Info | Compiler Version        | Compilation Options
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+testbench                         | simulation         |      | 10.5.216.6767 (Windows) | -O2 -v2k5
+top                               | simulation         |      | 10.5.216.6767 (Windows) | -O2 -v2k5
+HSOSC                             | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+pll                               | simulation         |      | 10.5.216.6767 (Windows) | -O2 -v2k5
+smi_fifo                          | simulation         |      | 10.5.216.6767 (Windows) | -O2 -v2k5
+TLC5957                           | simulation         |      | 10.5.216.6767 (Windows) | -O2 -sv2k12
+VLO                               | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+HSOSC_CORE                        | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+HFOSC                             | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+HFOSC_CORE                        | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+pll_ipgen_lscc_pll                | simulation         |      | 10.5.216.6767 (Windows) | -O2 -v2k5
+PLL_B                             | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+PLL40_2F_CORE                     | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+t_DS_PLL40                        | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+pllcfg_dynamicsetting_shiftreg    | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+ShiftReg427_DS                    | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+mux4to1                           | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+FineDlyAdj                        | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+ABIWTCZ4                          | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+Delay4Buf                         | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+tSPLL40                           | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+ShiftReg427                       | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+smi_fifo_ipgen_lscc_fifo_dc       | simulation         |      | 10.5.216.6767 (Windows) | -O2 -v2k5
+smi_fifo_ipgen_lscc_fifo_mem      | simulation         |      | 10.5.216.6767 (Windows) | -O2 -v2k5
+smi_fifo_ipgen_lscc_fifo_mem_core | simulation         |      | 10.5.216.6767 (Windows) | -O2 -v2k5
+PDP4K                             | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+EBR_B                             | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+RAM40_4K                          | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+read_data_decoder                 | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+write_data_decoder                | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+mask_decoder                      | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+RAM4K                             | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Library                           | Comment
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ovi_ice40up_timing                | LATTICE Radiant 1.1, iCE40UP VERILOG LIBRARY
+simulation                        | None
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

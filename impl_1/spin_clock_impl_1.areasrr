@@ -1,0 +1,46 @@
+----------------------------------------------------------------------
+Report for cell top.verilog
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                             CCU2_B      170       100.0
+                            FD1P3DZ       60       100.0
+                            FD1P3IZ       32       100.0
+                                GND        2       100.0
+                              HSOSC        1       100.0
+                                 IB        2       100.0
+                                INV       25       100.0
+                               LUT4       85       100.0
+                                 OB        5       100.0
+                              PLL_B        1       100.0
+                                VCC        2       100.0
+                                VHI        1       100.0
+                                VLO        1       100.0
+SUB MODULES 
+                                pll        1       100.0
+          pll_ipgen_lscc_pll_Z1_layer0        1       100.0
+                            
+                         TOTAL           389           
+----------------------------------------------------------------------
+Report for cell pll.netlist
+     Instance path:  my_pll
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        2       100.0
+                               LUT4        1         1.2
+                              PLL_B        1       100.0
+                                VCC        2       100.0
+SUB MODULES 
+          pll_ipgen_lscc_pll_Z1_layer0        1       100.0
+                            
+                         TOTAL             7           
+----------------------------------------------------------------------
+Report for cell pll_ipgen_lscc_pll_Z1_layer0.netlist
+     Instance path:  my_pll.lscc_pll_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1        50.0
+                               LUT4        1         1.2
+                              PLL_B        1       100.0
+                                VCC        1        50.0
+                            
+                         TOTAL             4           

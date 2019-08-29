@@ -1,0 +1,63 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=simulation
+
+[Library]
+simulation=.\simulation\simulation.lib
+
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=C:\development\FPGA\spin_clock_ice
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+simulation=.
+Active_lib=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/..\..\testbench.v=-1
+/..\..\top.v=-1
+/..\..\pll\rtl\pll.v=-1
+/wave.awc=-1
+/..\..\smi_fifo\rtl\smi_fifo.v=-1
+/..\..\TLC5957.v=-1
+
+[Files.Data]
+.\..\testbench.v=Verilog Source Code
+.\..\top.v=Verilog Source Code
+.\..\pll\rtl\pll.v=Verilog Source Code
+.\src\wave.awc=Accelerated Waveform Configuration
+.\..\smi_fifo\rtl\smi_fifo.v=Verilog Source Code
+.\..\TLC5957.v=Verilog Source Code
+

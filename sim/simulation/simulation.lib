@@ -1,0 +1,107 @@
+timestamp=1566768947077
+
+[~A]
+C:/development/FPGA/spin_clock_ice/testbench.v=0*2300*2770
+C:/development/FPGA/spin_clock_ice/testbench.v_top.v=0*8065*8973
+C:/development/FPGA/spin_clock_ice/testbench.v_top.v_pll.v=0*10982*13337
+C:/development/FPGA/spin_clock_ice/top.v=0*21917*22653
+C:/development/FPGA/spin_clock_ice/top.v_testbench.v=0*19997*20921
+LastVerilogToplevel=testbench
+ModifyID=50
+Version=74
+c:/development/FPGA/spin_clock_ice/TLC5957.sv=0*558570*559712
+c:/development/FPGA/spin_clock_ice/TLC5957.v=0*618724*620073
+c:/development/FPGA/spin_clock_ice/TLC5957.v_testbench.v=0*208756*210261
+c:/development/FPGA/spin_clock_ice/TLC5957.v_top.v=0*118454*120401
+c:/development/FPGA/spin_clock_ice/testbench.v=0*600419*601209
+c:/development/FPGA/spin_clock_ice/testbench.v_top.v_pll.v=0*35230*38369
+c:/development/FPGA/spin_clock_ice/testbench.v_top.v_pll.v_smi_fifo.v=0*565864*597383
+c:/development/FPGA/spin_clock_ice/testbench.v_top.v_pll.v_smi_fifo.v_TLC5957.v=0*172286*204567
+c:/development/FPGA/spin_clock_ice/top.v=0*604656*605905
+c:/development/FPGA/spin_clock_ice/top.v_testbench.v=0*205957*207586
+
+[$root]
+A/$root=22|||1*4323092
+BinI32/$root=3*2738241
+SLP=3*2738345
+Version=10.5.216.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216a2e47636fe06f805e5f13068a3d9e21d
+
+[TLC5957]
+A/TLC5957=22|./../../TLC5957.v|1|1*4323466
+BinI32/TLC5957=3*2738413
+R=./../../TLC5957.v|1
+SLP=3*2740619
+Version=10.5.216.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|cf08b7a1f1e39f1be3361d2ece1b531c26527262ddaa47cb266f3a3c4d9b973aa05949b0d92353df0f7321fa4b21ce83
+
+[pll]
+A/pll=22|./../../pll/rtl/pll.v|10|1*3998452
+BinI32/pll=3*2526802
+R=./../../pll/rtl/pll.v|10
+SLP=3*2526904
+Version=10.5.216.6767 (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|43c6f5c8637f73708b5d4ae6b8943a947b0767d06ce35ba93906e449fc7f4cac
+
+[pll_ipgen_lscc_pll]
+A/pll_ipgen_lscc_pll=22|./../../pll/rtl/pll.v|73|1*4004298
+BinI32/pll_ipgen_lscc_pll=3*2527274
+R=./../../pll/rtl/pll.v|73
+SLP=3*2528375
+Version=10.5.216.6767 (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|192085d72956844a97fe7de46d725b6af228d26d9fef3a992651f38e1956e866fd9c8837023e1df864ba4b9b55ee2174
+
+[smi_fifo]
+A/smi_fifo=22|./../../smi_fifo/rtl/smi_fifo.v|10|1*4000810
+BinI32/smi_fifo=3*2527004
+R=./../../smi_fifo/rtl/smi_fifo.v|10
+SLP=3*2527111
+Version=10.5.216.6767 (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|29191066caba84e50adaaadaf3c148160bafa52c4e5082916fa00306e52ea5edf0fe61cd93b49e1febb81cfe15b83d1c
+
+[smi_fifo_ipgen_lscc_fifo_dc]
+A/smi_fifo_ipgen_lscc_fifo_dc=22|./../../smi_fifo/rtl/smi_fifo.v|82|1*4012469
+BinI32/smi_fifo_ipgen_lscc_fifo_dc=3*2529069
+R=./../../smi_fifo/rtl/smi_fifo.v|82
+SLP=3*2559978
+Version=10.5.216.6767 (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|be38264cd86b36a7898a65e55c1dfc76d0354f9c5cba335f48558689f622aff58abc96f0b5517693c7d729bd2381a344
+
+[smi_fifo_ipgen_lscc_fifo_mem]
+A/smi_fifo_ipgen_lscc_fifo_mem=22|./../../smi_fifo/rtl/smi_fifo.v|956|1*4059807
+BinI32/smi_fifo_ipgen_lscc_fifo_mem=3*2571808
+R=./../../smi_fifo/rtl/smi_fifo.v|956
+SLP=3*2654675
+Version=10.5.216.6767 (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|be38264cd86b36a7898a65e55c1dfc76928ef0ae9fc0f4da69eb8fb4760ab82b26527262ddaa47cb266f3a3c4d9b973a756e98986af9d4e51100bcd7d1689321
+
+[smi_fifo_ipgen_lscc_fifo_mem_core]
+A/smi_fifo_ipgen_lscc_fifo_mem_core=22|./../../smi_fifo/rtl/smi_fifo.v|2070|1*4199207
+BinI32/smi_fifo_ipgen_lscc_fifo_mem_core=3*2673059
+R=./../../smi_fifo/rtl/smi_fifo.v|2070
+SLP=3*2696021
+Version=10.5.216.6767 (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|be38264cd86b36a7898a65e55c1dfc7620e2c0dd4cf6d6e695536a929428270f71fa3eaf78c80cf79858134d654d5552d6f42d6fc61d28b89c51df2cf9f4e0b0
+
+[testbench]
+A/testbench=22|./../../testbench.v|3|1*4289422
+BinI32/testbench=3*2712775
+R=./../../testbench.v|3
+SLP=3*2713773
+Version=10.5.216.6767 (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|9c08cd30fe0f9550ac0d051aa32c9ba5030c5f4de3ffa3c97f58c5528f1d791368a5d995e72afb47be97144ccf4996f8
+
+[top]
+A/top=22|./../../top.v|1|1*4297156
+BinI32/top=3*2716321
+R=./../../top.v|1
+SLP=3*2717213
+Version=10.5.216.6767 (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|f1fdecad8dc292011c024b8d633bc5c7db46d72e3444ca72c7ebce5f4d8434c7
+
+[~MFT]
+0=6|0simulation.mgf|620073|427746
+1=4|1simulation.mgf|4323466|4028618
+3=8|3simulation.mgf|2740619|2551915
+
+[~U]
+$root=12|0*618236|
+TLC5957=12|0*618450|
+pll=12|0*561122|
+pll_ipgen_lscc_pll=12|0*561691|
+smi_fifo=12|0*561366|
+smi_fifo_ipgen_lscc_fifo_dc=12|0*562234|
+smi_fifo_ipgen_lscc_fifo_mem=12|0*563065|
+smi_fifo_ipgen_lscc_fifo_mem_core=12|0*564904|
+testbench=12|0*600252||0x10
+top=12|0*604303|

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.1" title="spin_clock" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="impl_1">
+    <Options/>
+    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="top" top="top"/>
+        <Source name="pll/pll.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="smi_fifo/smi_fifo.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="testbench.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="TLC5957.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="device.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+        <Source name="source/flash.xcf" type="Programming Project File" type_short="Programming" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="timing.ldc" type="LSE Design Constraints File" type_short="LDC">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="spin_clock1.sty"/>
+</RadiantProject>

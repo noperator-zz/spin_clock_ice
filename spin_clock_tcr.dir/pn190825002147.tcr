@@ -1,0 +1,10 @@
+#Start recording tcl command: 8/12/2019 00:24:55
+#Project Location: C:/development/FPGA/spin_clock_ice; Project name: spin_clock
+prj_create -name "spin_clock" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "synplify"
+prj_save 
+prj_add_source "C:/development/FPGA/spin_clock_ice/top.sv"
+prj_remove_source "C:/development/FPGA/spin_clock_ice/top.sv"
+prj_add_source "C:/development/FPGA/spin_clock_ice/top.v"
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 8/25/2019 00:21:47

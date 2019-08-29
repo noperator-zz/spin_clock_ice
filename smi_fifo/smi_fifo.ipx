@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<RadiantModule date="2019 08 25 07:59:45" generator="ipgen" library="module" module="fifo_dc" name="smi_fifo" source_format="Verilog" vendor="latticesemi.com" version="1.0.0">
+ <Package>
+  <File modified="2019 08 25 07:59:45" name="rtl/smi_fifo.v" type="top_level_verilog"/>
+  <File modified="2019 08 25 07:59:45" name="rtl/smi_fifo_bb.v" type="black_box_verilog"/>
+  <File modified="2019 08 25 07:59:45" name="testbench/dut_params.v" type="testbench_parameters_verilog"/>
+  <File modified="2019 08 25 07:59:45" name="misc/smi_fifo_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2019 08 25 07:59:45" name="testbench/dut_inst.v" type="testbench_instance_verilog"/>
+  <File modified="2019 08 25 07:59:45" name="component.xml" type="IP-XACT_output_file"/>
+  <File modified="2019 08 25 07:59:45" name="smi_fifo.cfg" type="cfg"/>
+  <File modified="2019 08 25 07:59:45" name="misc/smi_fifo_tmpl.v" type="template_verilog"/>
+  <File modified="2019 01 30 06:55:35" name="testbench/tb_top.v" type="testbench_verilog"/>
+ </Package>
+</RadiantModule>

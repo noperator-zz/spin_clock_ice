@@ -1,0 +1,56 @@
+@W: CG781 :"C:\development\FPGA\spin_clock_ice\pll\rtl\pll.v":16:286:16:286|Input sclk_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\development\FPGA\spin_clock_ice\pll\rtl\pll.v":16:296:16:296|Input sdi_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\development\FPGA\spin_clock_ice\pll\rtl\pll.v":16:286:16:286|Input sclk_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\development\FPGA\spin_clock_ice\pll\rtl\pll.v":16:296:16:296|Input sdi_i on instance lscc_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG133 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":988:19:988:21|Object i_0 is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":988:24:988:26|Object i_1 is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL271 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":1172:36:1172:41|Pruning unused bits 8 to 0 of NON_MIX.genblk2._nreg.rd_addr_0_r[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CG133 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":116:15:116:16|Object i1 is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL271 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":656:16:656:21|Pruning unused bits 19 to 12 of genblk14.wp_sync1_r[19:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":656:16:656:21|Pruning unused bits 19 to 12 of genblk14.wp_sync2_r[19:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":529:16:529:21|Pruning unused bits 19 to 12 of rd_encode_sync.rd_grey_sync_r[19:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":343:16:343:21|Pruning unused bits 19 to 12 of genblk5.rp_sync1_r[19:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":343:16:343:21|Pruning unused bits 19 to 12 of genblk5.rp_sync2_r[19:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":216:16:216:21|Pruning unused bits 19 to 12 of wr_encode_sync.wr_grey_sync_r[19:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register cvt_color[10:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register i[3:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[3][0][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[2][0][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[1][0][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[3][1][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[2][1][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[1][1][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[3][2][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[2][2][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[1][2][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[3][3][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[2][3][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[1][3][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[3][4][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[2][4][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[1][4][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[3][5][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[2][5][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[1][5][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[3][6][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[2][6][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[1][6][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[3][7][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[2][7][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[1][7][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[3][8][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[2][8][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[1][8][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[3][9][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[2][9][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[1][9][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[3][10][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[2][10][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Pruning unused register data[1][10][47:0]. Make sure that there are no unused intermediate registers.
+@W: CL260 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":529:16:529:21|Pruning register bit 11 of rd_encode_sync.rd_grey_sync_r[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":216:16:216:21|Pruning register bit 11 of wr_encode_sync.wr_grey_sync_r[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":343:16:343:21|Optimizing register bit genblk5.rp_sync1_r[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":656:16:656:21|Optimizing register bit genblk14.wp_sync1_r[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":343:16:343:21|Pruning register bit 11 of genblk5.rp_sync1_r[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":656:16:656:21|Pruning register bit 11 of genblk14.wp_sync1_r[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+

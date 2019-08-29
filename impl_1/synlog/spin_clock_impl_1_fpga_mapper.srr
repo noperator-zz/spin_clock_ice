@@ -1,0 +1,410 @@
+# Sun Aug 25 12:01:15 2019
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03LR-SP1
+Install: C:\lscc\radiant\1.1\synpbase
+OS: Windows 6.1
+
+Hostname: IVAN-PC
+
+Implementation : impl_1
+Synopsys Lattice Technology Mapper, Version maplat2018q2p1, Build 030R, Built Feb 27 2019 10:02:28
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 100MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+@W: FA239 :"c:\development\fpga\spin_clock_ice\tlc5957.sv":47:17:47:33|ROM cvt_color_2[0] (in view: work.TLC5957(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\development\fpga\spin_clock_ice\tlc5957.sv":47:17:47:33|ROM cvt_color_2[0] (in view: work.TLC5957(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"c:\development\fpga\spin_clock_ice\tlc5957.sv":47:17:47:33|Found ROM cvt_color_2[0] (in view: work.TLC5957(verilog)) with 256 words by 1 bit.
+@N: MF236 :"c:\development\fpga\spin_clock_ice\top.sv":67:16:67:42|Generating a type div divider 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":744:24:744:29|User-specified initial value defined for instance color_fifo.lscc_fifo_dc_inst.aempty_flag_impl.sync.aempty_flag_r is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":308:16:308:21|User-specified initial value defined for instance color_fifo.lscc_fifo_dc_inst.sync_wr_controller.full_r is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":621:16:621:21|User-specified initial value defined for instance color_fifo.lscc_fifo_dc_inst.sync_rd_controller.empty_r is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":656:16:656:21|User-specified initial value defined for instance color_fifo.lscc_fifo_dc_inst.genblk14.wp_sync1_r[10:0] is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":343:16:343:21|User-specified initial value defined for instance color_fifo.lscc_fifo_dc_inst.genblk5.rp_sync1_r[10:0] is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":529:16:529:21|User-specified initial value defined for instance color_fifo.lscc_fifo_dc_inst.rd_encode_sync.rd_grey_sync_r[10:0] is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":216:16:216:21|User-specified initial value defined for instance color_fifo.lscc_fifo_dc_inst.wr_encode_sync.wr_grey_sync_r[10:0] is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":621:16:621:21|User-specified initial value defined for instance color_fifo.lscc_fifo_dc_inst.sync_rd_controller.rd_addr_r[10:0] is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":308:16:308:21|User-specified initial value defined for instance color_fifo.lscc_fifo_dc_inst.sync_wr_controller.wr_addr_r[10:0] is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":656:16:656:21|User-specified initial value defined for instance color_fifo.lscc_fifo_dc_inst.genblk14.wp_sync2_r[10:0] is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":343:16:343:21|User-specified initial value defined for instance color_fifo.lscc_fifo_dc_inst.genblk5.rp_sync2_r[10:0] is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":1172:36:1172:41|User-specified initial value defined for instance color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.genblk2._nreg.rd_addr_0_r[9] is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\tlc5957.sv":26:1:26:6|User-specified initial value defined for instance tlc0.state[1:0] is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\tlc5957.sv":26:1:26:6|User-specified initial value defined for instance tlc0.fifo_counter[7:0] is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\tlc5957.sv":26:1:26:6|User-specified initial value defined for instance tlc0.sout is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\tlc5957.sv":26:1:26:6|User-specified initial value defined for instance tlc0.line_pulse is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\tlc5957.sv":26:1:26:6|User-specified initial value defined for instance tlc0.fifo_rd is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\tlc5957.sv":26:1:26:6|User-specified initial value defined for instance tlc0.line_sync is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\tlc5957.sv":26:1:26:6|User-specified initial value defined for instance tlc0.line_cdc[1:0] is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\tlc5957.sv":26:1:26:6|User-specified initial value defined for instance tlc0.line_prev is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\top.sv":57:1:57:6|User-specified initial value defined for instance line_time_counter[31:0] is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\top.sv":57:1:57:6|User-specified initial value defined for instance frame_time_counter[31:0] is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\top.sv":57:1:57:6|User-specified initial value defined for instance line_time[31:0] is being ignored. 
+@W: FX1039 :"c:\development\fpga\spin_clock_ice\top.sv":57:1:57:6|User-specified initial value defined for instance prev_frame_sync is being ignored. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 134MB peak: 135MB)
+
+@W: BN132 :"c:\development\fpga\spin_clock_ice\top.sv":57:1:57:6|Removing instance line_time[31] because it is equivalent to instance line_time[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\development\fpga\spin_clock_ice\top.sv":57:1:57:6|Removing instance line_time[30] because it is equivalent to instance line_time[29]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\development\fpga\spin_clock_ice\top.sv":57:1:57:6|Removing instance line_time[29] because it is equivalent to instance line_time[28]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: MO231 :"c:\development\fpga\spin_clock_ice\top.sv":57:1:57:6|Found counter in view:work.top(verilog) instance line_time_counter[31:0] 
+@N: BN362 :"c:\development\fpga\spin_clock_ice\top.sv":57:1:57:6|Removing sequential instance line_time[28] (in view: work.top(verilog)) because it does not drive other instances.
+@N: MF179 :|Found 11 by 11 bit equality operator ('==') empty_nxt_r4 (in view: work.smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0(verilog))
+@N: MF179 :|Found 11 by 11 bit equality operator ('==') un1_sync_wr_controller\.wr_addr_r_2 (in view: work.smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0(verilog))
+@N: MF179 :|Found 10 by 10 bit equality operator ('==') full_nxt_r7 (in view: work.smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0(verilog))
+@N: MF179 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":300:29:300:63|Found 10 by 10 bit equality operator ('==') un1_bin_val_1 (in view: work.smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0(verilog))
+@N: MF179 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":613:29:613:63|Found 10 by 10 bit equality operator ('==') un1_bin_val_2 (in view: work.smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0(verilog))
+@W: BN132 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":621:16:621:21|Removing instance color_fifo.lscc_fifo_dc_inst.sync_rd_controller.rd_addr_r[3] because it is equivalent to instance color_fifo.lscc_fifo_dc_inst.rd_encode_sync.rd_grey_sync_r[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":621:16:621:21|Removing instance color_fifo.lscc_fifo_dc_inst.sync_rd_controller.rd_addr_r[7] because it is equivalent to instance color_fifo.lscc_fifo_dc_inst.rd_encode_sync.rd_grey_sync_r[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":621:16:621:21|Removing instance color_fifo.lscc_fifo_dc_inst.sync_rd_controller.rd_addr_r[10] because it is equivalent to instance color_fifo.lscc_fifo_dc_inst.rd_encode_sync.rd_grey_sync_r[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":216:16:216:21|Removing instance color_fifo.lscc_fifo_dc_inst.wr_encode_sync.wr_grey_sync_r[3] because it is equivalent to instance color_fifo.lscc_fifo_dc_inst.sync_wr_controller.wr_addr_r[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":216:16:216:21|Removing instance color_fifo.lscc_fifo_dc_inst.wr_encode_sync.wr_grey_sync_r[7] because it is equivalent to instance color_fifo.lscc_fifo_dc_inst.sync_wr_controller.wr_addr_r[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\development\fpga\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":216:16:216:21|Removing instance color_fifo.lscc_fifo_dc_inst.wr_encode_sync.wr_grey_sync_r[10] because it is equivalent to instance color_fifo.lscc_fifo_dc_inst.sync_wr_controller.wr_addr_r[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Starting factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 135MB peak: 135MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 137MB peak: 138MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 141MB peak: 142MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 142MB peak: 143MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 139MB peak: 143MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 138MB peak: 143MB)
+
+@N: BN362 :"c:\development\fpga\spin_clock_ice\top.sv":57:1:57:6|Removing sequential instance line_time[27] (in view: work.top(verilog)) because it does not drive other instances.
+
+Finished preparing to map (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 138MB peak: 143MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 143MB peak: 145MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:05s		   -15.01ns		 628 /       207
+   2		0h:00m:05s		   -15.01ns		 627 /       207
+   3		0h:00m:05s		   -14.84ns		 626 /       207
+   4		0h:00m:05s		   -14.84ns		 627 /       207
+   5		0h:00m:05s		   -14.84ns		 627 /       207
+
+   6		0h:00m:06s		   -14.84ns		 631 /       207
+   7		0h:00m:06s		   -13.55ns		 630 /       207
+
+
+   8		0h:00m:06s		   -13.55ns		 632 /       207
+   9		0h:00m:06s		   -13.55ns		 632 /       207
+@N: BN362 :"c:\development\fpga\spin_clock_ice\top.sv":57:1:57:6|Removing sequential instance line_time[26] (in view: work.top(verilog)) because it does not drive other instances.
+Error Code [order.cpp:1327 TaOrder is in a potential comb loop at level 1000000 (limit 1000000), TaSetup was called from file xcmap.cpp line 425;]
+While running 64-bit - Windows build
+@E::Internal Error in m_generic.exe
+Stack trace
+===========
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+Please open a web case about this problem. A Synopsys CAE will then contact you.
+
+Instructions to open a web-case:
+1.  Go to the Synopsys support web site, https://solvnet.synopsys.com. 
+2.  Login with your user name and password. If you do not have an account, please register and set one up.
+3.  Click the `Enter A Call' link.
+4.  Provide a detailed description of the problem, and fill in all required fields.
+5.  Attach any test cases or archived project files required to reproduce the problem. 
+Stack trace
+===========
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+0x140000000
+@N:|More debug information: The last object processed before the error was: line_time_counter_lm_0[1](SB_LUT4) in module top.verilog
+Process took 0h:00m:07s realtime, 0h:00m:07s cputime
+# Sun Aug 25 12:01:22 2019
+
+###########################################################]
