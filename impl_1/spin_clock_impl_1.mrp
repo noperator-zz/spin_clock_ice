@@ -5,7 +5,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 1.1.0.165.1
-Mapped on: Sun Aug 25 16:59:06 2019
+Mapped on: Thu Aug 29 15:08:44 2019
 
 Design Information
 ------------------
@@ -16,13 +16,13 @@ Command line:   map spin_clock_impl_1_syn.udb
 Design Summary
 --------------
 
-   Number of slice registers: 193 out of  5280 (4%)
-   Number of I/O registers:      1 out of   117 (1%)
-   Number of LUT4s:           448 out of  5280 (8%)
-      Number of logic LUT4s:             324
-      Number of inserted feedthru LUT4s:   5
+   Number of slice registers: 736 out of  5280 (14%)
+   Number of I/O registers:      2 out of   117 (2%)
+   Number of LUT4s:           4409 out of  5280 (84%)
+      Number of logic LUT4s:             4276
+      Number of inserted feedthru LUT4s:   6
       Number of replicated LUT4s:          1
-      Number of ripple logic:             59 (118 LUT4s)
+      Number of ripple logic:             63 (126 LUT4s)
    Number of IO sites used:   16 out of 39 (41%)
       Number of IO sites used for general PIOs: 13
       Number of IO sites used for I3Cs: 0 out of 2 (0%)
@@ -39,27 +39,27 @@ Design Summary
    Number of SRAMs:            0 out of 4 (0%)
    Number of WARMBOOTs:        0 out of 1 (0%)
    Number of SPIs:             0 out of 2 (0%)
-   Number of EBRs:             0 out of 30 (0%)
+   Number of EBRs:             2 out of 30 (6%)
    Number of PLLs:             1 out of 1 (100%)
    Number of Clocks:  4
-      Net tlc_sclk_c: 84 loads, 84 rising, 0 falling (Driver: Pin
+      Net sys_clk: 56 loads, 56 rising, 0 falling (Driver: Pin OSCInst0/CLKHF)
+      Net tlc_sclk_c: 615 loads, 615 rising, 0 falling (Driver: Pin
      tlc_sclk_I_0.lscc_pll_inst.u_PLL_B/OUTCORE)
-      Net sys_clk: 51 loads, 51 rising, 0 falling (Driver: Pin OSCInst0/CLKHF)
-      Net smi_nwe_pi_c: 42 loads, 0 rising, 42 falling (Driver: Port smi_nwe_pi)
       Net clk_in_c: 1 loads, 1 rising, 0 falling (Driver: Port clk_in)
-   Number of Clock Enables:  8
+      Net smi_nwe_pi_c: 44 loads, 0 rising, 44 falling (Driver: Port smi_nwe_pi)
+   Number of Clock Enables:  109
       Net VCC_net: 1 loads, 0 SLICEs
-      Net global_rst_N_122: 31 loads, 30 SLICEs
-      Net tlc0/n153327: 2 loads, 2 SLICEs
-      Net tlc0/state_3__N_2489: 16 loads, 16 SLICEs
-      Net tlc0/n44799: 1 loads, 1 SLICEs
-      Net tlc0/n153324: 2 loads, 2 SLICEs
-      Net tlc0/n7_adj_49047: 2 loads, 2 SLICEs
-      Net tlc0/n155062: 1 loads, 1 SLICEs
-   Number of LSRs:  24
-      Net global_rst: 18 loads, 18 SLICEs
-      Net n44790: 13 loads, 13 SLICEs
-      Net tlc0/n156347: 1 loads, 1 SLICEs
+      Net global_rst_N_152: 27 loads, 26 SLICEs
+      Net tlc0/state_3__N_2519: 448 loads, 448 SLICEs
+      Net tlc0/n153811: 1 loads, 1 SLICEs
+      Net tlc0/n153810: 1 loads, 1 SLICEs
+      Net tlc0/n154345: 1 loads, 1 SLICEs
+      Net tlc0/n154573: 4 loads, 4 SLICEs
+      Net tlc0/n7_adj_49195: 2 loads, 2 SLICEs
+      Net tlc0/n154383: 1 loads, 1 SLICEs
+      Net tlc0/n154119: 1 loads, 1 SLICEs
+      Net tlc0/n154311: 1 loads, 1 SLICEs
+      Net tlc0/n154150: 1 loads, 1 SLICEs
 
                                     Page 1
 
@@ -69,43 +69,668 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net tlc0/n156346: 1 loads, 1 SLICEs
-      Net tlc0/n156357: 1 loads, 1 SLICEs
-      Net tlc0/n156355: 1 loads, 1 SLICEs
-      Net tlc0/n156352: 1 loads, 1 SLICEs
-      Net tlc0/n156351: 1 loads, 1 SLICEs
-      Net tlc0/n156353: 1 loads, 1 SLICEs
-      Net tlc0/n156359: 1 loads, 1 SLICEs
-      Net tlc0/n156348: 1 loads, 1 SLICEs
-      Net tlc0/n156371: 1 loads, 1 SLICEs
-      Net tlc0/n51302: 5 loads, 5 SLICEs
-      Net tlc0/n7: 5 loads, 5 SLICEs
-      Net tlc0/n7_adj_49042: 1 loads, 1 SLICEs
-      Net tlc0/n153957: 2 loads, 2 SLICEs
-      Net tlc0/n156350: 1 loads, 1 SLICEs
-      Net tlc0/n156345: 1 loads, 1 SLICEs
-      Net tlc0/n156358: 1 loads, 1 SLICEs
-      Net tlc0/n156292: 1 loads, 1 SLICEs
-      Net tlc0/n156354: 1 loads, 1 SLICEs
-      Net tlc0/n156349: 1 loads, 1 SLICEs
-      Net tlc0/n156356: 1 loads, 1 SLICEs
-      Net n150159: 1 loads, 1 SLICEs
+      Net tlc0/n167311: 1 loads, 1 SLICEs
+      Net tlc0/n167299: 1 loads, 1 SLICEs
+      Net tlc0/n167328: 1 loads, 1 SLICEs
+      Net tlc0/n154149: 1 loads, 1 SLICEs
+      Net tlc0/n154169: 1 loads, 1 SLICEs
+      Net tlc0/n154170: 1 loads, 1 SLICEs
+      Net tlc0/n154171: 1 loads, 1 SLICEs
+      Net tlc0/n154310: 1 loads, 1 SLICEs
+      Net tlc0/n167278: 1 loads, 1 SLICEs
+      Net tlc0/n154325: 1 loads, 1 SLICEs
+      Net tlc0/n154321: 1 loads, 1 SLICEs
+      Net tlc0/n154104: 1 loads, 1 SLICEs
+      Net tlc0/n154106: 1 loads, 1 SLICEs
+      Net tlc0/n154105: 1 loads, 1 SLICEs
+      Net tlc0/n154111: 1 loads, 1 SLICEs
+      Net tlc0/n154112: 1 loads, 1 SLICEs
+      Net tlc0/n154308: 1 loads, 1 SLICEs
+      Net tlc0/n154008: 1 loads, 1 SLICEs
+      Net tlc0/n154423: 1 loads, 1 SLICEs
+      Net tlc0/n154103: 1 loads, 1 SLICEs
+      Net tlc0/n154318: 1 loads, 1 SLICEs
+      Net tlc0/n167312: 1 loads, 1 SLICEs
+      Net tlc0/n154329: 1 loads, 1 SLICEs
+      Net tlc0/n154330: 1 loads, 1 SLICEs
+      Net tlc0/n154320: 1 loads, 1 SLICEs
+      Net tlc0/n154322: 1 loads, 1 SLICEs
+      Net tlc0/n154323: 1 loads, 1 SLICEs
+      Net tlc0/n154347: 1 loads, 1 SLICEs
+      Net tlc0/n154319: 1 loads, 1 SLICEs
+      Net tlc0/n154102: 1 loads, 1 SLICEs
+      Net tlc0/n154381: 1 loads, 1 SLICEs
+      Net tlc0/n154380: 1 loads, 1 SLICEs
+      Net tlc0/n154109: 1 loads, 1 SLICEs
+      Net tlc0/n154426: 1 loads, 1 SLICEs
+      Net tlc0/n153974: 1 loads, 1 SLICEs
+      Net tlc0/n154425: 1 loads, 1 SLICEs
+      Net tlc0/n154114: 1 loads, 1 SLICEs
+      Net tlc0/n154115: 1 loads, 1 SLICEs
+      Net tlc0/n154116: 1 loads, 1 SLICEs
+      Net tlc0/tlc_sclk_c_enable_1: 1 loads, 0 SLICEs
+      Net tlc0/n154118: 1 loads, 1 SLICEs
+      Net tlc0/n154422: 1 loads, 1 SLICEs
+      Net tlc0/n154409: 1 loads, 1 SLICEs
+      Net tlc0/n154093: 1 loads, 1 SLICEs
+      Net tlc0/n154168: 1 loads, 1 SLICEs
+      Net tlc0/n154299: 1 loads, 1 SLICEs
+      Net tlc0/n167345: 1 loads, 1 SLICEs
+      Net tlc0/n154108: 1 loads, 1 SLICEs
+      Net tlc0/n154088: 1 loads, 1 SLICEs
+      Net tlc0/n154087: 1 loads, 1 SLICEs
+      Net tlc0/n172107: 1 loads, 1 SLICEs
+      Net tlc0/n44908: 1 loads, 1 SLICEs
+      Net tlc0/n154307: 1 loads, 1 SLICEs
+      Net tlc0/n154010: 1 loads, 1 SLICEs
+      Net tlc0/n154092: 1 loads, 1 SLICEs
+      Net tlc0/n167348: 1 loads, 1 SLICEs
+      Net tlc0/n154336: 1 loads, 1 SLICEs
+
+                                    Page 2
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net tlc0/n154332: 1 loads, 1 SLICEs
+      Net tlc0/n154333: 1 loads, 1 SLICEs
+      Net tlc0/n154306: 1 loads, 1 SLICEs
+      Net tlc0/n154011: 1 loads, 1 SLICEs
+      Net tlc0/n154156: 1 loads, 1 SLICEs
+      Net tlc0/n154101: 1 loads, 1 SLICEs
+      Net tlc0/n154160: 1 loads, 1 SLICEs
+      Net tlc0/n154096: 1 loads, 1 SLICEs
+      Net tlc0/n154408: 1 loads, 1 SLICEs
+      Net tlc0/n154157: 1 loads, 1 SLICEs
+      Net tlc0/n154344: 1 loads, 1 SLICEs
+      Net tlc0/n154161: 1 loads, 1 SLICEs
+      Net tlc0/n154097: 1 loads, 1 SLICEs
+      Net tlc0/n167323: 1 loads, 1 SLICEs
+      Net tlc0/n154300: 1 loads, 1 SLICEs
+      Net tlc0/n153975: 1 loads, 1 SLICEs
+      Net tlc0/n177139: 1 loads, 1 SLICEs
+      Net tlc0/n177140: 1 loads, 1 SLICEs
+      Net tlc0/n154303: 1 loads, 1 SLICEs
+      Net tlc0/n177141: 1 loads, 1 SLICEs
+      Net tlc0/n154304: 1 loads, 1 SLICEs
+      Net tlc0/n177142: 1 loads, 1 SLICEs
+      Net tlc0/n167320: 1 loads, 1 SLICEs
+      Net tlc0/n153623: 1 loads, 1 SLICEs
+      Net tlc0/n167315: 1 loads, 1 SLICEs
+      Net tlc0/n154419: 1 loads, 1 SLICEs
+      Net tlc0/n167314: 1 loads, 1 SLICEs
+      Net tlc0/n154301: 1 loads, 1 SLICEs
+      Net tlc0/n153977: 1 loads, 1 SLICEs
+      Net tlc0/n154298: 1 loads, 1 SLICEs
+      Net tlc0/n153978: 1 loads, 1 SLICEs
+      Net tlc0/n154295: 1 loads, 1 SLICEs
+      Net tlc0/n154296: 1 loads, 1 SLICEs
+      Net tlc0/n153971: 1 loads, 1 SLICEs
+      Net t_rd_fifo_en_w: 2 loads, 0 SLICEs
+      Net tlc_data_7__I_0/lscc_fifo_dc_inst/wr_fifo_en_w: 2 loads, 0 SLICEs
+      Net tlc_data_7__I_0/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[0
+     ].DATA_ROUTE[0].f_wr_en_w: 1 loads, 0 SLICEs
+      Net tlc_data_7__I_0/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[1
+     ].DATA_ROUTE[0].f_wr_en_w: 1 loads, 0 SLICEs
+      Net tlc_data_7__I_0/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[1
+     ].DATA_ROUTE[0].ff_rd_en_w: 1 loads, 0 SLICEs
+      Net tlc_data_7__I_0/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[0
+     ].DATA_ROUTE[0].ff_rd_en_w: 1 loads, 0 SLICEs
+   Number of LSRs:  454
+      Net n44899: 13 loads, 13 SLICEs
+      Net tlc0/n155109: 1 loads, 1 SLICEs
+      Net tlc0/n155108: 1 loads, 1 SLICEs
+      Net tlc0/n155107: 1 loads, 1 SLICEs
+      Net tlc0/n155106: 1 loads, 1 SLICEs
+      Net tlc0/n155105: 1 loads, 1 SLICEs
+      Net tlc0/n155104: 1 loads, 1 SLICEs
+      Net tlc0/n155103: 1 loads, 1 SLICEs
+      Net tlc0/n155102: 1 loads, 1 SLICEs
+      Net tlc0/n155101: 1 loads, 1 SLICEs
+      Net tlc0/n155100: 1 loads, 1 SLICEs
+      Net tlc0/n155099: 1 loads, 1 SLICEs
+
+                                    Page 3
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net tlc0/n155098: 1 loads, 1 SLICEs
+      Net tlc0/n155097: 1 loads, 1 SLICEs
+      Net tlc0/n155096: 1 loads, 1 SLICEs
+      Net tlc0/n155095: 1 loads, 1 SLICEs
+      Net tlc0/n155110: 1 loads, 1 SLICEs
+      Net tlc0/n155094: 1 loads, 1 SLICEs
+      Net tlc0/n155093: 1 loads, 1 SLICEs
+      Net tlc0/n155092: 1 loads, 1 SLICEs
+      Net tlc0/n155091: 1 loads, 1 SLICEs
+      Net tlc0/n155090: 1 loads, 1 SLICEs
+      Net tlc0/n154770: 1 loads, 1 SLICEs
+      Net tlc0/n155089: 1 loads, 1 SLICEs
+      Net tlc0/n155088: 1 loads, 1 SLICEs
+      Net tlc0/n155087: 1 loads, 1 SLICEs
+      Net tlc0/n155086: 1 loads, 1 SLICEs
+      Net tlc0/n154769: 1 loads, 1 SLICEs
+      Net tlc0/n155085: 1 loads, 1 SLICEs
+      Net tlc0/n155084: 1 loads, 1 SLICEs
+      Net tlc0/n155083: 1 loads, 1 SLICEs
+      Net tlc0/n155082: 1 loads, 1 SLICEs
+      Net tlc0/n155081: 1 loads, 1 SLICEs
+      Net tlc0/n154975: 1 loads, 1 SLICEs
+      Net tlc0/n155080: 1 loads, 1 SLICEs
+      Net tlc0/n172002: 1 loads, 1 SLICEs
+      Net tlc0/n172088: 1 loads, 1 SLICEs
+      Net tlc0/n155078: 1 loads, 1 SLICEs
+      Net tlc0/n154768: 1 loads, 1 SLICEs
+      Net tlc0/n155077: 1 loads, 1 SLICEs
+      Net tlc0/n155076: 1 loads, 1 SLICEs
+      Net tlc0/n172064: 1 loads, 1 SLICEs
+      Net tlc0/n155074: 1 loads, 1 SLICEs
+      Net tlc0/n155073: 1 loads, 1 SLICEs
+      Net tlc0/n155072: 1 loads, 1 SLICEs
+      Net tlc0/n154767: 1 loads, 1 SLICEs
+      Net tlc0/n154977: 1 loads, 1 SLICEs
+      Net tlc0/n172040: 1 loads, 1 SLICEs
+      Net tlc0/n154880: 1 loads, 1 SLICEs
+      Net tlc0/n155070: 1 loads, 1 SLICEs
+      Net tlc0/n155069: 1 loads, 1 SLICEs
+      Net tlc0/n154743: 1 loads, 1 SLICEs
+      Net tlc0/n172016: 1 loads, 1 SLICEs
+      Net tlc0/n154976: 1 loads, 1 SLICEs
+      Net tlc0/n155067: 1 loads, 1 SLICEs
+      Net tlc0/n154787: 1 loads, 1 SLICEs
+      Net tlc0/n155066: 1 loads, 1 SLICEs
+      Net tlc0/n155065: 1 loads, 1 SLICEs
+      Net tlc0/n155064: 1 loads, 1 SLICEs
+      Net tlc0/n154766: 1 loads, 1 SLICEs
+      Net tlc0/n172047: 1 loads, 1 SLICEs
+      Net tlc0/n154863: 1 loads, 1 SLICEs
+      Net tlc0/n172087: 1 loads, 1 SLICEs
+      Net tlc0/n154786: 1 loads, 1 SLICEs
+      Net tlc0/n155062: 1 loads, 1 SLICEs
+      Net tlc0/n155061: 1 loads, 1 SLICEs
+      Net tlc0/n155060: 1 loads, 1 SLICEs
+      Net tlc0/n154757: 1 loads, 1 SLICEs
+      Net tlc0/n154974: 1 loads, 1 SLICEs
+
+                                    Page 4
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net tlc0/n154756: 1 loads, 1 SLICEs
+      Net tlc0/n154755: 1 loads, 1 SLICEs
+      Net tlc0/n51535: 5 loads, 5 SLICEs
+      Net tlc0/n155059: 1 loads, 1 SLICEs
+      Net tlc0/n155058: 1 loads, 1 SLICEs
+      Net tlc0/n172063: 1 loads, 1 SLICEs
+      Net tlc0/n154764: 1 loads, 1 SLICEs
+      Net tlc0/n155056: 1 loads, 1 SLICEs
+      Net tlc0/n154754: 1 loads, 1 SLICEs
+      Net tlc0/n154753: 1 loads, 1 SLICEs
+      Net tlc0/n7_adj_49218: 5 loads, 5 SLICEs
+      Net tlc0/n172039: 1 loads, 1 SLICEs
+      Net tlc0/n172015: 1 loads, 1 SLICEs
+      Net tlc0/n154973: 1 loads, 1 SLICEs
+      Net tlc0/n155053: 1 loads, 1 SLICEs
+      Net tlc0/n155052: 1 loads, 1 SLICEs
+      Net tlc0/n155051: 1 loads, 1 SLICEs
+      Net tlc0/n172086: 1 loads, 1 SLICEs
+      Net tlc0/n154862: 1 loads, 1 SLICEs
+      Net tlc0/n172046: 1 loads, 1 SLICEs
+      Net tlc0/n155049: 1 loads, 1 SLICEs
+      Net tlc0/n154740: 1 loads, 1 SLICEs
+      Net tlc0/n155048: 1 loads, 1 SLICEs
+      Net tlc0/n155047: 1 loads, 1 SLICEs
+      Net tlc0/n155046: 1 loads, 1 SLICEs
+      Net tlc0/n154763: 1 loads, 1 SLICEs
+      Net tlc0/n154751: 1 loads, 1 SLICEs
+      Net tlc0/n154960: 1 loads, 1 SLICEs
+      Net tlc0/n154972: 1 loads, 1 SLICEs
+      Net tlc0/n155045: 1 loads, 1 SLICEs
+      Net tlc0/n172023: 1 loads, 1 SLICEs
+      Net tlc0/n155002: 1 loads, 1 SLICEs
+      Net tlc0/n172077: 1 loads, 1 SLICEs
+      Net tlc0/n154971: 1 loads, 1 SLICEs
+      Net tlc0/n155013: 1 loads, 1 SLICEs
+      Net tlc0/n172001: 1 loads, 1 SLICEs
+      Net tlc0/n172072: 1 loads, 1 SLICEs
+      Net tlc0/n172031: 1 loads, 1 SLICEs
+      Net tlc0/n155044: 1 loads, 1 SLICEs
+      Net tlc0/n154970: 1 loads, 1 SLICEs
+      Net tlc0/n154742: 1 loads, 1 SLICEs
+      Net tlc0/n155043: 1 loads, 1 SLICEs
+      Net tlc0/n155042: 1 loads, 1 SLICEs
+      Net tlc0/n155041: 1 loads, 1 SLICEs
+      Net tlc0/n172069: 1 loads, 1 SLICEs
+      Net tlc0/n172062: 1 loads, 1 SLICEs
+      Net tlc0/n172038: 1 loads, 1 SLICEs
+      Net tlc0/n155038: 1 loads, 1 SLICEs
+      Net tlc0/n172014: 1 loads, 1 SLICEs
+      Net tlc0/n172050: 1 loads, 1 SLICEs
+      Net tlc0/n172024: 1 loads, 1 SLICEs
+      Net tlc0/n172019: 1 loads, 1 SLICEs
+      Net tlc0/n172045: 1 loads, 1 SLICEs
+      Net tlc0/n172085: 1 loads, 1 SLICEs
+      Net tlc0/n155035: 1 loads, 1 SLICEs
+      Net tlc0/n172061: 1 loads, 1 SLICEs
+      Net tlc0/n155033: 1 loads, 1 SLICEs
+
+                                    Page 5
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net tlc0/n155032: 1 loads, 1 SLICEs
+      Net tlc0/n172028: 1 loads, 1 SLICEs
+      Net tlc0/n155031: 1 loads, 1 SLICEs
+      Net tlc0/n155030: 1 loads, 1 SLICEs
+      Net tlc0/n172051: 1 loads, 1 SLICEs
+      Net tlc0/n172084: 1 loads, 1 SLICEs
+      Net tlc0/n172043: 1 loads, 1 SLICEs
+      Net tlc0/n172060: 1 loads, 1 SLICEs
+      Net tlc0/n172054: 1 loads, 1 SLICEs
+      Net tlc0/n172037: 1 loads, 1 SLICEs
+      Net tlc0/n171996: 1 loads, 1 SLICEs
+      Net tlc0/n172048: 1 loads, 1 SLICEs
+      Net tlc0/n155025: 1 loads, 1 SLICEs
+      Net tlc0/n155024: 1 loads, 1 SLICEs
+      Net tlc0/n155023: 1 loads, 1 SLICEs
+      Net tlc0/n154861: 1 loads, 1 SLICEs
+      Net tlc0/n155022: 1 loads, 1 SLICEs
+      Net tlc0/n155021: 1 loads, 1 SLICEs
+      Net tlc0/n155020: 1 loads, 1 SLICEs
+      Net tlc0/n154698: 2 loads, 2 SLICEs
+      Net tlc0/n155018: 1 loads, 1 SLICEs
+      Net tlc0/n155017: 1 loads, 1 SLICEs
+      Net tlc0/n155016: 1 loads, 1 SLICEs
+      Net tlc0/n155015: 1 loads, 1 SLICEs
+      Net tlc0/n155014: 1 loads, 1 SLICEs
+      Net tlc0/n155012: 1 loads, 1 SLICEs
+      Net tlc0/n155011: 1 loads, 1 SLICEs
+      Net tlc0/n155010: 1 loads, 1 SLICEs
+      Net tlc0/n155009: 1 loads, 1 SLICEs
+      Net tlc0/n155008: 1 loads, 1 SLICEs
+      Net tlc0/n155007: 1 loads, 1 SLICEs
+      Net tlc0/n154741: 1 loads, 1 SLICEs
+      Net tlc0/n155006: 1 loads, 1 SLICEs
+      Net tlc0/n155005: 1 loads, 1 SLICEs
+      Net tlc0/n155004: 1 loads, 1 SLICEs
+      Net tlc0/n155003: 1 loads, 1 SLICEs
+      Net tlc0/n155001: 1 loads, 1 SLICEs
+      Net tlc0/n155000: 1 loads, 1 SLICEs
+      Net tlc0/n154999: 1 loads, 1 SLICEs
+      Net tlc0/n154998: 1 loads, 1 SLICEs
+      Net tlc0/n154997: 1 loads, 1 SLICEs
+      Net tlc0/n154996: 1 loads, 1 SLICEs
+      Net tlc0/n154995: 1 loads, 1 SLICEs
+      Net tlc0/n154994: 1 loads, 1 SLICEs
+      Net tlc0/n154993: 1 loads, 1 SLICEs
+      Net tlc0/n154992: 1 loads, 1 SLICEs
+      Net tlc0/n154991: 1 loads, 1 SLICEs
+      Net tlc0/n154990: 1 loads, 1 SLICEs
+      Net tlc0/n172052: 1 loads, 1 SLICEs
+      Net tlc0/n154989: 1 loads, 1 SLICEs
+      Net tlc0/n154988: 1 loads, 1 SLICEs
+      Net tlc0/n172059: 1 loads, 1 SLICEs
+      Net tlc0/n154860: 1 loads, 1 SLICEs
+      Net tlc0/n154987: 1 loads, 1 SLICEs
+      Net tlc0/n154986: 1 loads, 1 SLICEs
+      Net tlc0/n154985: 1 loads, 1 SLICEs
+      Net tlc0/n154984: 1 loads, 1 SLICEs
+
+                                    Page 6
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net tlc0/n154775: 1 loads, 1 SLICEs
+      Net tlc0/n154983: 1 loads, 1 SLICEs
+      Net tlc0/n154982: 1 loads, 1 SLICEs
+      Net tlc0/n154981: 1 loads, 1 SLICEs
+      Net tlc0/n154980: 1 loads, 1 SLICEs
+      Net tlc0/n154979: 1 loads, 1 SLICEs
+      Net tlc0/n154978: 1 loads, 1 SLICEs
+      Net tlc0/n154969: 1 loads, 1 SLICEs
+      Net tlc0/n172070: 1 loads, 1 SLICEs
+      Net tlc0/n154790: 1 loads, 1 SLICEs
+      Net tlc0/n154968: 1 loads, 1 SLICEs
+      Net tlc0/n154967: 1 loads, 1 SLICEs
+      Net tlc0/n154966: 1 loads, 1 SLICEs
+      Net tlc0/n154965: 1 loads, 1 SLICEs
+      Net tlc0/n154964: 1 loads, 1 SLICEs
+      Net tlc0/n172044: 1 loads, 1 SLICEs
+      Net tlc0/n154846: 1 loads, 1 SLICEs
+      Net tlc0/n172022: 1 loads, 1 SLICEs
+      Net tlc0/n172003: 1 loads, 1 SLICEs
+      Net tlc0/n154963: 1 loads, 1 SLICEs
+      Net tlc0/n154962: 1 loads, 1 SLICEs
+      Net tlc0/n154961: 1 loads, 1 SLICEs
+      Net tlc0/n154859: 1 loads, 1 SLICEs
+      Net tlc0/n154771: 1 loads, 1 SLICEs
+      Net tlc0/n154959: 1 loads, 1 SLICEs
+      Net tlc0/n154789: 1 loads, 1 SLICEs
+      Net tlc0/n154958: 1 loads, 1 SLICEs
+      Net tlc0/n154845: 1 loads, 1 SLICEs
+      Net tlc0/n172013: 1 loads, 1 SLICEs
+      Net tlc0/n154844: 1 loads, 1 SLICEs
+      Net tlc0/n154921: 1 loads, 1 SLICEs
+      Net tlc0/n154843: 1 loads, 1 SLICEs
+      Net tlc0/n172036: 1 loads, 1 SLICEs
+      Net tlc0/n154842: 1 loads, 1 SLICEs
+      Net tlc0/n154954: 1 loads, 1 SLICEs
+      Net tlc0/n172083: 1 loads, 1 SLICEs
+      Net tlc0/n154731: 1 loads, 1 SLICEs
+      Net tlc0/n171994: 1 loads, 1 SLICEs
+      Net tlc0/n172018: 1 loads, 1 SLICEs
+      Net tlc0/n154841: 1 loads, 1 SLICEs
+      Net tlc0/n172042: 1 loads, 1 SLICEs
+      Net tlc0/n154949: 1 loads, 1 SLICEs
+      Net tlc0/n154858: 1 loads, 1 SLICEs
+      Net tlc0/n172082: 1 loads, 1 SLICEs
+      Net tlc0/n154947: 1 loads, 1 SLICEs
+      Net tlc0/n172012: 1 loads, 1 SLICEs
+      Net tlc0/n154945: 1 loads, 1 SLICEs
+      Net tlc0/n172035: 1 loads, 1 SLICEs
+      Net tlc0/n154943: 1 loads, 1 SLICEs
+      Net tlc0/n172058: 1 loads, 1 SLICEs
+      Net tlc0/n172081: 1 loads, 1 SLICEs
+      Net tlc0/n172011: 1 loads, 1 SLICEs
+      Net tlc0/n172034: 1 loads, 1 SLICEs
+      Net tlc0/n172057: 1 loads, 1 SLICEs
+      Net tlc0/n154937: 1 loads, 1 SLICEs
+      Net tlc0/n154936: 1 loads, 1 SLICEs
+      Net tlc0/n172080: 1 loads, 1 SLICEs
+
+                                    Page 7
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net tlc0/n172010: 1 loads, 1 SLICEs
+      Net tlc0/n154933: 1 loads, 1 SLICEs
+      Net tlc0/n172033: 1 loads, 1 SLICEs
+      Net tlc0/n172056: 1 loads, 1 SLICEs
+      Net tlc0/n154930: 1 loads, 1 SLICEs
+      Net tlc0/n172079: 1 loads, 1 SLICEs
+      Net tlc0/n172009: 1 loads, 1 SLICEs
+      Net tlc0/n172032: 1 loads, 1 SLICEs
+      Net tlc0/n154774: 1 loads, 1 SLICEs
+      Net tlc0/n172055: 1 loads, 1 SLICEs
+      Net tlc0/n154857: 1 loads, 1 SLICEs
+      Net tlc0/n154762: 1 loads, 1 SLICEs
+      Net tlc0/n172078: 1 loads, 1 SLICEs
+      Net tlc0/n154879: 1 loads, 1 SLICEs
+      Net tlc0/n154924: 1 loads, 1 SLICEs
+      Net tlc0/n154856: 1 loads, 1 SLICEs
+      Net tlc0/n172008: 1 loads, 1 SLICEs
+      Net tlc0/n154840: 1 loads, 1 SLICEs
+      Net tlc0/n154855: 1 loads, 1 SLICEs
+      Net tlc0/n154911: 1 loads, 1 SLICEs
+      Net tlc0/n154761: 1 loads, 1 SLICEs
+      Net tlc0/n154922: 1 loads, 1 SLICEs
+      Net tlc0/n154785: 1 loads, 1 SLICEs
+      Net tlc0/n171997: 1 loads, 1 SLICEs
+      Net tlc0/n154744: 1 loads, 1 SLICEs
+      Net tlc0/n154919: 1 loads, 1 SLICEs
+      Net tlc0/n154734: 1 loads, 1 SLICEs
+      Net tlc0/n154739: 1 loads, 1 SLICEs
+      Net tlc0/n154917: 1 loads, 1 SLICEs
+      Net tlc0/n154910: 1 loads, 1 SLICEs
+      Net tlc0/n154854: 1 loads, 1 SLICEs
+      Net tlc0/n154682: 1 loads, 1 SLICEs
+      Net tlc0/n172007: 1 loads, 1 SLICEs
+      Net tlc0/n154681: 1 loads, 1 SLICEs
+      Net tlc0/n172030: 1 loads, 1 SLICEs
+      Net tlc0/n172053: 1 loads, 1 SLICEs
+      Net tlc0/n172067: 1 loads, 1 SLICEs
+      Net tlc0/n172000: 1 loads, 1 SLICEs
+      Net tlc0/n172071: 1 loads, 1 SLICEs
+      Net tlc0/n154909: 1 loads, 1 SLICEs
+      Net tlc0/n154784: 1 loads, 1 SLICEs
+      Net tlc0/n154908: 1 loads, 1 SLICEs
+      Net tlc0/n154907: 1 loads, 1 SLICEs
+      Net tlc0/n154906: 1 loads, 1 SLICEs
+      Net tlc0/n154905: 1 loads, 1 SLICEs
+      Net tlc0/n154680: 1 loads, 1 SLICEs
+      Net tlc0/n154904: 1 loads, 1 SLICEs
+      Net tlc0/n154903: 1 loads, 1 SLICEs
+      Net tlc0/n154902: 1 loads, 1 SLICEs
+      Net tlc0/n154783: 1 loads, 1 SLICEs
+      Net tlc0/n154901: 1 loads, 1 SLICEs
+      Net tlc0/n154878: 1 loads, 1 SLICEs
+      Net tlc0/n154900: 1 loads, 1 SLICEs
+      Net tlc0/n154899: 1 loads, 1 SLICEs
+      Net tlc0/n154898: 1 loads, 1 SLICEs
+      Net tlc0/n154897: 1 loads, 1 SLICEs
+      Net tlc0/n154896: 1 loads, 1 SLICEs
+
+                                    Page 8
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net tlc0/n154895: 1 loads, 1 SLICEs
+      Net tlc0/n154894: 1 loads, 1 SLICEs
+      Net tlc0/n154893: 1 loads, 1 SLICEs
+      Net tlc0/n154892: 1 loads, 1 SLICEs
+      Net tlc0/n154891: 1 loads, 1 SLICEs
+      Net tlc0/n154746: 1 loads, 1 SLICEs
+      Net tlc0/n154890: 1 loads, 1 SLICEs
+      Net tlc0/n172049: 1 loads, 1 SLICEs
+      Net tlc0/n154889: 1 loads, 1 SLICEs
+      Net tlc0/n154888: 1 loads, 1 SLICEs
+      Net tlc0/n154782: 1 loads, 1 SLICEs
+      Net tlc0/n154887: 1 loads, 1 SLICEs
+      Net tlc0/n154886: 1 loads, 1 SLICEs
+      Net tlc0/n154849: 1 loads, 1 SLICEs
+      Net tlc0/n154839: 1 loads, 1 SLICEs
+      Net tlc0/n154885: 1 loads, 1 SLICEs
+      Net tlc0/n154884: 1 loads, 1 SLICEs
+      Net tlc0/n154883: 1 loads, 1 SLICEs
+      Net tlc0/n154882: 1 loads, 1 SLICEs
+      Net tlc0/n154881: 1 loads, 1 SLICEs
+      Net tlc0/n154719: 1 loads, 1 SLICEs
+      Net tlc0/n172068: 1 loads, 1 SLICEs
+      Net tlc0/n154781: 1 loads, 1 SLICEs
+      Net tlc0/n155170: 1 loads, 1 SLICEs
+      Net tlc0/n154780: 1 loads, 1 SLICEs
+      Net tlc0/n154877: 1 loads, 1 SLICEs
+      Net tlc0/n154876: 1 loads, 1 SLICEs
+      Net tlc0/n154875: 1 loads, 1 SLICEs
+      Net tlc0/n154874: 1 loads, 1 SLICEs
+      Net tlc0/n154873: 1 loads, 1 SLICEs
+      Net tlc0/n154872: 1 loads, 1 SLICEs
+      Net tlc0/n154871: 1 loads, 1 SLICEs
+      Net tlc0/n154870: 1 loads, 1 SLICEs
+      Net tlc0/n154869: 1 loads, 1 SLICEs
+      Net tlc0/n154868: 1 loads, 1 SLICEs
+      Net tlc0/n154867: 1 loads, 1 SLICEs
+      Net tlc0/n154759: 1 loads, 1 SLICEs
+      Net tlc0/n154853: 1 loads, 1 SLICEs
+      Net tlc0/n154866: 1 loads, 1 SLICEs
+      Net tlc0/n155154: 1 loads, 1 SLICEs
+      Net tlc0/n154865: 1 loads, 1 SLICEs
+      Net tlc0/n154852: 1 loads, 1 SLICEs
+      Net tlc0/n154779: 1 loads, 1 SLICEs
+      Net tlc0/n155150: 1 loads, 1 SLICEs
+      Net tlc0/n154864: 1 loads, 1 SLICEs
+      Net tlc0/n154838: 1 loads, 1 SLICEs
+      Net tlc0/n154851: 1 loads, 1 SLICEs
+      Net tlc0/n154758: 1 loads, 1 SLICEs
+      Net tlc0/n154716: 1 loads, 1 SLICEs
+      Net tlc0/n154837: 1 loads, 1 SLICEs
+      Net tlc0/n155139: 1 loads, 1 SLICEs
+      Net tlc0/n154778: 1 loads, 1 SLICEs
+      Net tlc0/n155141: 1 loads, 1 SLICEs
+      Net tlc0/n154777: 1 loads, 1 SLICEs
+      Net tlc0/n155136: 1 loads, 1 SLICEs
+      Net tlc0/n171998: 1 loads, 1 SLICEs
+      Net tlc0/n155131: 1 loads, 1 SLICEs
+
+                                    Page 9
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net tlc0/n154850: 1 loads, 1 SLICEs
+      Net tlc0/n155169: 1 loads, 1 SLICEs
+      Net tlc0/n172020: 1 loads, 1 SLICEs
+      Net tlc0/n154776: 1 loads, 1 SLICEs
+      Net tlc0/n155168: 1 loads, 1 SLICEs
+      Net tlc0/n155167: 1 loads, 1 SLICEs
+      Net tlc0/n155165: 1 loads, 1 SLICEs
+      Net tlc0/n155164: 1 loads, 1 SLICEs
+      Net tlc0/n154733: 1 loads, 1 SLICEs
+      Net tlc0/n154799: 1 loads, 1 SLICEs
+      Net tlc0/n154798: 1 loads, 1 SLICEs
+      Net tlc0/n171756: 1 loads, 1 SLICEs
+      Net tlc0/n155153: 1 loads, 1 SLICEs
+      Net tlc0/n154797: 1 loads, 1 SLICEs
+      Net tlc0/n172025: 1 loads, 1 SLICEs
+      Net tlc0/n172073: 1 loads, 1 SLICEs
+      Net tlc0/n154796: 1 loads, 1 SLICEs
+      Net tlc0/n154795: 1 loads, 1 SLICEs
+      Net tlc0/n154732: 1 loads, 1 SLICEs
+      Net tlc0/n154794: 1 loads, 1 SLICEs
+      Net tlc0/n154793: 1 loads, 1 SLICEs
+      Net tlc0/n154792: 1 loads, 1 SLICEs
+      Net tlc0/n154791: 1 loads, 1 SLICEs
+      Net tlc0/n154848: 1 loads, 1 SLICEs
+      Net tlc0/n154836: 1 loads, 1 SLICEs
+      Net tlc0/n172006: 1 loads, 1 SLICEs
+      Net tlc0/n172029: 1 loads, 1 SLICEs
+      Net tlc0/n155152: 1 loads, 1 SLICEs
+      Net tlc0/n171999: 1 loads, 1 SLICEs
+      Net tlc0/n154835: 1 loads, 1 SLICEs
+      Net tlc0/n155151: 1 loads, 1 SLICEs
+      Net tlc0/n154834: 1 loads, 1 SLICEs
+      Net tlc0/n154833: 1 loads, 1 SLICEs
+      Net tlc0/n154832: 1 loads, 1 SLICEs
+      Net tlc0/n154831: 1 loads, 1 SLICEs
+      Net tlc0/n155149: 1 loads, 1 SLICEs
+      Net tlc0/n154830: 1 loads, 1 SLICEs
+      Net tlc0/n154829: 1 loads, 1 SLICEs
+      Net tlc0/n154828: 1 loads, 1 SLICEs
+      Net tlc0/n154788: 1 loads, 1 SLICEs
+      Net tlc0/n154760: 1 loads, 1 SLICEs
+      Net tlc0/n154827: 1 loads, 1 SLICEs
+      Net tlc0/n154826: 1 loads, 1 SLICEs
+      Net tlc0/n154825: 1 loads, 1 SLICEs
+      Net tlc0/n154824: 1 loads, 1 SLICEs
+      Net tlc0/n154821: 1 loads, 1 SLICEs
+      Net tlc0/n154820: 1 loads, 1 SLICEs
+      Net tlc0/n154819: 1 loads, 1 SLICEs
+      Net tlc0/n172076: 1 loads, 1 SLICEs
+      Net tlc0/n154817: 1 loads, 1 SLICEs
+      Net tlc0/n154816: 1 loads, 1 SLICEs
+      Net tlc0/n172005: 1 loads, 1 SLICEs
+      Net tlc0/n172027: 1 loads, 1 SLICEs
+      Net tlc0/n172075: 1 loads, 1 SLICEs
+      Net tlc0/n172004: 1 loads, 1 SLICEs
+      Net tlc0/n172026: 1 loads, 1 SLICEs
+      Net tlc0/n172074: 1 loads, 1 SLICEs
+
+                                   Page 10
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net tlc0/n155148: 1 loads, 1 SLICEs
+      Net tlc0/n171989: 1 loads, 1 SLICEs
+      Net tlc0/n155147: 1 loads, 1 SLICEs
+      Net tlc0/n172021: 1 loads, 1 SLICEs
+      Net tlc0/n171992: 1 loads, 1 SLICEs
+      Net tlc0/n171990: 1 loads, 1 SLICEs
+      Net tlc0/n171991: 1 loads, 1 SLICEs
+      Net tlc0/n155146: 1 loads, 1 SLICEs
+      Net tlc0/n155145: 1 loads, 1 SLICEs
+      Net tlc0/n155144: 1 loads, 1 SLICEs
+      Net tlc0/n155143: 1 loads, 1 SLICEs
+      Net tlc0/n155142: 1 loads, 1 SLICEs
+      Net tlc0/n172066: 1 loads, 1 SLICEs
+      Net tlc0/n155140: 1 loads, 1 SLICEs
+      Net tlc0/n155138: 1 loads, 1 SLICEs
+      Net tlc0/n155137: 1 loads, 1 SLICEs
+      Net tlc0/n155135: 1 loads, 1 SLICEs
+      Net tlc0/n155133: 1 loads, 1 SLICEs
+      Net tlc0/n155132: 1 loads, 1 SLICEs
+      Net tlc0/n155130: 1 loads, 1 SLICEs
+      Net tlc0/n155129: 1 loads, 1 SLICEs
+      Net tlc0/n155128: 1 loads, 1 SLICEs
+      Net tlc0/n155127: 1 loads, 1 SLICEs
+      Net tlc0/n155126: 1 loads, 1 SLICEs
+      Net tlc0/n155125: 1 loads, 1 SLICEs
+      Net tlc0/n155124: 1 loads, 1 SLICEs
+      Net tlc0/n155123: 1 loads, 1 SLICEs
+      Net tlc0/n155122: 1 loads, 1 SLICEs
+      Net tlc0/n171995: 1 loads, 1 SLICEs
+      Net tlc0/n155121: 1 loads, 1 SLICEs
+      Net tlc0/n155120: 1 loads, 1 SLICEs
+      Net tlc0/n155119: 1 loads, 1 SLICEs
+      Net tlc0/n155118: 1 loads, 1 SLICEs
+      Net tlc0/n155117: 1 loads, 1 SLICEs
+      Net tlc0/n155116: 1 loads, 1 SLICEs
+      Net tlc0/n155115: 1 loads, 1 SLICEs
+      Net tlc0/n155114: 1 loads, 1 SLICEs
+      Net tlc0/n155113: 1 loads, 1 SLICEs
+      Net tlc0/n155112: 1 loads, 1 SLICEs
+      Net tlc0/n155111: 1 loads, 1 SLICEs
+      Net tlc0/n154773: 1 loads, 1 SLICEs
+      Net tlc0/n154772: 1 loads, 1 SLICEs
+      Net global_rst: 18 loads, 18 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net global_rst: 91 loads
-      Net global_rst_N_122: 32 loads
-      Net VCC_net: 32 loads
-      Net n44790: 29 loads
-      Net full_o: 28 loads
-      Net n15: 16 loads
-      Net tlc0/state[1]: 16 loads
-      Net tlc0/state_3__N_2489: 16 loads
-      Net tlc0/bank_offset[1]: 15 loads
-      Net tlc0/n156344: 15 loads
+      Net tlc0/state_3__N_2519: 904 loads
+      Net tlc0/bank_offset[7]: 453 loads
+      Net tlc0/bank_offset[4]: 415 loads
+      Net tlc0/bank_offset[6]: 402 loads
+      Net tlc0/bank_offset[5]: 370 loads
+      Net tlc0/bank_offset[2]: 339 loads
+      Net tlc0/bank_offset[0]: 285 loads
+      Net tlc0/bank_offset[3]: 274 loads
+      Net tlc0/bank_offset[8]: 238 loads
+      Net tlc0/sr_bit_counter[0]: 202 loads
 
 
 
 
-   Number of warnings:  25
+                                   Page 11
+
+
+
+
+
+
+
+
+   Number of warnings:  17
    Number of errors:    0
 
 Design Errors/Warnings
@@ -126,15 +751,6 @@ WARNING - map: The clock port [smi_nwe_pi] is assigned to a non clock dedicated
      resources for the port.
 WARNING - map: The clock port [smi_data_pi[7]] is assigned to a non clock
      dedicated pin [34], which might affect the clock performance. Use dedicated
-
-                                    Page 2
-
-
-
-
-
-Design Errors/Warnings (cont)
------------------------------
      clock resources for the port.
 WARNING - map: The clock port [smi_data_pi[5]] is assigned to a non clock
      dedicated pin [36], which might affect the clock performance. Use dedicated
@@ -151,26 +767,10 @@ WARNING - map: The clock port [smi_data_pi[1]] is assigned to a non clock
 WARNING - map: The clock port [smi_data_pi[0]] is assigned to a non clock
      dedicated pin [41], which might affect the clock performance. Use dedicated
      clock resources for the port.
-WARNING - map: Signal 'smi_nwe_pi_N_59' is removed out, attached properties
+WARNING - map: Signal 'smi_nwe_pi_N_74' is removed out, attached properties
      "is_clock=" ignored.
 WARNING - map: Top module port 'smi_noe_pi' does not connect to anything.
 WARNING - map: Top module port 'tlc_sout' does not connect to anything.
-WARNING - map: Port [smi_data_pi_pad[6].bb_inst] does not have a load. Connect
-     or remove the port.
-WARNING - map: Port [smi_data_pi_pad[4].bb_inst] does not have a load. Connect
-     or remove the port.
-WARNING - map: Port [smi_data_pi_pad[5].bb_inst] does not have a load. Connect
-     or remove the port.
-WARNING - map: Port [smi_data_pi_pad[7].bb_inst] does not have a load. Connect
-     or remove the port.
-WARNING - map: Port [smi_data_pi_pad[2].bb_inst] does not have a load. Connect
-     or remove the port.
-WARNING - map: Port [smi_data_pi_pad[3].bb_inst] does not have a load. Connect
-     or remove the port.
-WARNING - map: Port [smi_data_pi_pad[0].bb_inst] does not have a load. Connect
-     or remove the port.
-WARNING - map: Port [smi_data_pi_pad[1].bb_inst] does not have a load. Connect
-     or remove the port.
 WARNING - map: The clock port [smi_nwe_pi] is assigned to a non clock dedicated
      pin [32], which might affect the clock performance. Use dedicated clock
      resources for the port.
@@ -182,18 +782,12 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| smi_data_pi[6]      | INPUT     | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| smi_nwe_pi          | INPUT     | LVCMOS33  |       |       |           |
+| smi_data_pi[7]      | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | frame_sync_pi       | INPUT     | LVCMOS33  | I     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| smi_data_pi[4]      | INPUT     | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| smi_data_pi[5]      | INPUT     | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 
-                                    Page 3
+                                   Page 12
 
 
 
@@ -201,13 +795,21 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
-| smi_data_pi[7]      | INPUT     | LVCMOS33  |       |       |           |
+| clk_in              | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| smi_data_pi[5]      | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| smi_data_pi[6]      | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| smi_nwe_pi          | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | smi_data_pi[2]      | INPUT     | LVCMOS33  |       |       | OD        |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| smi_data_pi[3]      | INPUT     | LVCMOS33  |       |       |           |
+| smi_data_pi[1]      | INPUT     | LVCMOS33  |       |       | OD        |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| smi_data_pi[0]      | INPUT     | LVCMOS33  |       |       | OD        |
+| smi_data_pi[4]      | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| smi_data_pi[3]      | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | line_sync           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -215,19 +817,17 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+-------+-------+-----------+
 | tlc_sclk            | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| tlc_sin             | OUTPUT    | LVCMOS33  | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 | tlc_lat             | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| tlc_sin             | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| clk_in              | INPUT     | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| smi_data_pi[1]      | INPUT     | LVCMOS33  |       |       | OD        |
+| smi_data_pi[0]      | INPUT     | LVCMOS33  |       |       | OD        |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
 Removed logic
 -------------
 
-Signal smi_nwe_pi_N_59 was merged into signal smi_nwe_pi_c
+Signal smi_nwe_pi_N_74 was merged into signal smi_nwe_pi_c
 Block smi_nwe_pi_I_0_1_lut was optimized away.
 
 PLL/DLL Summary
@@ -252,14 +852,8 @@ PLL 1:                                 Pin/Node Value
   Input Clock Frequency (MHz):                  12.0000
   Reference Divider:                            0
   Feedback Divider:                             87
-  VCO Divider:                                  5
-  ENABLE_ICEGATE_PORTA:                         0
-  ENABLE_ICEGATE_PORTB:                         0
-  PLLOUT_SELECT_PORTA:                          GENCLK
-  PLLOUT_SELECT_PORTB:                          GENCLK
-  SHIFTREG_DIV_MODE:                            0
 
-                                    Page 4
+                                   Page 13
 
 
 
@@ -267,6 +861,12 @@ PLL 1:                                 Pin/Node Value
 
 PLL/DLL Summary (cont)
 ----------------------
+  VCO Divider:                                  5
+  ENABLE_ICEGATE_PORTA:                         0
+  ENABLE_ICEGATE_PORTB:                         0
+  PLLOUT_SELECT_PORTA:                          GENCLK
+  PLLOUT_SELECT_PORTB:                          GENCLK
+  SHIFTREG_DIV_MODE:                            0
   DELAY_ADJUSTMENT_MODE_RELATIVE:               FIXED
   FDA_RELATIVE:                                 0
   FEEDBACK_PATH:                                SIMPLE
@@ -292,17 +892,25 @@ ASIC Components
 
 Instance Name: frame_cdc_i0_i0
          Type: IOLOGIC
-Instance Name: OSCInst0
-         Type: HFOSC
+Instance Name: tlc0.sout
+         Type: IOLOGIC
 Instance Name: tlc_sclk_I_0.lscc_pll_inst.u_PLL_B
          Type: PLL
+Instance Name: tlc_data_7__I_0.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_RO
+     UTE[1].DATA_ROUTE[0].no_init.u_mem0.ICE_MEM.u_mem0
+         Type: EBR
+Instance Name: tlc_data_7__I_0.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_RO
+     UTE[0].DATA_ROUTE[0].no_init.u_mem0.ICE_MEM.u_mem0
+         Type: EBR
+Instance Name: OSCInst0
+         Type: HFOSC
 
 Run Time and Memory Usage
 -------------------------
 
-   Total CPU Time: 1 secs
-   Total REAL Time: 0 secs
-   Peak Memory Usage: 201 MB
+   Total CPU Time: 3 secs
+   Total REAL Time: 4 secs
+   Peak Memory Usage: 267 MB
 
 
 
@@ -311,21 +919,7 @@ Run Time and Memory Usage
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    Page 5
+                                   Page 14
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.

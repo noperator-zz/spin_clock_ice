@@ -1,5 +1,5 @@
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Sun Aug 25 16:59:08 2019
+Thu Aug 29 15:08:53 2019
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	spin_clock_impl_1_map.udb spin_clock_impl_1.udb 
@@ -8,16 +8,16 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 Level/       Number       Worst        Timing       Worst        Timing       Run          Run
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -0.342       757          0.379        0            13           Success
+5_1   *      0            -29.945      15949430     -2.772       2772         02:59        Success
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 13 secs 
+Total (real) run time for 1-seed: 3 mins 
 
 par done!
 
 Lattice Place and Route Report for Design "spin_clock_impl_1_map.udb"
-Sun Aug 25 16:59:08 2019
+Thu Aug 29 15:08:53 2019
 
 PAR: Place And Route Radiant Software (64-bit) 1.1.0.165.1.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
@@ -51,18 +51,18 @@ WARNING - par: Top module port 'smi_noe_pi' does not connect to anything.
 WARNING - par: Top module port 'tlc_sout' does not connect to anything.
 WARNING - par: Top module port 'smi_noe_pi' does not connect to anything.
 WARNING - par: Top module port 'tlc_sout' does not connect to anything.
-Number of Signals: 745
-Number of Connections: 1849
+Number of Signals: 5281
+Number of Connections: 18843
 WARNING - par: Placement timing constraints are hard to meet. However, placement will continue. Use static timing analysis to identify errors. For more information, see online help subjects 'Place and Route Timing Report' or the 'Timing' application
 
 Device utilization summary:
 
-   SLICE (est.)     239/2640          9% used
-     LUT            449/5280          8% used
-     REG            193/5280          3% used
+   SLICE (est.)    2438/2640         92% used
+     LUT           4410/5280         83% used
+     REG            736/5280         13% used
    PIO               13/56           23% used
                      13/36           36% bonded
-   IOLOGIC            1/56            1% used
+   IOLOGIC            2/56            3% used
    DSP                0/8             0% used
    I2C                0/2             0% used
    HFOSC              1/1           100% used
@@ -73,7 +73,7 @@ Device utilization summary:
    SRAM               0/4             0% used
    WARMBOOT           0/1             0% used
    SPI                0/2             0% used
-   EBR                0/30            0% used
+   EBR                2/30            6% used
    PLL                1/1           100% used
    RGBOUTBUF          0/3             0% used
    I3C                0/2             0% used
@@ -81,39 +81,40 @@ Device utilization summary:
 
 Pin Constraint Summary:
    13 out of 13 pins locked (100% locked).
-Finished Placer Phase 0 (HIER).  CPU time: 1 secs , REAL time: 0 secs 
+Finished Placer Phase 0 (HIER).  CPU time: 38 secs , REAL time: 40 secs 
 
 
-................
-Finished Placer Phase 0 (AP).  CPU time: 1 secs , REAL time: 2 secs 
+...........................
+Finished Placer Phase 0 (AP).  CPU time: 54 secs , REAL time: 57 secs 
 
-Starting Placer Phase 1. REAL time: 2 secs 
+Starting Placer Phase 1. REAL time: 57 secs 
 ..  ..
-.....................
+........................
 
-Placer score = 59858.
+Placer score = 1338094.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE            236/2640          8% used
+   SLICE           2431/2640         92% used
 
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
-Finished Placer Phase 1.  CPU time: 8 secs , REAL time: 9 secs 
+Finished Placer Phase 1.  CPU time: 1 mins 30 secs , REAL time: 1 mins 35 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  73715
-Finished Placer Phase 2.  CPU time: 8 secs , REAL time: 9 secs 
+Placer score =  8644574
+Finished Placer Phase 2.  CPU time: 1 mins 33 secs , REAL time: 1 mins 38 secs 
 
 
 ------------------ Clock Report ------------------
 
 Global Clocks :
-  PRIMARY "sys_clk" from comp "OSCInst0" on site "HFOSC_R1C32", clk load = 34, ce load = 0, sr load = 0
-  PRIMARY "tlc_sclk_c" from OUTCORE on comp "tlc_sclk_I_0.lscc_pll_inst.u_PLL_B" on site "PLL_R13C32", clk load = 62, ce load = 0, sr load = 0
-  PRIMARY "smi_nwe_pi_c" from comp "smi_nwe_pi" on PIO site "32 (PR17A)", clk load = 21, ce load = 0, sr load = 0
+  PRIMARY "sys_clk" from comp "OSCInst0" on site "HFOSC_R1C32", clk load = 43, ce load = 0, sr load = 0
+  PRIMARY "tlc_sclk_c" from OUTCORE on comp "tlc_sclk_I_0.lscc_pll_inst.u_PLL_B" on site "PLL_R13C32", clk load = 594, ce load = 0, sr load = 0
+  PRIMARY "tlc0/state_3__N_2519" from F0 on comp "SLICE_1649" on site "R13C2A", clk load = 0, ce load = 448, sr load = 0
+  PRIMARY "smi_nwe_pi_c" from comp "smi_nwe_pi" on PIO site "32 (PR17A)", clk load = 24, ce load = 0, sr load = 0
 
-  PRIMARY  : 3 out of 8 (37%)
+  PRIMARY  : 4 out of 8 (50%)
 
 --------------- End of Clock Report ---------------
 
@@ -133,24 +134,16 @@ I/O Bank Usage Summary:
 | 2        | 0 / 8 (  0%)   | OFF        |            |            |
 +----------+----------------+------------+------------+------------+
 
-Total Placer CPU time: 8 secs , REAL time: 9 secs 
+Total Placer CPU time: 1 mins 35 secs , REAL time: 1 mins 40 secs 
 
 Writing design to file spin_clock_impl_1_par.dir/5_1.udb ...
 
 WARNING - par: Top module port 'smi_noe_pi' does not connect to anything.
 WARNING - par: Top module port 'tlc_sout' does not connect to anything.
-WARNING - par: Port [smi_data_pi_pad[6].bb_inst] does not have a load. Connect or remove the port.
-WARNING - par: Port [smi_data_pi_pad[4].bb_inst] does not have a load. Connect or remove the port.
-WARNING - par: Port [smi_data_pi_pad[5].bb_inst] does not have a load. Connect or remove the port.
-WARNING - par: Port [smi_data_pi_pad[7].bb_inst] does not have a load. Connect or remove the port.
-WARNING - par: Port [smi_data_pi_pad[2].bb_inst] does not have a load. Connect or remove the port.
-WARNING - par: Port [smi_data_pi_pad[3].bb_inst] does not have a load. Connect or remove the port.
-WARNING - par: Port [smi_data_pi_pad[0].bb_inst] does not have a load. Connect or remove the port.
-WARNING - par: Port [smi_data_pi_pad[1].bb_inst] does not have a load. Connect or remove the port.
 WARNING - par: The clock port [smi_nwe_pi] is assigned to a non clock dedicated pin [32], which might affect the clock performance. Use dedicated clock resources for the port.
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 
-Start NBR router at 16:59:17 08/25/19
+Start NBR router at 15:10:35 08/29/19
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -169,19 +162,22 @@ WARNING - par: The preferred point for defining clocks is top level ports and dr
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-295 connections routed with dedicated routing resources
-3 global clock signals routed
-329 connections routed (of 1773 total) (18.56%)
+846 connections routed with dedicated routing resources
+4 global clock signals routed
+889 connections routed (of 18781 total) (4.73%)
 ---------------------------------------------------------
 Clock routing summary:
-Primary clocks (3 used out of 8 available):
+Primary clocks (4 used out of 8 available):
 #0  Signal "tlc_sclk_c"
-       Clock   loads: 0     out of    62 routed (  0.00%)
+       Clock   loads: 0     out of   594 routed (  0.00%)
        Data    loads: 0     out of     1 routed (  0.00%)
 #2  Signal "smi_nwe_pi_c"
-       Clock   loads: 0     out of    21 routed (  0.00%)
+       Clock   loads: 0     out of    24 routed (  0.00%)
 #4  Signal "sys_clk"
-       Clock   loads: 34    out of    34 routed (100.00%)
+       Clock   loads: 43    out of    43 routed (100.00%)
+#5  Signal "tlc0/state_3__N_2519"
+       Control loads: 0     out of   448 routed (  0.00%)
+       Data    loads: 0     out of   456 routed (  0.00%)
 Other clocks:
     Signal "clk_in_c"
        Clock   loads: 1     out of     1 routed (100.00%)
@@ -192,69 +188,81 @@ Other clocks:
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
 
-Start NBR section for initial routing at 16:59:19 08/25/19
+Start NBR section for initial routing at 15:10:40 08/29/19
 Level 1, iteration 1
-1(0.00%) conflict; 1350(76.14%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.199ns/0.000ns; real time: 2 secs 
+12(0.00%) conflicts; 17154(91.34%) untouched conns; 46066789 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -19.445ns/-46066.790ns; real time: 6 secs 
 Level 2, iteration 1
-0(0.00%) conflict; 1350(76.14%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.127ns/0.000ns; real time: 2 secs 
+142(0.05%) conflicts; 13086(69.68%) untouched conns; 80264155 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.787ns/-80264.156ns; real time: 15 secs 
 Level 3, iteration 1
-0(0.00%) conflict; 1350(76.14%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.127ns/0.000ns; real time: 2 secs 
+12(0.00%) conflicts; 13041(69.44%) untouched conns; 82572982 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.708ns/-82572.983ns; real time: 16 secs 
 Level 4, iteration 1
-24(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.883ns/0.000ns; real time: 2 secs 
+944(0.36%) conflicts; 0(0.00%) untouched conn; 104030922 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.708ns/-104030.923ns; real time: 36 secs 
 
-Info: Initial congestion level at 75% usage is 0
-Info: Initial congestion area  at 75% usage is 0 (0.00%)
+Info: Initial congestion level at 75% usage is 8
+Info: Initial congestion area  at 75% usage is 156 (20.13%)
 
-Start NBR section for normal routing at 16:59:19 08/25/19
+Start NBR section for normal routing at 15:11:11 08/29/19
 Level 1, iteration 1
-0(0.00%) conflict; 24(1.35%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.883ns/0.000ns; real time: 2 secs 
-Level 2, iteration 1
-0(0.00%) conflict; 24(1.35%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.883ns/0.000ns; real time: 2 secs 
-Level 3, iteration 1
-0(0.00%) conflict; 24(1.35%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.883ns/0.000ns; real time: 2 secs 
+9(0.00%) conflicts; 1704(9.07%) untouched conns; 104582521 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-104582.522ns; real time: 38 secs 
 Level 4, iteration 1
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.883ns/0.000ns; real time: 2 secs 
+328(0.13%) conflicts; 0(0.00%) untouched conn; 107215632 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-107215.633ns; real time: 47 secs 
 Level 4, iteration 2
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.883ns/0.000ns; real time: 2 secs 
+164(0.06%) conflicts; 0(0.00%) untouched conn; 107285480 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-107285.481ns; real time: 52 secs 
+Level 4, iteration 3
+122(0.05%) conflicts; 0(0.00%) untouched conn; 107813420 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-107813.421ns; real time: 56 secs 
+Level 4, iteration 4
+62(0.02%) conflicts; 0(0.00%) untouched conn; 107813420 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-107813.421ns; real time: 58 secs 
+Level 4, iteration 5
+36(0.01%) conflicts; 0(0.00%) untouched conn; 108187201 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-108187.202ns; real time: 59 secs 
+Level 4, iteration 6
+19(0.01%) conflicts; 0(0.00%) untouched conn; 108187201 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-108187.202ns; real time: 1 mins 
+Level 4, iteration 7
+14(0.01%) conflicts; 0(0.00%) untouched conn; 108440146 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-108440.147ns; real time: 1 mins 1 secs 
+Level 4, iteration 8
+13(0.00%) conflicts; 0(0.00%) untouched conn; 108440146 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-108440.147ns; real time: 1 mins 1 secs 
+Level 4, iteration 9
+9(0.00%) conflicts; 0(0.00%) untouched conn; 108590126 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-108590.127ns; real time: 1 mins 2 secs 
+Level 4, iteration 10
+7(0.00%) conflicts; 0(0.00%) untouched conn; 108590126 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-108590.127ns; real time: 1 mins 2 secs 
+Level 4, iteration 11
+8(0.00%) conflicts; 0(0.00%) untouched conn; 108605956 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-108605.957ns; real time: 1 mins 3 secs 
+Level 4, iteration 12
+3(0.00%) conflicts; 0(0.00%) untouched conn; 108605956 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-108605.957ns; real time: 1 mins 3 secs 
+Level 4, iteration 13
+0(0.00%) conflict; 0(0.00%) untouched conn; 108614953 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-108614.954ns; real time: 1 mins 3 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 16:59:19 08/25/19
-WARNING - par: The hold timing violation in the connection from i127401_2_lut_2_lut/Z to tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync1_r__i5/D in the signal n154044 cannot be fixed because it was pre-routed using dedicated routing resources.
-WARNING - par: The hold timing violation in the connection from SLICE_85/F0 to SLICE_85/DI0 in the signal tlc_data_7__I_0/lscc_fifo_dc_inst/n154005 cannot be fixed because it was pre-routed using dedicated routing resources.
-WARNING - par: The hold timing violation in the connection from i127400_2_lut_2_lut/Z to tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync1_r__i6/D in the signal n154043 cannot be fixed because it was pre-routed using dedicated routing resources.
-WARNING - par: The hold timing violation in the connection from i127399_2_lut_2_lut/Z to tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync1_r__i7/D in the signal n154042 cannot be fixed because it was pre-routed using dedicated routing resources.
-WARNING - par: The hold timing violation in the connection from i127398_2_lut_2_lut/Z to tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync1_r__i8/D in the signal n154041 cannot be fixed because it was pre-routed using dedicated routing resources.
-WARNING - par: The hold timing violation in the connection from i127397_2_lut_2_lut/Z to tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync1_r__i10/D in the signal n154040 cannot be fixed because it was pre-routed using dedicated routing resources.
-WARNING - par: The hold timing violation in the connection from i127396_2_lut_2_lut/Z to tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync1_r__i11/D in the signal n154039 cannot be fixed because it was pre-routed using dedicated routing resources.
-WARNING - par: The hold timing violation in the connection from i127395_2_lut_2_lut/Z to tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync2_r__i2/D in the signal n154038 cannot be fixed because it was pre-routed using dedicated routing resources.
-WARNING - par: The hold timing violation in the connection from i127394_2_lut_2_lut/Z to tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync2_r__i3/D in the signal n154037 cannot be fixed because it was pre-routed using dedicated routing resources.
-WARNING - par: The hold timing violation in the connection from i127393_2_lut_2_lut/Z to tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync2_r__i4/D in the signal n154036 cannot be fixed because it was pre-routed using dedicated routing resources.
-WARNING - par: The hold timing violation in the connection from i127392_2_lut_2_lut/Z to tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync2_r__i5/D in the signal n154035 cannot be fixed because it was pre-routed using dedicated routing resources.
-WARNING - par: The hold timing violation in the connection from i127391_2_lut_2_lut/Z to tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync1_r__i9/D in the signal n154034 cannot be fixed because it was pre-routed using dedicated routing resources.
-WARNING - par: The hold timing violation in the connection from SLICE_149/F0 to SLICE_149/DI0 in the signal line_sync_c/sig_002/FeedThruLUT cannot be fixed because it was pre-routed using dedicated routing resources.
-INFO - par: There are additional hold timing violations that cannot be fixed, but only the first 13 occurrences are printed. Please check the timing report for further details.
-Level 4, iteration 0
+Start NBR section for performance tuning (iteration 1) at 15:11:38 08/29/19
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<hold >: 0.374ns/0.000ns; real time: 3 secs 
-Level 4, iteration 0
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
-Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 3 secs 
+1(0.00%) conflict; 0(0.00%) untouched conn; 108609589 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-108609.590ns; real time: 1 mins 4 secs 
+Level 4, iteration 2
+0(0.00%) conflict; 0(0.00%) untouched conn; 108607350 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-108607.351ns; real time: 1 mins 4 secs 
 
-Start NBR section for re-routing at 16:59:21 08/25/19
+Start NBR section for re-routing at 15:11:39 08/29/19
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 4 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 107853610 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -29.945ns/-107853.611ns; real time: 1 mins 9 secs 
 
-Start NBR section for post-routing at 16:59:21 08/25/19
+Start NBR section for post-routing at 15:11:44 08/29/19
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 
 End NBR router with 0 unrouted connection
@@ -262,27 +270,19 @@ End NBR router with 0 unrouted connection
 NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
-  Number of connections with timing violations : 8 (0.45%)
-  Estimated worst slack<setup> : -0.343ns
-  Timing score<setup> : 757
+  Number of connections with timing violations : 9404 (50.07%)
+  Estimated worst slack<setup> : -29.945ns
+  Timing score<setup> : 15949430
 -----------
 Notes: The timing info is calculated for SETUP only.
 
 
-Total CPU time 3 secs 
-Total REAL time: 4 secs 
+Total CPU time 1 mins 14 secs 
+Total REAL time: 1 mins 15 secs 
 Completely routed.
-End of route.  1773 routed (100.00%); 0 unrouted.
+End of route.  18781 routed (100.00%); 0 unrouted.
 WARNING - par: Top module port 'smi_noe_pi' does not connect to anything.
 WARNING - par: Top module port 'tlc_sout' does not connect to anything.
-WARNING - par: Port [smi_data_pi_pad[6].bb_inst] does not have a load. Connect or remove the port.
-WARNING - par: Port [smi_data_pi_pad[4].bb_inst] does not have a load. Connect or remove the port.
-WARNING - par: Port [smi_data_pi_pad[5].bb_inst] does not have a load. Connect or remove the port.
-WARNING - par: Port [smi_data_pi_pad[7].bb_inst] does not have a load. Connect or remove the port.
-WARNING - par: Port [smi_data_pi_pad[2].bb_inst] does not have a load. Connect or remove the port.
-WARNING - par: Port [smi_data_pi_pad[3].bb_inst] does not have a load. Connect or remove the port.
-WARNING - par: Port [smi_data_pi_pad[0].bb_inst] does not have a load. Connect or remove the port.
-WARNING - par: Port [smi_data_pi_pad[1].bb_inst] does not have a load. Connect or remove the port.
 WARNING - par: The clock port [smi_nwe_pi] is assigned to a non clock dedicated pin [32], which might affect the clock performance. Use dedicated clock resources for the port.
 
 Writing design to file spin_clock_impl_1_par.dir/5_1.udb ...
@@ -293,15 +293,15 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = Success
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = -0.342
-PAR_SUMMARY::Timing score<setup/<ns>> = 0.757
-PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.379
-PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -29.945
+PAR_SUMMARY::Timing score<setup/<ns>> = 15949.430
+PAR_SUMMARY::Worst  slack<hold /<ns>> = -2.772
+PAR_SUMMARY::Timing score<hold /<ns>> = 2.772
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 12 secs 
-Total REAL Time: 13 secs 
-Peak Memory Usage: 266 MB
+Total CPU  Time: 2 mins 53 secs 
+Total REAL Time: 3 mins 
+Peak Memory Usage: 473 MB
 
 
 par done!

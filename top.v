@@ -28,10 +28,10 @@ module top(clk_in, frame_sync_pi, line_sync,
 	reg smi_noe = 0;
 	reg [7:0] smi_data = 0;
 	
-	reg [24:0] frame_time_counter = 0;
-	reg [15:0] line_time_counter = 0;
+	reg [23:0] frame_time_counter = 0;
+	reg [23:0] line_time_counter = 0; // 15 bit int + 9 bit dec
 	
-	reg [15:0] line_time = 0;
+	reg [23:0] line_time = 0;
 	reg prev_frame_sync = 0;
 	
 	HSOSC OSCInst0(.CLKHFEN(1'b1), .CLKHFPU(1'b1), .CLKHF(sys_clk));
@@ -72,19 +72,20 @@ module top(clk_in, frame_sync_pi, line_sync,
 			
 			if (frame_sync && (!prev_frame_sync)) begin
 				frame_time_counter <= 0;
-				line_time <= frame_time_counter >> 9;  
+				line_time <= frame_time_counter;
 			end
-									
-			if (!line_time_counter) begin
-				line_time_counter <= line_time;
+
+			line_sync <= 0;
+			if (line_time_counter >= line_time) begin
+				line_time_counter <= line_time_counter - line_time;
+				line_sync <= 1; // TODO extend pulse or CDC it correctly
 			end else begin
-				line_time_counter <= line_time_counter - 1;
+				line_time_counter <= line_time_counter + (1 << 9);
 			end
-			
-			line_sync <= 0;		
-			if (line_time_counter < 8) begin	  
-				line_sync <= 1;
-			end
+
+//			if (line_time_counter < 8) begin
+//				line_sync <= 1;
+//			end
 		end
 	end
 	
