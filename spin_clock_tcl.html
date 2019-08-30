@@ -140,12 +140,38 @@ prj_run Map -impl impl_1
 
 
 
+<A name="pn190829142907"></A><B><U><big>pn190829142907</big></U></B>
+#Start recording tcl command: 8/25/2019 13:52:31
+#Project Location: C:/development/FPGA/spin_clock_ice; Project name: spin_clock
+prj_open "C:/development/FPGA/spin_clock_ice/spin_clock.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/development/FPGA/spin_clock_ice/source/flash.xcf"
+#Stop recording: 8/29/2019 14:29:07
+
+
+
 </PRE></DIV>
 
 <DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
 <UL id="toc_list">
 <LI><A href=#pn190825002147>pn190825002147</A></LI>
 <LI><A href=#pn190825110634>pn190825110634</A></LI>
+<LI><A href=#pn190829142907>pn190829142907</A></LI>
 </UL>
 </DIV>
 

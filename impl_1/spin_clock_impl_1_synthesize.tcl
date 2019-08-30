@@ -9,8 +9,6 @@ set para(prj_dir) "C:/development/FPGA/spin_clock_ice"
 # synthesize IPs
 # synthesize VMs
 # synthesize top design
-file delete -force -- spin_clock_impl_1.vm spin_clock_impl_1.ldc
-run_engine_newmsg synthesis -f "spin_clock_impl_1_lattice.synproj"
 run_postsyn [list -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -keeprtl -w -o spin_clock_impl_1.udb spin_clock_impl_1.vm] "C:/development/FPGA/spin_clock_ice/impl_1/spin_clock_impl_1.ldc"
 
 } out]} {
