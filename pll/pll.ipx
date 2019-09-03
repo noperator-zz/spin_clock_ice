@@ -1,11 +1,11 @@
 <?xml version="1.0" ?>
-<RadiantModule date="2019 08 25 16:46:27" generator="ipgen" library="module" module="pll" name="pll" source_format="Verilog" vendor="latticesemi.com" version="1.0.1">
+<RadiantModule date="2019 09 01 05:48:02" generator="ipgen" library="module" module="pll" name="pll" source_format="Verilog" vendor="latticesemi.com" version="1.0.1">
  <Package>
-  <File modified="2019 08 25 16:46:26" name="rtl/pll.v" type="top_level_verilog"/>
-  <File modified="2019 08 25 16:46:26" name="rtl/pll_bb.v" type="black_box_verilog"/>
-  <File modified="2019 08 25 16:46:26" name="misc/pll_tmpl.vhd" type="template_vhdl"/>
-  <File modified="2019 08 25 16:46:27" name="component.xml" type="IP-XACT_output_file"/>
-  <File modified="2019 08 25 16:46:26" name="pll.cfg" type="cfg"/>
-  <File modified="2019 08 25 16:46:26" name="misc/pll_tmpl.v" type="template_verilog"/>
+  <File modified="2019 09 01 05:48:01" name="rtl/pll.v" type="top_level_verilog"/>
+  <File modified="2019 09 01 05:48:01" name="rtl/pll_bb.v" type="black_box_verilog"/>
+  <File modified="2019 09 01 05:48:01" name="misc/pll_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2019 09 01 05:48:02" name="component.xml" type="IP-XACT_output_file"/>
+  <File modified="2019 09 01 05:48:01" name="pll.cfg" type="cfg"/>
+  <File modified="2019 09 01 05:48:01" name="misc/pll_tmpl.v" type="template_verilog"/>
  </Package>
 </RadiantModule>

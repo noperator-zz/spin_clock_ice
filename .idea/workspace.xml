@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2aa0759f-8977-4728-8f5b-c915928f968c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/edaphic/defines.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/spin_clock_ice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TLC5957.sv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/hdr_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_fpga_mapper_area_report.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_fpga_mapper_opt_report.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_fpga_mapper_resourceusage.rpt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_fpga_mapper_timing_report.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/syntmp/logtmp1637a10676.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/syntmp/logtmp1637a12440.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/syntmp/logtmp1637a13472.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/syntmp/logtmp1637a14024.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/syntmp/logtmp1637a15276.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/syntmp/logtmp1842a12440.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/syntmp/logtmp1842a13472.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/syntmp/logtmp2717a12440.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/syntmp/logtmp2717a13472.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/syntmp/logtmp5344a12440.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/syntmp/logtmp5344a13472.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/syntmp/logtmp5344a15276.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/syntmp/logtmp5759a12440.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/impl_1/syntmp/logtmp5759a13472.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/macros.sv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sim/src/untitled.awc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spin_clock_tcr.dir/pn190829142907.tcr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testbench.sv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/top.sv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TLC5957.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/device.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/device.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drc.log" beforeDir="false" afterPath="$PROJECT_DIR$/drc.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamma.py" beforeDir="false" afterPath="$PROJECT_DIR$/gamma.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/.build_status" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/.build_status" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/.vdbs/top_rtl.vdb" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/.vdbs/top_rtl.vdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/.vdbs/top_tech.vdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/AutoConstraint_top.sdc" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/AutoConstraint_top.sdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/IBIS/spin_clock_impl_1.ibs" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/IBIS/spin_clock_impl_1.ibs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/IBIS/spin_clock_impl_1.log" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/IBIS/spin_clock_impl_1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/IBIS/spin_clock_impl_1ibs.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/IBIS/spin_clock_impl_1ibs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/automake.err" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/automake.err" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/automake.log" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/automake.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/dm/layer0.xdm" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/dm/layer0.xdm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/hdla_gen_hierarchy.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/hdla_gen_hierarchy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/run_options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/run_options.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/scratchproject.prs" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/scratchproject.prs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.arearep" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.arearep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.areasrr" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.areasrr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.bin" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.hrr" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.hrr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.ior" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.ior" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.ior.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.ior.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.ldc" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.ldc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.lsedata" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.lsedata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.mrp" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.mrp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.pad" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.pad" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.par" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.par" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.psn" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.psn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.sap" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.sap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.srd" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.srd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.srf" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.srf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.srm" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.srm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.srr" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.srr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.srr.db" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.srr.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.srs" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.srs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.tw1" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.tw1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.tw1.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.tw1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.twr" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.twr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.twr.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.twr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.tws" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.tws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.tws.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.tws.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.udb" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.udb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.vm" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_cck.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_cck.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_css.ior.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_css.ior.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_css.tw1.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_css.tw1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_css.twr.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_css.twr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_css.tws.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_css.tws.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_lseres.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_lseres.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_map.udb" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_map.udb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_mapres.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_mapres.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_mrp.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_mrp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_pad.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_pad.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_par.dir/5_1.pad" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_par.dir/5_1.pad" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_par.dir/5_1.par" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_par.dir/5_1.par" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_par.dir/5_1.udb" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_par.dir/5_1.udb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_par.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_par.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_par.udb" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_par.udb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_scck.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_scck.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_syn.udb" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_syn.udb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_synplify.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_synplify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_synplify.tcl" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_synplify.tcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_synres.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_synres.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_synthesize.tcl" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_synthesize.tcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_vo.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_vo.sdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_vo.vo" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1_vo.vo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/spin_clock_impl_1psn.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/spin_clock_impl_1psn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/stdout.log" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/stdout.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/stdout.log.bak" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/stdout.log.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/stdout.log.bak.1" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/stdout.log.bak.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/stdout.log.bak.2" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/stdout.log.bak.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/stdout.log.bak.3" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/stdout.log.bak.3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/stdout.log.bak.4" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/stdout.log.bak.4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/stdout.log.bak.5" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/stdout.log.bak.5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/report/metrics.db" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/report/metrics.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_compiler_errors.txt" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_compiler_errors.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_compiler_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_compiler_notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_compiler_runstatus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_compiler_runstatus.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_compiler_warnings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_compiler_warnings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_fpga_mapper_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_fpga_mapper_notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_fpga_mapper_runstatus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_fpga_mapper_runstatus.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_fpga_mapper_warnings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_fpga_mapper_warnings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_premap_combined_clk.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_premap_combined_clk.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_premap_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_premap_notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_premap_runstatus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_premap_runstatus.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_premap_warnings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/report/spin_clock_impl_1_premap_warnings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_compiler.srr" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_compiler.srr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_compiler.srr.db" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_compiler.srr.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_fpga_mapper.srr" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_fpga_mapper.srr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_fpga_mapper.srr.db" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_fpga_mapper.srr.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_fpga_mapper.szr" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_fpga_mapper.szr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_multi_srs_gen.srr" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_multi_srs_gen.srr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_premap.srr" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_premap.srr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_premap.srr.db" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_premap.srr.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_premap.szr" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_premap.szr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_premap.xck" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synlog/spin_clock_impl_1_premap.xck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synthesis.log" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synthesis.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synthesis_lse.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synthesis_lse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/syntmp/cmdrec_compiler.log" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/syntmp/cmdrec_compiler.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/syntmp/cmdrec_fpga_mapper.log" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/syntmp/cmdrec_fpga_mapper.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/syntmp/cmdrec_multi_srs_gen.log" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/syntmp/cmdrec_multi_srs_gen.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/syntmp/cmdrec_premap.log" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/syntmp/cmdrec_premap.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/syntmp/run_option.xml" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/syntmp/run_option.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/syntmp/spin_clock_impl_1.plg" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/syntmp/spin_clock_impl_1.plg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/syntmp/spin_clock_impl_1_srr.htm" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/syntmp/spin_clock_impl_1_srr.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/syntmp/spin_clock_impl_1_toc.htm" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/syntmp/spin_clock_impl_1_toc.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/syntmp/statusReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/syntmp/statusReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/syntmp/traplog.tlg" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/syntmp/traplog.tlg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/syntmp/traplog.tlg.db" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/syntmp/traplog.tlg.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/.cckTransfer" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/.cckTransfer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/_slc_mhdlc" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/_slc_mhdlc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/incr_compile.rpt" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/incr_compile.rpt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/layer0.fdep" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/layer0.fdep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/layer0.rt.csv" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/layer0.rt.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/layer0.srs" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/layer0.srs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/layer0.tlg" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/layer0.tlg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/layer0.tlg.db" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/layer0.tlg.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/modulechange.db" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/modulechange.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/modulechange_mixhdl/layer0/modulechange.db" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/modulechange_mixhdl/layer0/modulechange.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_comp.fdep" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_comp.fdep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_comp.srs" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_comp.srs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_m.srm" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_m.srm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_m_srm/1.srm" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_m_srm/1.srm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_m_srm/fileinfo.srm" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_m_srm/fileinfo.srm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_mult.gcr" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_mult.gcr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_mult.sap" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_mult.sap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_mult.srs" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_mult.srs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_mult_srs/1.srs" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_mult_srs/1.srs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_mult_srs/fileinfo.srs" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_mult_srs/fileinfo.srs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_mult_srs/skeleton.srs" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_mult_srs/skeleton.srs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_prem.sap" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_prem.sap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_prem.srd" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_prem.srd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_prem.srm" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_prem.srm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_prem_srm/1.srm" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_prem_srm/1.srm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_prem_srm/fileinfo.srm" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_prem_srm/fileinfo.srm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_prem_srm/skeleton.srm" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/synwork/spin_clock_impl_1_prem_srm/skeleton.srm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/top_prim.v" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/top_prim.v" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/xxx_lse_cp_file_list" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/xxx_lse_cp_file_list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl_1/xxx_lse_sign_file" beforeDir="false" afterPath="$PROJECT_DIR$/impl_1/xxx_lse_sign_file" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pin_map.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/pin_map.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pll/component.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pll/component.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pll/for_lse/.vdbs/pll_rtl.vdb" beforeDir="false" afterPath="$PROJECT_DIR$/pll/for_lse/.vdbs/pll_rtl.vdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pll/for_lse/.vdbs/pll_tech.vdb" beforeDir="false" afterPath="$PROJECT_DIR$/pll/for_lse/.vdbs/pll_tech.vdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pll/for_lse/pll.arearep" beforeDir="false" afterPath="$PROJECT_DIR$/pll/for_lse/pll.arearep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pll/for_lse/pll.lsedata" beforeDir="false" afterPath="$PROJECT_DIR$/pll/for_lse/pll.lsedata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pll/for_lse/pll.udb" beforeDir="false" afterPath="$PROJECT_DIR$/pll/for_lse/pll.udb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pll/for_lse/pll.vm" beforeDir="false" afterPath="$PROJECT_DIR$/pll/for_lse/pll.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pll/for_lse/pll_prim.v" beforeDir="false" afterPath="$PROJECT_DIR$/pll/for_lse/pll_prim.v" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pll/for_lse/synthesis.log" beforeDir="false" afterPath="$PROJECT_DIR$/pll/for_lse/synthesis.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pll/pll.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/pll/pll.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pll/pll.ipx" beforeDir="false" afterPath="$PROJECT_DIR$/pll/pll.ipx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pll/rtl/pll.v" beforeDir="false" afterPath="$PROJECT_DIR$/pll/rtl/pll.v" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pll/rtl/pll_bb.v" beforeDir="false" afterPath="$PROJECT_DIR$/pll/rtl/pll_bb.v" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/compilation.order" beforeDir="false" afterPath="$PROJECT_DIR$/sim/compilation.order" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/compile.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/sim/compile.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/compile/contents.lib~simulation" beforeDir="false" afterPath="$PROJECT_DIR$/sim/compile/contents.lib~simulation" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/compile/simulation.epr" beforeDir="false" afterPath="$PROJECT_DIR$/sim/compile/simulation.epr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/compile/simulation.erf" beforeDir="false" afterPath="$PROJECT_DIR$/sim/compile/simulation.erf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/compile/sources.sth" beforeDir="false" afterPath="$PROJECT_DIR$/sim/compile/sources.sth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/compile/vcp_cmd.log" beforeDir="false" afterPath="$PROJECT_DIR$/sim/compile/vcp_cmd.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/compile/vlog.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/sim/compile/vlog.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/log/console.log" beforeDir="false" afterPath="$PROJECT_DIR$/sim/log/console.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/sim.wsw" beforeDir="false" afterPath="$PROJECT_DIR$/sim/sim.wsw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/simulation.adf" beforeDir="false" afterPath="$PROJECT_DIR$/sim/simulation.adf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/simulation.wsp" beforeDir="false" afterPath="$PROJECT_DIR$/sim/simulation.wsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/simulation/0simulation.mgf" beforeDir="false" afterPath="$PROJECT_DIR$/sim/simulation/0simulation.mgf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/simulation/1simulation.mgf" beforeDir="false" afterPath="$PROJECT_DIR$/sim/simulation/1simulation.mgf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/simulation/3simulation.mgf" beforeDir="false" afterPath="$PROJECT_DIR$/sim/simulation/3simulation.mgf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/simulation/elaboration.log" beforeDir="false" afterPath="$PROJECT_DIR$/sim/simulation/elaboration.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/simulation/simulation.lib" beforeDir="false" afterPath="$PROJECT_DIR$/sim/simulation/simulation.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/0.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/0.off" beforeDir="false" afterPath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/0.off" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/2.ff" beforeDir="false" afterPath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/2.ff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/ext.gen" beforeDir="false" afterPath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/ext.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/slp_model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/slp_model.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/slp_model.info" beforeDir="false" afterPath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/slp_model.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/slp_model_par.info" beforeDir="false" afterPath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/slp_model_par.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/spi.gen" beforeDir="false" afterPath="$PROJECT_DIR$/sim/simulation/slp/025c7bd8e0179b1e14cd0728f049354b/spi.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdb" beforeDir="false" afterPath="$PROJECT_DIR$/sim/src/wave.asdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/LOCAL___11b46d5dd4214c7ab704.sid/channels.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/LOCAL___11b46d5dd4214c7ab704.sid/global_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/LOCAL___11b46d5dd4214c7ab704.sid/names.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/LOCAL___11b46d5dd4214c7ab704.sid/ref_counter" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/LOCAL___11b46d5dd4214c7ab704.sid/sources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/LOCAL___11b46d5dd4214c7ab704.sid/status_ok" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/LOCAL___11b46d5dd4214c7ab704.sid/strings.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/LOCAL___11b46d5dd4214c7ab704.sid/treeinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/LOCAL___59ff625dba0b7a505303.sid/channels.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/LOCAL___59ff625dba0b7a505303.sid/current_time" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/LOCAL___59ff625dba0b7a505303.sid/names.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/LOCAL___59ff625dba0b7a505303.sid/pattern_lut" beforeDir="false" afterPath="$PROJECT_DIR$/sim/src/wave.asdbw/current/global_info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/LOCAL___59ff625dba0b7a505303.sid/scratchpad.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/LOCAL___59ff625dba0b7a505303.sid/scratchpad.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/LOCAL___59ff625dba0b7a505303.sid/typeinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/current/channels" beforeDir="false" afterPath="$PROJECT_DIR$/sim/src/wave.asdbw/current/channels" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/current/names.data" beforeDir="false" afterPath="$PROJECT_DIR$/sim/src/wave.asdbw/current/names.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/current/names.index" beforeDir="false" afterPath="$PROJECT_DIR$/sim/src/wave.asdbw/current/names.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/current/pattern_lut" beforeDir="false" afterPath="$PROJECT_DIR$/sim/src/wave.asdbw/current/pattern_lut" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/current/scratchpad" beforeDir="false" afterPath="$PROJECT_DIR$/sim/src/wave.asdbw/current/scratchpad" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/current/treeinfo" beforeDir="false" afterPath="$PROJECT_DIR$/sim/src/wave.asdbw/current/treeinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.asdbw/current/typeinfo" beforeDir="false" afterPath="$PROJECT_DIR$/sim/src/wave.asdbw/current/typeinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/src/wave.awc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim/synthesis.order" beforeDir="false" afterPath="$PROJECT_DIR$/sim/synthesis.order" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smi_fifo/component.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smi_fifo/component.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smi_fifo/rtl/smi_fifo.v" beforeDir="false" afterPath="$PROJECT_DIR$/smi_fifo/rtl/smi_fifo.v" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smi_fifo/rtl/smi_fifo_bb.v" beforeDir="false" afterPath="$PROJECT_DIR$/smi_fifo/rtl/smi_fifo_bb.v" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smi_fifo/smi_fifo.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/smi_fifo/smi_fifo.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smi_fifo/smi_fifo.ipx" beforeDir="false" afterPath="$PROJECT_DIR$/smi_fifo/smi_fifo.ipx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smi_fifo/testbench/dut_params.v" beforeDir="false" afterPath="$PROJECT_DIR$/smi_fifo/testbench/dut_params.v" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spin_clock.rdf" beforeDir="false" afterPath="$PROJECT_DIR$/spin_clock.rdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testbench.v" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/top.v" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/top.sv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1088">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TLC5957.sv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/macros.sv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testbench.sv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gamma.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>frame_pulse_i_ext</find>
+      <find>frame_sync_i_ext</find>
+      <find>line_sync</find>
+      <find>LINES</find>
+      <find>line_pulse</find>
+      <find>fifo_almost</find>
+      <find>fifo_</find>
+      <find>read_counter</find>
+      <find>frame_opto_i_ext</find>
+      <find>OP_LINE_W</find>
+      <find>TLC_READ_LINE</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>frame_sync_i_ext</replace>
+      <replace>frame_opto_i_ext</replace>
+      <replace>line_pulse</replace>
+      <replace>`LINES</replace>
+      <replace>fifo_almost_empty</replace>
+      <replace>frame_opto_i</replace>
+      <replace>OP_LINE_BITS</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/upload_fpga.py" />
+        <option value="$PROJECT_DIR$/top.v" />
+        <option value="$PROJECT_DIR$/TLC5957.v" />
+        <option value="$PROJECT_DIR$/testbench.v" />
+        <option value="$PROJECT_DIR$/macros.v" />
+        <option value="$PROJECT_DIR$/macros.sv" />
+        <option value="$PROJECT_DIR$/TLC5957.sv" />
+        <option value="$PROJECT_DIR$/gamma.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/spin_clock_ice.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/edaphic/defines.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1216" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="spin_clock_ice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spin_clock_ice" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.gamma">
+    <configuration name="gamma" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="spin_clock_ice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gamma.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="upload_fpga" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="spin_clock_ice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/upload_fpga.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.gamma" />
+        <item itemvalue="Python.upload_fpga" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2aa0759f-8977-4728-8f5b-c915928f968c" name="Default Changelist" comment="" />
+      <created>1567114160981</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567114160981</updated>
+    </task>
+    <task id="LOCAL-00001" summary="closed">
+      <created>1567114181687</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567114181687</updated>
+    </task>
+    <task id="LOCAL-00002" summary="closed">
+      <created>1567186147274</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567186147274</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1216" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1654373" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" weight="0.2098501" />
+      <window_info anchor="bottom" id="Python Console" weight="0.32976446" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32933578" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2398524" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="closed" />
+    <option name="LAST_COMMIT_MESSAGE" value="closed" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://C:/Python27/Lib/site-packages/paramiko/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="823" selection-start-line="823" selection-end-line="823" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload_fpga.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLC5957.v">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/top.v">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="97" column="18" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testbench.v">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testbench.sv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/macros.sv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLC5957.sv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/top.sv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1088">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamma.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

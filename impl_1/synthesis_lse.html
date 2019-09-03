@@ -41,18 +41,6 @@ if (a)
 
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Syn"></A><B><U><big>Synthesis Report</big></U></B>
-synthesis:  version Radiant Software (64-bit) 1.1.0.165.1
-
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Aug 29 15:04:56 2019
-
-
-Command Line:  C:\lscc\radiant\1.1\ispfpga\bin\nt64\synthesis.exe -f spin_clock_impl_1_lattice.synproj -gui -msgset C:/development/FPGA/spin_clock_ice/promote.xml 
-
 Synthesis options:
 The -a option is iCE40UP.
 The -t option is SG48.
@@ -164,17 +152,22 @@ INFO - synthesis: c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(17): analyzing includ
 Analyzing Verilog file c:/development/fpga/spin_clock_ice/pll/rtl/pll.v. VERI-1482
 Analyzing Verilog file c:/development/fpga/spin_clock_ice/smi_fifo/rtl/smi_fifo.v. VERI-1482
 Analyzing Verilog file c:/development/fpga/spin_clock_ice/tlc5957.v. VERI-1482
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(11): multiple packed dimensions are not allowed in this mode of verilog. VERI-1680
+INFO - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(1): analyzing included file c:/development/fpga/spin_clock_ice/macros.v. VERI-1328
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(8): multiple packed dimensions are not allowed in this mode of verilog. VERI-1680
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(30): multiple packed dimensions are not allowed in this mode of verilog. VERI-1680
 WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(33): multiple packed dimensions are not allowed in this mode of verilog. VERI-1680
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(36): multiple packed dimensions are not allowed in this mode of verilog. VERI-1680
 Analyzing Verilog file c:/development/fpga/spin_clock_ice/top.v. VERI-1482
+INFO - synthesis: c:/development/fpga/spin_clock_ice/top.v(1): analyzing included file c:/development/fpga/spin_clock_ice/macros.v. VERI-1328
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/top.v(65): frame_pulse is already implicitly declared earlier. VERI-1362
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/top.v(72): write_finished is already implicitly declared earlier. VERI-1362
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/top.v(73): skip_write is already implicitly declared earlier. VERI-1362
 Analyzing VHDL file c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.vhd. VHDL-1481
 INFO - synthesis: c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
 unit top is not yet analyzed. VHDL-1485
 INFO - synthesis: The default VHDL library search path is now "C:/development/FPGA/spin_clock_ice/impl_1". VHDL-1504
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): top
-INFO - synthesis: c:/development/fpga/spin_clock_ice/top.v(1): compiling module top. VERI-1018
+INFO - synthesis: c:/development/fpga/spin_clock_ice/top.v(3): compiling module top. VERI-1018
 INFO - synthesis: C:/lscc/radiant/1.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC. VERI-1018
 INFO - synthesis: c:/development/fpga/spin_clock_ice/pll/rtl/pll.v(10): compiling module pll. VERI-1018
 INFO - synthesis: c:/development/fpga/spin_clock_ice/pll/rtl/pll.v(75): compiling module pll_ipgen_lscc_pll(DIVR="0",DIVF="87",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000"). VERI-1018
@@ -186,18 +179,24 @@ INFO - synthesis: c:/development/fpga/spin_clock_ice/smi_fifo/rtl/smi_fifo.v(82)
 INFO - synthesis: c:/development/fpga/spin_clock_ice/smi_fifo/rtl/smi_fifo.v(956): compiling module smi_fifo_ipgen_lscc_fifo_mem(FAMILY="iCE40UP",WADDR_WIDTH=10,WDATA_WIDTH=8,RADDR_DEPTH=1024,RADDR_WIDTH=10,RDATA_WIDTH=8,REGMODE="noreg",BYTE_ENABLE=0,BYTE_WIDTH=1). VERI-1018
 INFO - synthesis: c:/development/fpga/spin_clock_ice/smi_fifo/rtl/smi_fifo.v(2070): compiling module smi_fifo_ipgen_lscc_fifo_mem_core(DATA_WIDTH_W=32'b01000,DATA_WIDTH_R=32'b01000,REGMODE="noreg"). VERI-1018
 INFO - synthesis: C:/lscc/radiant/1.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(693): compiling module PDP4K(DATA_WIDTH_W="8",DATA_WIDTH_R="8"). VERI-1018
-INFO - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(1): compiling module TLC5957. VERI-1018
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(6): using initial value of gamma since it is never assigned. VERI-1220
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(33): using initial value of bank_lut since it is never assigned. VERI-1220
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(36): using initial value of bit_lut since it is never assigned. VERI-1220
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(62): expression size 32 truncated to fit in target size 2. VERI-1209
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(66): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(70): expression size 12 truncated to fit in target size 11. VERI-1209
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(96): expression size 32 truncated to fit in target size 6. VERI-1209
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(110): expression size 32 truncated to fit in target size 4. VERI-1209
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(111): expression size 32 truncated to fit in target size 4. VERI-1209
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/top.v(71): expression size 32 truncated to fit in target size 24. VERI-1209
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/top.v(83): expression size 32 truncated to fit in target size 24. VERI-1209
+INFO - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(3): compiling module TLC5957. VERI-1018
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(8): using initial value of gamma since it is never assigned. VERI-1220
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(30): using initial value of bank_lut since it is never assigned. VERI-1220
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(33): using initial value of bit_lut since it is never assigned. VERI-1220
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(80): expression size 32 truncated to fit in target size 18. VERI-1209
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(84): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(88): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(91): expression size 12 truncated to fit in target size 11. VERI-1209
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(117): expression size 32 truncated to fit in target size 6. VERI-1209
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(125): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(126): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/top.v(81): expression size 44 truncated to fit in target size 33. VERI-1209
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/top.v(85): expression size 32 truncated to fit in target size 24. VERI-1209
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/top.v(94): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/top.v(108): expression size 32 truncated to fit in target size 24. VERI-1209
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/top.v(60): net frame_pulse does not have a driver. VDB-1002
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/top.v(51): net write_finished does not have a driver. VDB-1002
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/top.v(51): net skip_write does not have a driver. VDB-1002
 Loading device for application lse from file 'itpa08.nph' in environment: C:/lscc/radiant/1.1/ispfpga.
                                                          
 
@@ -279,539 +278,24 @@ WARNING - synthesis: Initial value found on net pwr_2 will be ignored due to unr
 WARNING - synthesis: Initial value found on net gnd will be ignored due to unrecognized driver type
 WARNING - synthesis: c:/development/fpga/spin_clock_ice/pll/rtl/pll.v(18): input port sclk_i is not connected on this instance. VDB-1013
 WARNING - synthesis: c:/development/fpga/spin_clock_ice/pll/rtl/pll.v(18): input port sdi_i is not connected on this instance. VDB-1013
-WARNING - synthesis: I/O Port smi_noe_pi 's net has no driver and is unused.
-WARNING - synthesis: I/O Port tlc_sout 's net has no driver and is unused.
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/pll/rtl/pll.v(94): net \tlc_sclk_I_0/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/pll/rtl/pll.v(95): net \tlc_sclk_I_0/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
-######## Missing driver on net \tlc_sclk_I_0/lscc_pll_inst/sclk_i. Patching with GND.
-######## Missing driver on net \tlc_sclk_I_0/lscc_pll_inst/sdi_i. Patching with GND.
+WARNING - synthesis: I/O Port clk_i 's net has no driver and is unused.
+WARNING - synthesis: I/O Port frame_opto_i_ext 's net has no driver and is unused.
+WARNING - synthesis: I/O Port smi_noe_i_pi 's net has no driver and is unused.
+WARNING - synthesis: I/O Port tlc_sclk_o 's net has no driver and is unused.
+WARNING - synthesis: I/O Port tlc_sout_i 's net has no driver and is unused.
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/pll/rtl/pll.v(94): net \my_pll/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/pll/rtl/pll.v(95): net \my_pll/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
+######## Missing driver on net tlc_sclk_o. Patching with GND.
+######## Missing driver on net frame_pulse. Patching with GND.
+######## Missing driver on net write_finished. Patching with GND.
+######## Missing driver on net skip_write. Patching with GND.
+######## Missing driver on net \my_pll/lscc_pll_inst/sclk_i. Patching with GND.
+######## Missing driver on net \my_pll/lscc_pll_inst/sdi_i. Patching with GND.
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/top.v(112): Register frame_rst_o_pi is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(141): Register \tlc0/frame_sync is stuck at Zero. VDB-5013
 
 
 
-WARNING - synthesis: I/O Port smi_noe_pi 's net has no driver and is unused.
-WARNING - synthesis: I/O Port tlc_sout 's net has no driver and is unused.
-WARNING - synthesis: Bit 0 of Register \tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r is stuck at Zero
-WARNING - synthesis: Bit 0 of Register \tlc_data_7__I_0/lscc_fifo_dc_inst/wr_grey_sync_r is stuck at Zero
-WARNING - synthesis: Bit 0 of Register \tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync1_r_ is stuck at Zero
-WARNING - synthesis: Bit 0 of Register \tlc_data_7__I_0/lscc_fifo_dc_inst/rp_sync1_r_ is stuck at Zero
-WARNING - synthesis: Bit 0 of Register \tlc_data_7__I_0/lscc_fifo_dc_inst/wp_sync2_r_ is stuck at Zero
-WARNING - synthesis: Bit 0 of Register \tlc_data_7__I_0/lscc_fifo_dc_inst/rp_sync2_r_ is stuck at Zero
-WARNING - synthesis: c:/development/fpga/spin_clock_ice/tlc5957.v(118): Register \tlc0/state__i3 is stuck at Zero. VDB-5013
-Duplicate register/latch removal. \tlc_data_7__I_0/lscc_fifo_dc_inst/rd_addr_r_i3 is a one-to-one match with \tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i4.
-Duplicate register/latch removal. \tlc_data_7__I_0/lscc_fifo_dc_inst/wr_grey_sync_r_i8 is a one-to-one match with \tlc_data_7__I_0/lscc_fifo_dc_inst/wr_addr_r_i7.
-Duplicate register/latch removal. \tlc_data_7__I_0/lscc_fifo_dc_inst/rd_addr_r_i7 is a one-to-one match with \tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i8.
-Duplicate register/latch removal. \tlc_data_7__I_0/lscc_fifo_dc_inst/wr_addr_r_i10 is a one-to-one match with \tlc_data_7__I_0/lscc_fifo_dc_inst/wr_grey_sync_r_i11.
-Duplicate register/latch removal. \tlc_data_7__I_0/lscc_fifo_dc_inst/rd_addr_r_i10 is a one-to-one match with \tlc_data_7__I_0/lscc_fifo_dc_inst/rd_grey_sync_r_i11.
-Duplicate register/latch removal. \tlc_data_7__I_0/lscc_fifo_dc_inst/wr_addr_r_i3 is a one-to-one match with \tlc_data_7__I_0/lscc_fifo_dc_inst/wr_grey_sync_r_i4.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i119 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i118 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i267 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i268 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i269 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i117 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i270 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i116 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i271 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i124 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i123 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i115 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i114 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i113 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i112 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i111 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i110 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i109 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i108 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i107 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i272 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i273 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i274 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i266 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i106 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i105 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i104 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i103 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i275 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i276 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i277 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i278 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i279 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i280 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i102 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i281 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i101 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i100 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i99 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i98 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i282 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i97 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i283 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i284 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i285 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i286 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i287 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i288 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i289 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i290 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i265 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i291 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i292 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i293 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i125 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i294 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i295 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i296 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i264 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i297 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i298 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i263 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i299 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i300 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i301 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i302 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i303 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i304 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i305 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i137 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i306 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i262 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i307 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i261 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i308 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i309 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i310 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i311 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i312 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i313 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i260 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i314 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i142 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i259 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i315 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i316 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i317 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i318 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i319 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i320 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i321 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i322 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i323 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i324 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i325 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i326 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i327 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i328 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i329 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i330 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i331 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i332 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i333 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i334 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i335 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i336 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i337 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i96 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i338 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i339 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i140 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i126 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i122 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i340 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i341 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i342 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i343 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i344 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i345 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i258 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i257 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i346 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i347 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i143 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i136 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i348 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i349 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i350 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i256 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i351 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i352 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i138 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i353 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i255 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i354 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i355 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i127 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i356 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i357 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i358 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i359 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i360 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i361 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i362 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i254 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i253 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i363 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i364 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i135 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i365 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i366 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i367 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i252 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i368 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i369 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i370 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i251 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i371 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i372 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i373 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i374 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i250 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i375 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i376 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i377 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i378 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i379 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i134 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i380 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i249 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i381 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i248 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i382 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i247 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i383 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i384 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i385 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i386 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i246 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i387 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i388 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i389 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i245 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i390 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i244 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i391 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i243 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i392 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i242 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i393 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i241 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i394 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i395 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i396 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i397 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i398 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i240 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i141 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i128 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i399 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i239 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i400 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i401 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i402 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i403 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i404 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i238 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i405 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i133 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i406 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i237 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i139 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i407 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i236 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i408 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i409 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i410 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i411 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i412 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i235 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i413 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i414 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i144 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i415 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i416 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i234 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i145 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i417 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i418 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i419 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i420 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i421 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i233 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i422 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i146 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i423 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i232 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i424 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i231 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i425 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i426 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i427 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i428 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i147 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i429 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i430 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i431 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i230 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i229 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i132 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i228 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i227 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i226 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i225 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i448 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i449 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i450 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i224 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i451 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i452 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i453 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i454 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i455 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i456 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i457 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i129 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i458 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i459 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i148 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i460 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i223 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i461 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i462 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i149 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i463 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i464 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i465 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i466 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i222 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i467 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i150 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i131 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i221 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i468 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i220 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i469 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i219 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i470 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i471 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i472 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i151 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i473 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i218 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i474 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i475 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i217 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i476 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i477 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i216 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i152 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i478 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i215 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i153 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i479 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i214 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i213 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i212 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i95 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i211 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i154 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i210 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i209 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i155 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i208 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i207 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i206 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i121 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i120 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i94 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i93 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i92 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i91 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i205 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i156 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i204 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i203 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i157 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i202 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i201 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i90 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i89 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i88 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i87 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i86 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i85 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i84 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i83 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i82 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i200 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i81 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i80 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i79 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i199 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i198 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i158 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i197 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i78 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i77 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i76 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i75 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i74 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i196 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i73 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i72 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i71 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i70 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i195 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i69 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i68 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i194 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i67 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i66 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i65 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i193 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i64 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i63 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i62 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i192 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i191 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i190 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i61 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i60 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i59 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i58 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i57 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i56 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i55 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i54 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i189 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i53 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i52 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i188 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i51 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i187 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i50 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i49 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i48 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i186 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i47 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i46 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i45 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i44 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i43 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i185 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i42 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i41 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i184 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i159 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i183 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i160 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i182 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i40 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i39 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i38 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i37 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i36 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i35 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i34 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i33 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i32 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i31 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i181 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i30 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i29 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i28 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i27 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i26 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i180 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i25 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i24 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i23 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i22 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i179 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i161 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i178 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i162 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i177 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i176 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i175 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i174 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i173 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i172 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i21 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i20 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i19 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i18 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i17 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i16 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i171 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i163 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i164 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i170 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i783 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i781 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i779 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i777 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i775 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i773 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i771 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i769 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i169 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i130 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i168 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i167 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i166 will be ignored.
-WARNING - synthesis: Initial value found on instance \tlc0/data_i0_i165 will be ignored.
-INFO - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
-
-
-<A name="lse_area"></A><B><U><big>Area Report</big></U></B>
-
-################### Begin Area Report (top)######################
-Number of register bits => 736 of 5280 (13 % )
-EBR_B => 2
-CCU2 => 63
-FD1P3XZ => 736
-HSOSC_CORE => 1
-IB => 11
-INV => 1
-IOL_B => 2
-LUT4 => 4273
-OB => 5
-PLL_B => 1
-################### End Area Report ##################
-Number of odd-length carry chains : 5
-Number of even-length carry chains : 4
-
-
-<A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
-
-################### Begin Clock Report ######################
-Clock Nets
-Number of Clocks: 4
-  Net : sys_clk, loads : 0
-  Net : tlc_sclk_I_0/lscc_pll_inst/tlc_sclk_c, loads : 1
-  Net : clk_in_c, loads : 1
-  Net : smi_nwe_pi_N_74, loads : 0
-Clock Enable Nets
-Number of Clock Enables: 0
-Highest fanout non-clock nets
-Top 10 highest fanout non-clock nets:
-  Net : tlc0/state_3__N_2519, loads : 912
-  Net : tlc0/bank_offset[7], loads : 441
-  Net : tlc0/bank_offset[4], loads : 410
-  Net : tlc0/bank_offset[6], loads : 401
-  Net : tlc0/bank_offset[5], loads : 369
-  Net : tlc0/bank_offset[2], loads : 332
-  Net : tlc0/bank_offset[0], loads : 284
-  Net : tlc0/bank_offset[3], loads : 264
-  Net : tlc0/bank_offset[8], loads : 230
-  Net : tlc0/sr_bit_counter[0], loads : 201
-################### End Clock Report ##################
-
-Peak Memory Usage: 773.820  MB
-
---------------------------------------------------------------
-Total CPU time for LSE flow : 205.984  secs
-Total REAL time for LSE flow : 212.000  secs
---------------------------------------------------------------
 
 
 
@@ -866,14 +350,6 @@ Total REAL time for LSE flow : 212.000  secs
 <BR>
 <BR>
 </PRE></DIV>
-
-<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
-<UL id="toc_list">
-<LI><A href=#Syn>Top</A></LI>
-<LI><A href=#lse_area>Area Report</A></LI>
-<LI><A href=#lse_clock>Clock Report</A></LI>
-</UL>
-</DIV>
 
 <button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
 <script type="text/javascript">

@@ -1,14 +1,15 @@
-Active-HDL 10.5.216.6767 2019-08-25 14:35:47
+Active-HDL 10.5.216.6767 2019-09-02 22:40:17
 
 Elaboration top modules:
 Verilog Module                testbench
+SystemVerilog Package         UnitScopePackage_3
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Verilog Module                    | Library            | Info | Compiler Version        | Compilation Options
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-testbench                         | simulation         |      | 10.5.216.6767 (Windows) | -O2 -v2k5
-top                               | simulation         |      | 10.5.216.6767 (Windows) | -O2 -v2k5
+testbench                         | simulation         |      | 10.5.216.6767 (Windows) | -O2 -sv2k12
+top                               | simulation         |      | 10.5.216.6767 (Windows) | -O2 -sv2k12
 HSOSC                             | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
 pll                               | simulation         |      | 10.5.216.6767 (Windows) | -O2 -v2k5
 smi_fifo                          | simulation         |      | 10.5.216.6767 (Windows) | -O2 -v2k5
@@ -39,6 +40,12 @@ read_data_decoder                 | ovi_ice40up_timing |      | 10.5.216.6767 (W
 write_data_decoder                | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
 mask_decoder                      | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
 RAM4K                             | ovi_ice40up_timing |      | 10.5.216.6767 (Windows) | -v2k5 -vendor lattice +define+TIMINGCHECK +incdir+D:\diamondng_build1_1\env\fpga\primlib\simulation\active_hdl\scripts\ovi_iCE40UP_timing\src\
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SystemVerilog Package             | Library            | Info | Compiler Version        | Compilation Options
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UnitScopePackage_3                | simulation         |      | 10.5.216.6767 (Windows) | -O2 -sv2k12
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

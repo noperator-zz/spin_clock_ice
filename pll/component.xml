@@ -66,10 +66,6 @@
                 <ipxact:fileType user="template_vhdl">user</ipxact:fileType>
             </ipxact:file>
             <ipxact:file>
-                <ipxact:name>component.xml</ipxact:name>
-                <ipxact:fileType user="IP-XACT_output_file">user</ipxact:fileType>
-            </ipxact:file>
-            <ipxact:file>
                 <ipxact:name>pll.cfg</ipxact:name>
                 <ipxact:fileType user="cfg">user</ipxact:fileType>
             </ipxact:file>

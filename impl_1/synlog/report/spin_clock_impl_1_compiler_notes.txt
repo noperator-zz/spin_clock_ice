@@ -46,38 +46,97 @@
 @N: CG333 :"C:\lscc\radiant\1.1\ip\pmi\pmi_multaddsub.v":97:11:97:22|Read directive translate_on.
 @N: CG334 :"C:\lscc\radiant\1.1\ip\pmi\pmi_mult.v":84:11:84:23|Read directive translate_off.
 @N: CG333 :"C:\lscc\radiant\1.1\ip\pmi\pmi_mult.v":93:11:93:22|Read directive translate_on.
+@N: CG364 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":3:0:3:6|Synthesizing module work_C:\lscc\radiant\1.1\ip\pmi\pmi_iCE40UP.v_unit in library work.
 @N: CG364 :"C:\lscc\radiant\1.1\synpbase\lib\generic\ice40up.v":795:7:795:11|Synthesizing module HSOSC in library work.
 @N: CG364 :"C:\lscc\radiant\1.1\synpbase\lib\generic\ice40up.v":438:7:438:11|Synthesizing module PLL_B in library work.
-@N: CG364 :"C:\development\FPGA\spin_clock_ice\pll\rtl\pll.v":73:7:73:24|Synthesizing module pll_ipgen_lscc_pll in library work.
+@N: CG364 :"C:\development\FPGA\spin_clock_ice\pll\rtl\pll.v":75:7:75:24|Synthesizing module pll_ipgen_lscc_pll in library work.
 @N: CG364 :"C:\development\FPGA\spin_clock_ice\pll\rtl\pll.v":10:7:10:9|Synthesizing module pll in library work.
 @N: CG364 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":82:7:82:33|Synthesizing module smi_fifo_ipgen_lscc_fifo_dc in library work.
 @N: CG364 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":956:7:956:34|Synthesizing module smi_fifo_ipgen_lscc_fifo_mem in library work.
 @N: CG364 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":2070:7:2070:39|Synthesizing module smi_fifo_ipgen_lscc_fifo_mem_core in library work.
 @N: CG364 :"C:\lscc\radiant\1.1\synpbase\lib\generic\ice40up.v":703:7:703:11|Synthesizing module PDP4K in library work.
 @N: CG364 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":10:7:10:14|Synthesizing module smi_fifo in library work.
-@N: CG364 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":1:7:1:13|Synthesizing module TLC5957 in library work.
-@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Register bit lat is always 0.
-@N: CG364 :"C:\development\FPGA\spin_clock_ice\top.sv":1:7:1:9|Synthesizing module top in library work.
-@N: CL159 :"C:\development\FPGA\spin_clock_ice\top.sv":2:14:2:23|Input smi_noe_pi is unused.
-@N: CL201 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Trying to extract state machine for register state.
-@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Register bit state[2] is always 0.
-@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":26:1:26:6|Register bit state[3] is always 0.
-@N: CL159 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":1:85:1:87|Input sin is unused.
+@N: CG364 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":5:7:5:13|Synthesizing module TLC5957 in library work.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[3] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[4] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[5] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[6] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[7] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[8] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[9] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[10] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[11] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[12] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[13] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[14] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[15] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[16] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[17] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[18] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[19] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[20] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[21] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[22] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[23] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[24] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[25] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[26] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[27] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[28] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[29] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[30] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_after_read_state[31] is always 0.
+@N: CG364 :"C:\development\FPGA\spin_clock_ice\top.sv":3:7:3:9|Synthesizing module top in library work.
+@N: CL135 :"C:\development\FPGA\spin_clock_ice\top.sv":78:1:78:6|Found sequential shift smi_cdc with address depth of 3 words and data bit width of 2.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\top.sv":78:1:78:6|Register bit write_counter[16] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\top.sv":78:1:78:6|Register bit write_counter[17] is always 0.
+@N: CL159 :"C:\development\FPGA\spin_clock_ice\top.sv":3:11:3:15|Input clk_i is unused.
+@N: CL159 :"C:\development\FPGA\spin_clock_ice\top.sv":4:16:4:27|Input smi_noe_i_pi is unused.
+@N: CL201 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Trying to extract state machine for register tlc_state.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[3] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[4] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[5] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[6] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[7] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[8] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[9] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[10] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[11] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[12] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[13] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[14] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[15] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[16] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[17] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[18] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[19] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[20] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[21] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[22] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[23] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[24] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[25] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[26] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[27] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[28] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[29] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[30] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":47:1:47:6|Register bit tlc_state[31] is always 0.
+@N: CL159 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":5:35:5:44|Input fifo_empty is unused.
+@N: CL159 :"C:\development\FPGA\spin_clock_ice\TLC5957.sv":5:114:5:116|Input sin is unused.
 @N: CL159 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":2082:10:2082:14|Input rst_i is unused.
 @N: CL159 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":2085:10:2085:24|Input rd_out_clk_en_i is unused.
 @N: CL159 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":2091:31:2091:35|Input ben_i is unused.
 @N: CL159 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":976:31:976:35|Input ben_i is unused.
-@N: CL189 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":216:16:216:21|Register bit wr_encode_sync.wr_grey_sync_r[11] is always 0.
-@N: CL189 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":529:16:529:21|Register bit rd_encode_sync.rd_grey_sync_r[11] is always 0.
-@N: CL189 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":343:16:343:21|Register bit genblk5.rp_sync1_r[11] is always 0.
-@N: CL189 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":656:16:656:21|Register bit genblk14.wp_sync1_r[11] is always 0.
-@N: CL189 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":343:16:343:21|Register bit genblk5.rp_sync2_r[11] is always 0.
-@N: CL189 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":656:16:656:21|Register bit genblk14.wp_sync2_r[11] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":216:16:216:21|Register bit wr_encode_sync.wr_grey_sync_r[14] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":529:16:529:21|Register bit rd_encode_sync.rd_grey_sync_r[14] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":343:16:343:21|Register bit genblk5.rp_sync1_r[14] is always 0.
+@N: CL189 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":656:16:656:21|Register bit genblk14.wp_sync1_r[14] is always 0.
 @N: CL159 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":95:32:95:47|Input almost_full_th_i is unused.
 @N: CL159 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":96:32:96:51|Input almost_full_clr_th_i is unused.
 @N: CL159 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":97:32:97:48|Input almost_empty_th_i is unused.
 @N: CL159 :"C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v":98:32:98:52|Input almost_empty_clr_th_i is unused.
-@N: CL159 :"C:\development\FPGA\spin_clock_ice\pll\rtl\pll.v":83:10:83:19|Input feedback_i is unused.
-@N: CL159 :"C:\development\FPGA\spin_clock_ice\pll\rtl\pll.v":84:16:84:30|Input dynamic_delay_i is unused.
+@N: CL159 :"C:\development\FPGA\spin_clock_ice\pll\rtl\pll.v":85:10:85:19|Input feedback_i is unused.
+@N: CL159 :"C:\development\FPGA\spin_clock_ice\pll\rtl\pll.v":86:16:86:30|Input dynamic_delay_i is unused.
 @N|Running in 64-bit mode
 

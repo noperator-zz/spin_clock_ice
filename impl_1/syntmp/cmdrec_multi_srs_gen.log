@@ -1,7 +1,7 @@
 C:\lscc\radiant\1.1\synpbase\bin64\syn_nfilter.exe  -link  -top  top  -multisrs  C:\development\FPGA\spin_clock_ice\impl_1\synwork\spin_clock_impl_1_comp.srs  -osyn  C:\development\FPGA\spin_clock_ice\impl_1\synwork\spin_clock_impl_1_mult.srs  -log  C:\development\FPGA\spin_clock_ice\impl_1\synlog\spin_clock_impl_1_multi_srs_gen.srr 
 relcom:..\..\..\..\..\lscc\radiant\1.1\synpbase\bin64\syn_nfilter.exe -link -top top -multisrs ..\synwork\spin_clock_impl_1_comp.srs -osyn ..\synwork\spin_clock_impl_1_mult.srs -log ..\synlog\spin_clock_impl_1_multi_srs_gen.srr
 rc:0 success:1 runtime:0
-file:..\synwork\spin_clock_impl_1_comp.srs|io:i|time:1566759673|size:28904|exec:0|csum:B58449E30AE516801056E5235EBBECDD
-file:..\synwork\spin_clock_impl_1_mult.srs|io:o|time:1566759674|size:4579|exec:0|csum:
-file:..\synlog\spin_clock_impl_1_multi_srs_gen.srr|io:o|time:1566759674|size:1122|exec:0|csum:
+file:..\synwork\spin_clock_impl_1_comp.srs|io:i|time:1567508328|size:74393|exec:0|csum:E03394D4D249A36AB41FBCA3BB10F952
+file:..\synwork\spin_clock_impl_1_mult.srs|io:o|time:1567508330|size:6719|exec:0|csum:
+file:..\synlog\spin_clock_impl_1_multi_srs_gen.srr|io:o|time:1567508330|size:1122|exec:0|csum:
 file:..\..\..\..\..\lscc\radiant\1.1\synpbase\bin64\syn_nfilter.exe|io:i|time:1542386272|size:8731136|exec:1|csum:FDA9CE3068B3473AD3F7DDB573109F00

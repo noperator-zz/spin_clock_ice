@@ -1,0 +1,402 @@
+<config>
+    <version>
+        2.0
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="LOCAL___f0f76d5deb3e557b7100">wave.asdb</database>
+    </databases>
+    <signallists>
+        <signallist id="0">
+                AAAAJQATzzcAAAAQAaYRAhD3EQIQAagRAhDmA7QbAhAAMAcBAxd51QkAEBEAAAAA
+|
+        </signallist>
+    </signallists>
+    <propertybases>
+        <propertybase id="0">
+            <propclass name="radix">
+                <property first="52682" last="52682">
+                10
+                </property>
+                <property first="52708" last="52708">
+                10
+                </property>
+                <property first="55174" last="55174">
+                10
+                </property>
+                <property first="55200" last="55200">
+                10
+                </property>
+                <property first="57666" last="57666">
+                10
+                </property>
+                <property first="57692" last="57692">
+                10
+                </property>
+                <property first="60159" last="60159">
+                10
+                </property>
+                <property first="60185" last="60185">
+                10
+                </property>
+                <property first="62652" last="62652">
+                10
+                </property>
+                <property first="62678" last="62678">
+                10
+                </property>
+                <property first="65145" last="65145">
+                10
+                </property>
+                <property first="65171" last="65171">
+                10
+                </property>
+                <property first="67638" last="67638">
+                10
+                </property>
+                <property first="67664" last="67664">
+                10
+                </property>
+                <property first="70131" last="70131">
+                10
+                </property>
+                <property first="70157" last="70157">
+                10
+                </property>
+                <property first="72624" last="72624">
+                10
+                </property>
+                <property first="72650" last="72650">
+                10
+                </property>
+                <property first="75117" last="75117">
+                10
+                </property>
+                <property first="75143" last="75143">
+                10
+                </property>
+                <property first="77610" last="77610">
+                10
+                </property>
+                <property first="77636" last="77636">
+                10
+                </property>
+                <property first="80103" last="80103">
+                10
+                </property>
+                <property first="80129" last="80129">
+                10
+                </property>
+                <property first="82596" last="82596">
+                10
+                </property>
+                <property first="82622" last="82622">
+                10
+                </property>
+                <property first="85089" last="85089">
+                10
+                </property>
+                <property first="85115" last="85115">
+                10
+                </property>
+                <property first="87582" last="87582">
+                10
+                </property>
+                <property first="87608" last="87608">
+                10
+                </property>
+                <property first="90075" last="90075">
+                10
+                </property>
+                <property first="90101" last="90101">
+                10
+                </property>
+                <property first="92568" last="92568">
+                10
+                </property>
+                <property first="92594" last="92594">
+                10
+                </property>
+                <property first="95061" last="95061">
+                10
+                </property>
+                <property first="95087" last="95087">
+                10
+                </property>
+                <property first="97596" last="97596">
+                10
+                </property>
+                <property first="97622" last="97622">
+                10
+                </property>
+                <property first="100131" last="100131">
+                10
+                </property>
+                <property first="100157" last="100157">
+                10
+                </property>
+                <property first="102666" last="102666">
+                10
+                </property>
+                <property first="102692" last="102692">
+                10
+                </property>
+                <property first="105201" last="105201">
+                10
+                </property>
+                <property first="105227" last="105227">
+                10
+                </property>
+                <property first="105339" last="105339">
+                10
+                </property>
+                <property first="107736" last="107736">
+                10
+                </property>
+                <property first="107762" last="107762">
+                10
+                </property>
+                <property first="107874" last="107874">
+                10
+                </property>
+                <property first="110271" last="110271">
+                10
+                </property>
+                <property first="110297" last="110297">
+                10
+                </property>
+                <property first="110409" last="110409">
+                10
+                </property>
+                <property first="112806" last="112806">
+                10
+                </property>
+                <property first="112832" last="112832">
+                10
+                </property>
+                <property first="112944" last="112944">
+                10
+                </property>
+                <property first="115341" last="115341">
+                10
+                </property>
+                <property first="115367" last="115367">
+                10
+                </property>
+                <property first="115479" last="115479">
+                10
+                </property>
+                <property first="117876" last="117876">
+                10
+                </property>
+                <property first="117902" last="117902">
+                10
+                </property>
+                <property first="117980" last="117980">
+                10
+                </property>
+                <property first="118014" last="118014">
+                10
+                </property>
+                <property first="120411" last="120411">
+                10
+                </property>
+                <property first="120437" last="120437">
+                10
+                </property>
+                <property first="120515" last="120515">
+                10
+                </property>
+                <property first="120549" last="120549">
+                10
+                </property>
+                <property first="122946" last="122946">
+                10
+                </property>
+                <property first="122972" last="122972">
+                10
+                </property>
+                <property first="123050" last="123050">
+                10
+                </property>
+                <property first="123084" last="123084">
+                10
+                </property>
+                <property first="125481" last="125481">
+                10
+                </property>
+                <property first="125507" last="125507">
+                10
+                </property>
+                <property first="125585" last="125585">
+                10
+                </property>
+                <property first="125619" last="125619">
+                10
+                </property>
+                <property first="128016" last="128016">
+                10
+                </property>
+                <property first="128042" last="128042">
+                10
+                </property>
+                <property first="128081" last="128081">
+                10
+                </property>
+                <property first="128120" last="128120">
+                10
+                </property>
+                <property first="128154" last="128154">
+                10
+                </property>
+                <property first="130551" last="130551">
+                10
+                </property>
+                <property first="130577" last="130577">
+                10
+                </property>
+                <property first="130616" last="130616">
+                10
+                </property>
+                <property first="130655" last="130655">
+                10
+                </property>
+                <property first="130689" last="130689">
+                10
+                </property>
+                <property first="133086" last="133086">
+                10
+                </property>
+                <property first="133112" last="133112">
+                10
+                </property>
+                <property first="133151" last="133151">
+                10
+                </property>
+                <property first="133190" last="133190">
+                10
+                </property>
+                <property first="133224" last="133224">
+                10
+                </property>
+                <property first="135621" last="135621">
+                10
+                </property>
+                <property first="135647" last="135647">
+                10
+                </property>
+                <property first="135686" last="135686">
+                10
+                </property>
+                <property first="135725" last="135725">
+                10
+                </property>
+                <property first="135759" last="135759">
+                10
+                </property>
+                <property first="268437934" last="268437934">
+                10
+                </property>
+                <property first="268437939" last="268437939">
+                10
+                </property>
+            </propclass>
+            <propclass name="mode">
+            </propclass>
+            <propclass name="notation">
+                <property first="138109" last="138109">
+                2
+                </property>
+                <property first="138143" last="138143">
+                2
+                </property>
+                <property first="268437990" last="268437990">
+                2
+                </property>
+                <property first="268438023" last="268438023">
+                2
+                </property>
+            </propclass>
+            <propclass name="reverse">
+            </propclass>
+            <propclass name="bold">
+            </propclass>
+            <propclass name="row_height">
+            </propclass>
+            <propclass name="color">
+            </propclass>
+            <propclass name="compared">
+            </propclass>
+            <propclass name="analog_bounds">
+            </propclass>
+            <propclass name="fixedpoint">
+            </propclass>
+            <propclass name="floating_encoding">
+            </propclass>
+            <propclass name="floating_notation">
+            </propclass>
+            <propclass name="floating_precision">
+            </propclass>
+            <propclass name="rounding_method">
+            </propclass>
+            <propclass name="aliasname">
+            </propclass>
+        </propertybase>
+    </propertybases>
+    <prefbases>
+        <prefbase id="0" >
+            <pref name="End Time" value="9271646800" />
+            <pref name="Start Time" value="6981720656" />
+        </prefbase>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="8001116372" label="Cursor 1" locked="0" />
+        </cursors>
+    </cursorbases>
+    <measurementbases>
+    </measurementbases>
+    <commentbases>
+        <comments id="0">
+        </comments>
+    </commentbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="0" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+    </views>
+    <virtualsources>
+        <virtualnamedrows>
+        </virtualnamedrows>
+        <virtualbuses>
+            <virtualbus id="135591" name="VGroup0" group="true" analog="false">
+                    AAAADQqACKgRAgEDAW4ayhECEQAA
+|
+            </virtualbus>
+            <virtualbus id="135673" name="VGroup1" group="true" analog="false">
+                    AAAAEwABkAD6EQL+AwEDHAEHASAAAwsSAhEAAAAA
+|
+            </virtualbus>
+            <virtualbus id="135711" name="VGroup2" group="true" analog="false">
+                    AAAAIAAOhAB9GwLivwkBAw4BGAABDnoKBBcBP84IGAAe8QFSGwIRAAAA
+|
+            </virtualbus>
+        </virtualbuses>
+        <virtualalias>
+                AAAAewq//6gRAqoRAhCrEQIQfAAKqRECEK4RAhAAEgIQX0wAAAH//14SAhBZEgIQRhICEGoSAhBr3QBt        TQJuhQRvxAFkAmQEBVQSAhBVEgIQfAAIxBsCEP/AyRsCEFNMBQknEgIQvBsCEPEJABARAAAA
+|
+        </virtualalias>
+        <virtualbusalias>
+                AAAAwAe886sRAq4RAhDBTAADAdsRAhDAYAEJ6BECEM88zxECEAKoXAEOURICEAVbEgIQRBICEDvzz1Rc        AQNdEgIQBq1MAgO0EgIQAbJFAr1QAQY88wHsGwIQlxtNAopRAIFOAAGfRwLPPJpoAQeTGwIQixsCEA7V        VQbpVAkKA/PP/hICED8aAhAPcUEIbGwCDVASAhCgEwIQPPMBMRICEApOBQGbTQJ4YAEKmBECEOAAxxEC        ENUbAhEAAAAA
+|
+        </virtualbusalias>
+        <virtualanalogalias>
+        </virtualanalogalias>
+        <virtualanalogbusalias>
+        </virtualanalogbusalias>
+        </virtualsources>
+</config>

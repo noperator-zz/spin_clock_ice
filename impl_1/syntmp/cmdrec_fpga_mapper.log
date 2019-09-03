@@ -1,14 +1,14 @@
 C:\lscc\radiant\1.1\synpbase\bin64\m_generic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  C:\development\FPGA\spin_clock_ice\impl_1   -part iCE40UP5K  -package SG48  -grade High-Performance_1.2V    -software Radiant -maxfan 1000 -RWCheckOnRam 0 -pipe -infer_seqShift -fixgatedclocks 0 -fixgeneratedclocks 0 -enable_gcc_in_premap -resolveMultipleDriver -summaryfile C:\development\FPGA\spin_clock_ice\impl_1\synlog\report\spin_clock_impl_1_fpga_mapper.xml -merge_inferred_clocks 0  -top_level_module  top  -flow mapping  -multisrs  -ovm  C:\development\FPGA\spin_clock_ice\impl_1\spin_clock_impl_1.vm   -autoconstraint  -freq 1.000   C:\development\FPGA\spin_clock_ice\impl_1\synwork\spin_clock_impl_1_prem.srd  -sap  C:\development\FPGA\spin_clock_ice\impl_1\spin_clock_impl_1.sap  -otap  C:\development\FPGA\spin_clock_ice\impl_1\spin_clock_impl_1.tap  -omap  C:\development\FPGA\spin_clock_ice\impl_1\spin_clock_impl_1.map  -devicelib  C:\lscc\radiant\1.1\synpbase\lib\generic\ice40up.v  -sap  C:\development\FPGA\spin_clock_ice\impl_1\spin_clock_impl_1.sap  -ologparam  C:\development\FPGA\spin_clock_ice\impl_1\syntmp\spin_clock_impl_1.plg  -osyn  C:\development\FPGA\spin_clock_ice\impl_1\spin_clock_impl_1.srm  -prjdir  C:\development\FPGA\spin_clock_ice\impl_1\  -prjname  proj_1  -log  C:\development\FPGA\spin_clock_ice\impl_1\synlog\spin_clock_impl_1_fpga_mapper.srr  -sn  2018.03  -jobname  "fpga_mapper" 
 relcom:..\..\..\..\..\lscc\radiant\1.1\synpbase\bin64\m_generic.exe -prodtype synplify_pro -encrypt -pro -rundir ..\..\impl_1 -part iCE40UP5K -package SG48 -grade High-Performance_1.2V -software Radiant -maxfan 1000 -RWCheckOnRam 0 -pipe -infer_seqShift -fixgatedclocks 0 -fixgeneratedclocks 0 -enable_gcc_in_premap -resolveMultipleDriver -summaryfile ..\synlog\report\spin_clock_impl_1_fpga_mapper.xml -merge_inferred_clocks 0 -top_level_module top -flow mapping -multisrs -ovm ..\spin_clock_impl_1.vm -autoconstraint -freq 1.000 ..\synwork\spin_clock_impl_1_prem.srd -sap ..\spin_clock_impl_1.sap -otap ..\spin_clock_impl_1.tap -omap ..\spin_clock_impl_1.map -devicelib ..\..\..\..\..\lscc\radiant\1.1\synpbase\lib\generic\ice40up.v -sap ..\spin_clock_impl_1.sap -ologparam spin_clock_impl_1.plg -osyn ..\spin_clock_impl_1.srm -prjdir ..\ -prjname proj_1 -log ..\synlog\spin_clock_impl_1_fpga_mapper.srr -sn 2018.03 -jobname "fpga_mapper"
-rc:3 success:0 runtime:8
-file:..\spin_clock_impl_1.vm|io:o|time:0|size:-1|exec:0|csum:
-file:..\synwork\spin_clock_impl_1_prem.srd|io:i|time:1566759674|size:36998|exec:0|csum:DDAC774BC14C6FD4BB20490A7155034F
-file:..\spin_clock_impl_1.sap|io:o|time:1566759674|size:1979|exec:0|csum:
+rc:1 success:1 runtime:26
+file:..\spin_clock_impl_1.vm|io:o|time:1567508356|size:1195732|exec:0|csum:
+file:..\synwork\spin_clock_impl_1_prem.srd|io:i|time:1567508330|size:114076|exec:0|csum:8A8DF5B82C74CD573472D5D20A55CACF
+file:..\spin_clock_impl_1.sap|io:o|time:1567508331|size:4926|exec:0|csum:
 file:..\spin_clock_impl_1.tap|io:o|time:0|size:-1|exec:0|csum:
-file:..\spin_clock_impl_1.map|io:o|time:1566759489|size:28|exec:0|csum:
+file:..\spin_clock_impl_1.map|io:o|time:1567508357|size:28|exec:0|csum:
 file:..\..\..\..\..\lscc\radiant\1.1\synpbase\lib\generic\ice40up.v|io:i|time:1542386286|size:26462|exec:0|csum:8B09F1149CCF7CC6317C01A3E471734B
-file:..\spin_clock_impl_1.sap|io:o|time:1566759674|size:1979|exec:0|csum:
-file:spin_clock_impl_1.plg|io:o|time:1566759675|size:0|exec:0|csum:
-file:..\spin_clock_impl_1.srm|io:o|time:1566759488|size:32813|exec:0|csum:
-file:..\synlog\spin_clock_impl_1_fpga_mapper.srr|io:o|time:1566759682|size:17473|exec:0|csum:
+file:..\spin_clock_impl_1.sap|io:o|time:1567508331|size:4926|exec:0|csum:
+file:spin_clock_impl_1.plg|io:o|time:1567508357|size:932|exec:0|csum:
+file:..\spin_clock_impl_1.srm|io:o|time:1567508356|size:26265|exec:0|csum:
+file:..\synlog\spin_clock_impl_1_fpga_mapper.srr|io:o|time:1567508357|size:144909|exec:0|csum:
 file:..\..\..\..\..\lscc\radiant\1.1\synpbase\bin64\m_generic.exe|io:i|time:1551291640|size:35815936|exec:1|csum:7D65A1163F46BDA757FB4FF383E4DCCE

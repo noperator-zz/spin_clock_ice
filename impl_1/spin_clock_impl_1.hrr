@@ -3,82 +3,192 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOLGC	       2.00        100.0
-                                  LUT4	       4409        100.0
-                                 IOREG	          2        100.0
-                                 IOBUF	         16        100.0
-                                PFUREG	        736        100.0
-                                   EBR	          2        100.0
+                                  LUT4	       4927        100.0
+                                 IOBUF	         17        100.0
+                                PFUREG	        814        100.0
+                                   EBR	         16        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                               TLC5957	          1        89.6
+                               TLC5957	          1        80.2
                                    pll	          1         0.0
-                              smi_fifo	          1         3.7
+                              smi_fifo	          1        10.9
+---------------------------------------------------
+Report for cell pll
+   Instance path: top/my_pll
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+          pll_ipgen_lscc_pll_Z1_layer0	          1         0.0
+---------------------------------------------------
+Report for cell pll_ipgen_lscc_pll_Z1_layer0
+   Instance path: top/my_pll/lscc_pll_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell smi_fifo
+   Instance path: top/color_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        539        10.9
+                                PFUREG	        115        14.1
+                                   EBR	         16        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0	          1        10.9
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0
+   Instance path: top/color_fifo/lscc_fifo_dc_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        539        10.9
+                                PFUREG	        115        14.1
+                                   EBR	         16        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+smi_fifo_ipgen_lscc_fifo_mem_Z3_layer0	          1         2.8
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_Z3_layer0
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        138         2.8
+                                PFUREG	          7         0.9
+                                   EBR	         16        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0	          1         0.0
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_0	          1         0.0
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_1	          1         0.2
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_10	          1         0.2
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_11	          1         0.2
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_12	          1         0.0
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_13	          1         0.2
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_14	          1         0.2
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_2	          1         0.0
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_3	          1         0.0
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_4	          1         0.0
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_5	          1         0.2
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_6	          1         0.0
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_7	          1         0.0
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_8	          1         0.2
+smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_9	          1         0.2
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[13].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                                   EBR	          1         6.3
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_0
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[9].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                                   EBR	          1         6.3
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_1
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[2].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         10         0.2
+                                   EBR	          1         6.3
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_2
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[8].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                                   EBR	          1         6.3
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_3
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[15].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                                   EBR	          1         6.3
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_4
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[14].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                                   EBR	          1         6.3
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_5
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[0].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         10         0.2
+                                   EBR	          1         6.3
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_6
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[10].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                                   EBR	          1         6.3
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_7
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[4].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                                   EBR	          1         6.3
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_8
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[11].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         10         0.2
+                                   EBR	          1         6.3
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_9
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[5].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         11         0.2
+                                   EBR	          1         6.3
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_10
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[12].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         10         0.2
+                                   EBR	          1         6.3
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_11
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[6].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         11         0.2
+                                   EBR	          1         6.3
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_12
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[3].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                                   EBR	          1         6.3
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_13
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[7].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         10         0.2
+                                   EBR	          1         6.3
+---------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_14
+   Instance path: top/color_fifo/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[1].DATA_ROUTE[0].no_init.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         10         0.2
+                                   EBR	          1         6.3
 ---------------------------------------------------
 Report for cell TLC5957
    Instance path: top/tlc0
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOLGC	       1.00        50.0
-                                  LUT4	       3951        89.6
-                                 IOREG	          1        50.0
-                                PFUREG	        573        77.9
----------------------------------------------------
-Report for cell pll
-   Instance path: top/tlc_sclk_I_0
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-SUB MODULES
-                                  cell	      count    LUT4 Usage(%)
-pll_ipgen_lscc_pll(DIVR="0",DIVF="87",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")	          1         0.0
----------------------------------------------------
-Report for cell pll_ipgen_lscc_pll(DIVR="0",DIVF="87",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")
-   Instance path: top/tlc_sclk_I_0/lscc_pll_inst
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
----------------------------------------------------
-Report for cell smi_fifo
-   Instance path: top/tlc_data_7__I_0
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	        164         3.7
-                                PFUREG	         86        11.7
-                                   EBR	          2        100.0
-SUB MODULES
-                                  cell	      count    LUT4 Usage(%)
-smi_fifo_ipgen_lscc_fifo_dc(WADDR_DEPTH=1024,WADDR_WIDTH=10,WDATA_WIDTH=8,RADDR_DEPTH=1024,RADDR_WIDTH=10,RDATA_WIDTH=8,REGMODE="noreg",RESETMODE="sync",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=832,ALMOST_FULL_DEASSERT_LVL=831,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=191,ALMOST_EMPTY_DEASSERT_LVL=192,FAMILY="iCE40UP")	          1         3.7
----------------------------------------------------
-Report for cell smi_fifo_ipgen_lscc_fifo_dc(WADDR_DEPTH=1024,WADDR_WIDTH=10,WDATA_WIDTH=8,RADDR_DEPTH=1024,RADDR_WIDTH=10,RDATA_WIDTH=8,REGMODE="noreg",RESETMODE="sync",ALMOST_FULL_ASSERTION="static-single",ALMOST_FULL_ASSERT_LVL=832,ALMOST_FULL_DEASSERT_LVL=831,ALMOST_EMPTY_ASSERTION="static-single",ALMOST_EMPTY_ASSERT_LVL=191,ALMOST_EMPTY_DEASSERT_LVL=192,FAMILY="iCE40UP")
-   Instance path: top/tlc_data_7__I_0/lscc_fifo_dc_inst
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	        164         3.7
-                                PFUREG	         86        11.7
-                                   EBR	          2        100.0
-SUB MODULES
-                                  cell	      count    LUT4 Usage(%)
-smi_fifo_ipgen_lscc_fifo_mem(FAMILY="iCE40UP",WADDR_WIDTH=10,WDATA_WIDTH=8,RADDR_DEPTH=1024,RADDR_WIDTH=10,RDATA_WIDTH=8,REGMODE="noreg",BYTE_ENABLE=0,BYTE_WIDTH=1)	          1         0.3
----------------------------------------------------
-Report for cell smi_fifo_ipgen_lscc_fifo_mem(FAMILY="iCE40UP",WADDR_WIDTH=10,WDATA_WIDTH=8,RADDR_DEPTH=1024,RADDR_WIDTH=10,RDATA_WIDTH=8,REGMODE="noreg",BYTE_ENABLE=0,BYTE_WIDTH=1)
-   Instance path: top/tlc_data_7__I_0/lscc_fifo_dc_inst/EBR.u_fifo_mem0
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         12         0.3
-                                PFUREG	          1         0.1
-                                   EBR	          2        100.0
-SUB MODULES
-                                  cell	      count    LUT4 Usage(%)
-smi_fifo_ipgen_lscc_fifo_mem_core(DATA_WIDTH_W=32'b01000,DATA_WIDTH_R=32'b01000,REGMODE="noreg")	          1         0.0
-smi_fifo_ipgen_lscc_fifo_mem_core(DATA_WIDTH_W=32'b01000,DATA_WIDTH_R=32'b01000,REGMODE="noreg")_U0	          1         0.0
----------------------------------------------------
-Report for cell smi_fifo_ipgen_lscc_fifo_mem_core(DATA_WIDTH_W=32'b01000,DATA_WIDTH_R=32'b01000,REGMODE="noreg")
-   Instance path: top/tlc_data_7__I_0/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[1].DATA_ROUTE[0].no_init.u_mem0
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                   EBR	          1        50.0
----------------------------------------------------
-Report for cell smi_fifo_ipgen_lscc_fifo_mem_core(DATA_WIDTH_W=32'b01000,DATA_WIDTH_R=32'b01000,REGMODE="noreg")_U0
-   Instance path: top/tlc_data_7__I_0/lscc_fifo_dc_inst/EBR.u_fifo_mem0/NON_MIX.ADDR_ROUTE[0].DATA_ROUTE[0].no_init.u_mem0
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                   EBR	          1        50.0
+                                  LUT4	       3953        80.2
+                                PFUREG	        600        73.7

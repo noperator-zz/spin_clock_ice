@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version N-2018.03LR-SP1
 #--  Project file C:\development\FPGA\spin_clock_ice\impl_1\run_options.txt
-#--  Written on Sun Aug 25 12:01:12 2019
+#--  Written on Tue Sep  3 03:57:50 2019
 
 
 #project files

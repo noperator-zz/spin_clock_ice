@@ -16,108 +16,109 @@ Synopsys HDL compiler and linker, Version comp2018q2p1, Build 251R, Built Nov 12
 
 Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
-0        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08)
+0        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49)
 
 *******************************************************************
 Modules that may have changed as a result of file changes: 45
 MID:  lib.cell.view
 0        work.TLC5957.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 1        work.lscc_add_sub.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 2        work.lscc_adder.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 3        work.lscc_cntr.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 4        work.lscc_complex_mult.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 5        work.lscc_dq_core.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 6        work.lscc_fifo.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 7        work.lscc_fifo_dc.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 8        work.lscc_fifo_mem.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 9        work.lscc_fifo_mem_core.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 10       work.lscc_mult_accumulate.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 11       work.lscc_mult_add_sub.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 12       work.lscc_mult_add_sub_sum.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 13       work.lscc_multiplier.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 14       work.lscc_multiplier_dsp.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 15       work.lscc_multiplier_lut.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 16       work.lscc_ram_dp.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 17       work.lscc_ram_dp_core.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 18       work.lscc_ram_dq.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 19       work.lscc_rom.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 20       work.lscc_subtractor.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 21       work.pll.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 22       work.pll_ipgen_lscc_pll.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 23       work.pmi_add.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 24       work.pmi_addsub.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 25       work.pmi_complex_mult.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 26       work.pmi_counter.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 27       work.pmi_dsp.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 28       work.pmi_fifo.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 29       work.pmi_fifo_dc.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 30       work.pmi_mac.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 31       work.pmi_mult.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 32       work.pmi_multaddsub.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 33       work.pmi_multaddsubsum.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 34       work.pmi_ram_dp.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 35       work.pmi_ram_dp_be.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 36       work.pmi_ram_dq.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 37       work.pmi_ram_dq_be.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 38       work.pmi_rom.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 39       work.pmi_sub.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 40       work.smi_fifo.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 41       work.smi_fifo_ipgen_lscc_fifo_dc.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 42       work.smi_fifo_ipgen_lscc_fifo_mem.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 43       work.smi_fifo_ipgen_lscc_fifo_mem_core.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 44       work.top.verilog may have changed because the following files changed:
-                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-08-25 12:00:09, 2019-08-25 12:01:08) <-- (may instantiate this module)
+                        C:\development\FPGA\spin_clock_ice\TLC5957.sv (2019-09-03 03:54:44, 2019-09-03 03:57:49) <-- (may instantiate this module)
 
 *******************************************************************
-Unmodified files: 40
+Unmodified files: 41
 FID:  path (timestamp)
-1        C:\development\FPGA\spin_clock_ice\pll\rtl\pll.v (2019-08-25 05:31:36)
-2        C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v (2019-08-25 10:28:12)
-41       C:\development\FPGA\spin_clock_ice\top.sv (2019-08-25 11:49:11)
+44       C:\development\FPGA\spin_clock_ice\macros.sv (2019-09-02 22:11:05)
+1        C:\development\FPGA\spin_clock_ice\pll\rtl\pll.v (2019-09-01 05:48:01)
+2        C:\development\FPGA\spin_clock_ice\smi_fifo\rtl\smi_fifo.v (2019-09-01 07:14:32)
+41       C:\development\FPGA\spin_clock_ice\top.sv (2019-09-02 22:09:02)
 4        C:\lscc\radiant\1.1\ip\pmi\../common/adder/rtl/lscc_adder.v (2018-11-11 17:18:28)
 5        C:\lscc\radiant\1.1\ip\pmi\../common/adder_subtractor/rtl/lscc_add_sub.v (2018-09-04 23:05:36)
 6        C:\lscc\radiant\1.1\ip\pmi\../common/complex_mult/rtl/lscc_complex_mult.v (2018-11-11 17:23:28)

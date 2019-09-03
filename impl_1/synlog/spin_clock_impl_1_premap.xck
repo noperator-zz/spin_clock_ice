@@ -1,3 +1,1 @@
-ckid0_0:@|S:my_pll.lscc_pll_inst.u_PLL_B.OUTGLOBAL@|E:tlc0.state[1:0]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
-ckid0_1:@|S:smi_nwe_pi@|E:color_fifo.lscc_fifo_dc_inst.sync_wr_controller\.full_r@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1
-ckid0_2:@|S:OSCInst0.CLKHF@|E:line_time_counter[31:0]@|F:@syn_dgcc_clockid0_2==1@|M:ClockId_0_2
+ckid0_0:@|S:my_pll.lscc_pll_inst.u_PLL_B.OUTCORE@|E:smi_cdc_2_[10]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0

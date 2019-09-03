@@ -128,6 +128,10 @@
                 <ipxact:fileType user="testbench_instance_verilog">user</ipxact:fileType>
             </ipxact:file>
             <ipxact:file>
+                <ipxact:name>component.xml</ipxact:name>
+                <ipxact:fileType user="IP-XACT_output_file">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
                 <ipxact:name>smi_fifo.cfg</ipxact:name>
                 <ipxact:fileType user="cfg">user</ipxact:fileType>
             </ipxact:file>

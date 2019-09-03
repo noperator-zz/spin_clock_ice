@@ -45,19 +45,21 @@ HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 
-[Files]
-/..\..\testbench.v=-1
-/..\..\top.v=-1
-/..\..\pll\rtl\pll.v=-1
-/wave.awc=-1
-/..\..\smi_fifo\rtl\smi_fifo.v=-1
-/..\..\TLC5957.v=-1
-
 [Files.Data]
-.\..\testbench.v=Verilog Source Code
-.\..\top.v=Verilog Source Code
 .\..\pll\rtl\pll.v=Verilog Source Code
-.\src\wave.awc=Accelerated Waveform Configuration
 .\..\smi_fifo\rtl\smi_fifo.v=Verilog Source Code
-.\..\TLC5957.v=Verilog Source Code
+.\src\untitled.awc=Accelerated Waveform Configuration
+.\..\macros.sv=SystemVerilog Source Code
+.\..\testbench.sv=SystemVerilog Source Code
+.\..\TLC5957.sv=SystemVerilog Source Code
+.\..\top.sv=SystemVerilog Source Code
+
+[Files]
+/untitled.awc=-1
+/..\..\macros.sv=-1
+/..\..\pll\rtl\pll.v=-1
+/..\..\smi_fifo\rtl\smi_fifo.v=-1
+/..\..\TLC5957.sv=-1
+/..\..\top.sv=-1
+/..\..\testbench.sv=-1
 

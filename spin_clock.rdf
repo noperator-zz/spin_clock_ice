@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RadiantProject version="4.1" title="spin_clock" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="impl_1">
     <Options/>
-    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="top" top="top"/>
+    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="synplify" default_strategy="Strategy1">
+        <Options top="top"/>
         <Source name="pll/pll.ipx" type="IPX_Module" type_short="IPX">
             <Options/>
         </Source>
         <Source name="smi_fifo/smi_fifo.ipx" type="IPX_Module" type_short="IPX">
             <Options/>
         </Source>
-        <Source name="testbench.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+        <Source name="testbench.sv" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
             <Options/>
         </Source>
-        <Source name="TLC5957.v" type="Verilog" type_short="Verilog">
+        <Source name="TLC5957.sv" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="top.v" type="Verilog" type_short="Verilog">
-            <Options top_module="top"/>
+        <Source name="top.sv" type="Verilog" type_short="Verilog">
+            <Options/>
         </Source>
         <Source name="device.pdc" type="Physical Constraints File" type_short="PDC">
             <Options/>

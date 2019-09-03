@@ -1,5 +1,6 @@
-i<>.\..\testbench.v
-i<>.\..\top.v
 i<>.\..\pll\rtl\pll.v
 i<>.\..\smi_fifo\rtl\smi_fifo.v
-i<>.\..\TLC5957.v
+i<>.\..\macros.sv
+i<>.\..\testbench.sv
+i<>.\..\TLC5957.sv
+i<>.\..\top.sv

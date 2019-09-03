@@ -6,21 +6,15 @@
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 47 clock pin(s) of sequential element(s)
-2 gated/generated clock tree(s) driving 175 clock pin(s) of sequential element(s)
-0 instances converted, 175 sequential instances remain driven by gated/generated clocks
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 851 clock pin(s) of sequential element(s)
+0 instances converted, 851 sequential instances remain driven by gated/generated clocks
 
-=============================================== Non-Gated/Non-Generated Clocks ================================================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                                        
--------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_1       smi_nwe_pi          Unconstrained_port     47         color_fifo.lscc_fifo_dc_inst.sync_wr_controller\.full_r
-===============================================================================================================================
-============================================================================= Gated/Generated Clocks ==============================================================================
-Clock Tree ID     Driving Element                            Drive Element Type     Unconverted Fanout     Sample Instance             Explanation                                 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_0       my_pll.lscc_pll_inst.u_PLL_B.OUTGLOBAL     PLL_B                  77                     tlc0.state[1:0]             Gated/generated clock conversion not enabled
-@KP:ckid0_2       OSCInst0.CLKHF                             HSOSC                  98                     line_time_counter[31:0]     Gated/generated clock conversion not enabled
-===================================================================================================================================================================================
+======================================================================== Gated/Generated Clocks =========================================================================
+Clock Tree ID     Driving Element                          Drive Element Type     Unconverted Fanout     Sample Instance     Explanation                                 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       my_pll.lscc_pll_inst.u_PLL_B.OUTCORE     PLL_B                  851                    smi_cdc_2_[10]      Gated/generated clock conversion not enabled
+=========================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######

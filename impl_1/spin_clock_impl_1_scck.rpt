@@ -13,7 +13,7 @@ Hostname: IVAN-PC
 
 Implementation : impl_1
 
-# Written on Sun Aug 25 12:01:14 2019
+# Written on Tue Sep  3 03:58:50 2019
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      (none)
@@ -30,30 +30,22 @@ No issues found in constraint syntax.
 Clock Summary
 *************
 
-          Start                                                       Requested     Requested     Clock        Clock                     Clock
-Level     Clock                                                       Frequency     Period        Type         Group                     Load 
-----------------------------------------------------------------------------------------------------------------------------------------------
-0 -       System                                                      1.0 MHz       1000.000      system       system_clkgroup           0    
-                                                                                                                                              
-0 -       top|osc_clk_inferred_clock                                  187.7 MHz     5.327         inferred     Autoconstr_clkgroup_0     98   
-                                                                                                                                              
-0 -       pll_ipgen_lscc_pll_Z1_layer0|outglobal_o_inferred_clock     116.2 MHz     8.605         inferred     Autoconstr_clkgroup_1     77   
-                                                                                                                                              
-0 -       top|smi_nwe_pi                                              171.4 MHz     5.833         inferred     Autoconstr_clkgroup_2     47   
-==============================================================================================================================================
+          Start                                                     Requested     Requested     Clock        Clock                     Clock
+Level     Clock                                                     Frequency     Period        Type         Group                     Load 
+--------------------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                                    1.0 MHz       1000.000      system       system_clkgroup           0    
+                                                                                                                                            
+0 -       pll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     87.0 MHz      11.490        inferred     Autoconstr_clkgroup_0     851  
+============================================================================================================================================
 
 
 Clock Load Summary
 ******************
 
-                                                            Clock     Source                                            Clock Pin                                                    Non-clock Pin     Non-clock Pin           
-Clock                                                       Load      Pin                                               Seq Example                                                  Seq Example       Comb Example            
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                                      0         -                                                 -                                                            -                 -                       
-                                                                                                                                                                                                                               
-top|osc_clk_inferred_clock                                  98        OSCInst0.CLKHF(HSOSC)                             prev_frame_sync.C                                            -                 -                       
-                                                                                                                                                                                                                               
-pll_ipgen_lscc_pll_Z1_layer0|outglobal_o_inferred_clock     77        my_pll.lscc_pll_inst.u_PLL_B.OUTGLOBAL(PLL_B)     tlc0.line_prev.C                                             -                 -                       
-                                                                                                                                                                                                                               
-top|smi_nwe_pi                                              47        smi_nwe_pi(port)                                  color_fifo.lscc_fifo_dc_inst.genblk5\.rp_sync2_r[10:0].C     -                 un1_smi_nwe_pi.I[0](inv)
-===============================================================================================================================================================================================================================
+                                                          Clock     Source                                          Clock Pin       Non-clock Pin     Non-clock Pin
+Clock                                                     Load      Pin                                             Seq Example     Seq Example       Comb Example 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                    0         -                                               -               -                 -            
+                                                                                                                                                                   
+pll_ipgen_lscc_pll_Z1_layer0|outcore_o_inferred_clock     851       my_pll.lscc_pll_inst.u_PLL_B.OUTCORE(PLL_B)     busy_o_pi.C     -                 -            
+===================================================================================================================================================================

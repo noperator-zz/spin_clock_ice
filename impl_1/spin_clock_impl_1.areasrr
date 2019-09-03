@@ -2,45 +2,370 @@
 Report for cell top.verilog
                                           Cell usage:
                                cell       count    Res Usage(%)
-                             CCU2_B      170       100.0
-                            FD1P3DZ       60       100.0
-                            FD1P3IZ       32       100.0
-                                GND        2       100.0
+                             CCU2_B      169       100.0
+                            FD1P3DZ      622       100.0
+                            FD1P3IZ      188       100.0
+                            FD1P3JZ        4       100.0
+                                GND       22       100.0
                               HSOSC        1       100.0
-                                 IB        2       100.0
-                                INV       25       100.0
-                               LUT4       85       100.0
+                                 IB       11       100.0
+                                INV       63       100.0
+                               LUT4     4423       100.0
                                  OB        5       100.0
+                              OBZ_B        1       100.0
+                              PDP4K       16       100.0
                               PLL_B        1       100.0
-                                VCC        2       100.0
+                                VCC       22       100.0
                                 VHI        1       100.0
                                 VLO        1       100.0
 SUB MODULES 
+                            TLC5957        1       100.0
                                 pll        1       100.0
           pll_ipgen_lscc_pll_Z1_layer0        1       100.0
+                           smi_fifo        1       100.0
+          smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_Z3_layer0        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_0        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_1        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_10        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_11        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_12        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_13        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_14        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_2        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_3        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_4        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_5        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_6        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_7        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_8        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_9        1       100.0
                             
-                         TOTAL           389           
+                         TOTAL          5572           
+----------------------------------------------------------------------
+Report for cell TLC5957.netlist
+     Instance path:  tlc0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                             CCU2_B        4         2.4
+                            FD1P3DZ      581        93.4
+                            FD1P3IZ       19        10.1
+                                GND        1         4.5
+                                INV        1         1.6
+                               LUT4     4060        91.8
+                                VCC        1         4.5
+                            
+                         TOTAL          4667           
+----------------------------------------------------------------------
+Report for cell smi_fifo.netlist
+     Instance path:  color_fifo
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                             CCU2_B      119        70.4
+                            FD1P3DZ       14         2.3
+                            FD1P3IZ       99        52.7
+                            FD1P3JZ        2        50.0
+                                GND       19        86.4
+                                INV       38        60.3
+                               LUT4      311         7.0
+                              PDP4K       16       100.0
+                                VCC       19        86.4
+SUB MODULES 
+          smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_Z3_layer0        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_0        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_1        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_10        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_11        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_12        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_13        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_14        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_2        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_3        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_4        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_5        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_6        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_7        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_8        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_9        1       100.0
+                            
+                         TOTAL           655           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_dc_Z2_layer0.netlist
+     Instance path:  color_fifo.lscc_fifo_dc_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                             CCU2_B      119        70.4
+                            FD1P3DZ       14         2.3
+                            FD1P3IZ       99        52.7
+                            FD1P3JZ        2        50.0
+                                GND       18        81.8
+                                INV       38        60.3
+                               LUT4      311         7.0
+                              PDP4K       16       100.0
+                                VCC       18        81.8
+SUB MODULES 
+          smi_fifo_ipgen_lscc_fifo_mem_Z3_layer0        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_0        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_1        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_10        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_11        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_12        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_13        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_14        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_2        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_3        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_4        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_5        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_6        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_7        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_8        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_9        1       100.0
+                            
+                         TOTAL           652           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_Z3_layer0.netlist
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3DZ        7         1.1
+                                GND       17        77.3
+                               LUT4      138         3.1
+                              PDP4K       16       100.0
+                                VCC       17        77.3
+SUB MODULES 
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_0        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_1        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_10        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_11        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_12        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_13        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_14        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_2        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_3        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_4        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_5        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_6        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_7        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_8        1       100.0
+          smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_9        1       100.0
+                            
+                         TOTAL           211           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_14.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[1].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4       10         0.2
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL            13           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_13.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[7].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4       10         0.2
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL            13           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_12.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[3].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4        2         0.0
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL             5           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_11.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[6].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4       11         0.2
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL            14           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_10.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[12].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4       10         0.2
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL            13           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_9.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[5].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4       11         0.2
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL            14           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_8.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[11].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4       10         0.2
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL            13           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_7.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[4].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4        2         0.0
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL             5           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_6.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[10].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4        2         0.0
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL             5           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_5.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[0].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4       10         0.2
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL            13           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_4.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[14].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4        2         0.0
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL             5           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_3.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[15].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4        2         0.0
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL             5           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_2.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[8].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4        2         0.0
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL             5           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_1.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[2].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4       10         0.2
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL            13           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0_0.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[9].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4        2         0.0
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL             5           
+----------------------------------------------------------------------
+Report for cell smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0.netlist
+  Original Cell name smi_fifo_ipgen_lscc_fifo_mem_core_Z4_layer0
+     Instance path:  color_fifo.lscc_fifo_dc_inst.EBR.u_fifo_mem0.NON_MIX.ADDR_ROUTE[13].DATA_ROUTE[0].no_init.u_mem0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                GND        1         4.5
+                               LUT4        2         0.0
+                              PDP4K        1         6.3
+                                VCC        1         4.5
+                            
+                         TOTAL             5           
 ----------------------------------------------------------------------
 Report for cell pll.netlist
      Instance path:  my_pll
                                           Cell usage:
                                cell       count    Res Usage(%)
-                                GND        2       100.0
-                               LUT4        1         1.2
+                                GND        2         9.1
                               PLL_B        1       100.0
-                                VCC        2       100.0
+                                VCC        2         9.1
 SUB MODULES 
           pll_ipgen_lscc_pll_Z1_layer0        1       100.0
                             
-                         TOTAL             7           
+                         TOTAL             6           
 ----------------------------------------------------------------------
 Report for cell pll_ipgen_lscc_pll_Z1_layer0.netlist
      Instance path:  my_pll.lscc_pll_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                                GND        1        50.0
-                               LUT4        1         1.2
+                                GND        1         4.5
                               PLL_B        1       100.0
-                                VCC        1        50.0
+                                VCC        1         4.5
                             
-                         TOTAL             4           
+                         TOTAL             3           

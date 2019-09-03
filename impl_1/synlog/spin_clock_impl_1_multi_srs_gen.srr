@@ -17,11 +17,11 @@ Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 251R, Built Nov 12
 @N|Running in 64-bit mode
 File C:\development\FPGA\spin_clock_ice\impl_1\synwork\spin_clock_impl_1_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Aug 25 12:01:14 2019
+# Tue Sep  3 03:58:50 2019
 
 ###########################################################]

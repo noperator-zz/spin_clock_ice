@@ -1,0 +1,1657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SVCompilerDirectivesDefines">
+    <option name="define">
+      <map>
+        <entry key="B">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="42" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="BP">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="42" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="BPP">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="42" />
+                    <option name="replacementList" value="4" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="C">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="80" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="CO">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="80" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="COL">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="80" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="COLO">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="80" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="COLOR">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="80" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="COLOR_">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="80" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="COLOR_B">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="80" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="COLOR_BI">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="80" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="COLOR_BIT">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="80" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="COLOR_BITS">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="80" />
+                    <option name="replacementList" value="11" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="80" />
+                    <option name="replacementList" value="11" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="D">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="macros.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="F">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="56" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="FI">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="56" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="FIF">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="56" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="FIFO">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="56" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="FIFO_">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="56" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="FIFO_D">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="56" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="FIFO_DE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="56" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="FIFO_DEP">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="56" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="FIFO_DEPT">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="56" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="FIFO_DEPTH">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="56" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="FIFO_L">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="56" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="FIFO_LI">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="56" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="FIFO_LIN">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="56" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="FIFO_LINE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="56" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="FIFO_LINES">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="58" />
+                    <option name="replacementList" value="32" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="58" />
+                    <option name="replacementList" value="32" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="testbench.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="I">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="IP">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="IP_">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="IP_L">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="IP_LI">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="IP_LIN">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="IP_LINE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="IP_LINE_">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="IP_LINE_L">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="IP_LINE_LE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="IP_LINE_LEN">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="replacementList" value="`LINES * `LEDS * 4" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="replacementList" value="`LINES * `LEDS * 4" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="L">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="8" />
+                    <option name="source" value="TLC5957.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="26" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="top.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="LE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="26" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="top.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="LED">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="26" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="top.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="LEDS">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="26" />
+                    <option name="replacementList" value="64" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="26" />
+                    <option name="replacementList" value="64" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="top.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="testbench.sv" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="top.sv" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="LI">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="8" />
+                    <option name="source" value="TLC5957.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="LIN">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="8" />
+                    <option name="source" value="TLC5957.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="LINE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="8" />
+                    <option name="source" value="TLC5957.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="LINES">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="8" />
+                    <option name="replacementList" value="512" />
+                    <option name="source" value="TLC5957.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="8" />
+                    <option name="replacementList" value="512" />
+                    <option name="source" value="top.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="8" />
+                    <option name="replacementList" value="128" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="8" />
+                    <option name="replacementList" value="128" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="top.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.sv" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="testbench.sv" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="top.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="LINES_">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="196" />
+                    <option name="replacementList" value="$clog2(LINES" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="LINES_B">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="196" />
+                    <option name="replacementList" value="$clog2(LINES" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="LINES_BI">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="196" />
+                    <option name="replacementList" value="$clog2(LINES" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="LINES_BIR">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="196" />
+                    <option name="replacementList" value="$clog2(LINES" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="LINES_BIRT">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="196" />
+                    <option name="replacementList" value="$clog2(LINES" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="LINES_BIT">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="196" />
+                    <option name="replacementList" value="$clog2(LINES" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="LINES_BITS">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="26" />
+                    <option name="replacementList" value="$clog2(`LINES)" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="LINES_W">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="replacementList" value="$clog2(LINES" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="186" />
+                    <option name="replacementList" value="$clog2(LINES" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="O">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="144" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OI">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OP">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="143" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="144" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OP_">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="143" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="144" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OP_L">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="143" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="144" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OP_LI">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="143" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="144" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OP_LIN">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="143" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="144" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OP_LINE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="143" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="144" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OP_LINE_">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="143" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="149" />
+                    <option name="replacementList" value="$clog2(OP_LINE_LEN)" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OP_LINE_B">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="149" />
+                    <option name="replacementList" value="$clog2(OP_LINE_LEN)" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OP_LINE_BI">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="149" />
+                    <option name="replacementList" value="$clog2(OP_LINE_LEN)" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OP_LINE_BIT">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="149" />
+                    <option name="replacementList" value="$clog2(OP_LINE_LEN)" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OP_LINE_BITS">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="184" />
+                    <option name="replacementList" value="$clog2(`OP_LINE_LEN)" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OP_LINE_L">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="143" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OP_LINE_LE">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="143" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OP_LINE_LEN">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="143" />
+                    <option name="replacementList" value="`LINES * `LEDS * 3" />
+                    <option name="source" value="macros.v" />
+                  </Body>
+                  <Body>
+                    <option name="offset" value="103" />
+                    <option name="replacementList" value="`LEDS * 3 * `COLOR_BITS" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="OP_LINE_W">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="144" />
+                    <option name="replacementList" value="$clog2(OP_LINE_LEN)" />
+                    <option name="source" value="macros.sv" />
+                  </Body>
+                </list>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="TB_TOP">
+          <value>
+            <Define>
+              <option name="definitions">
+                <list>
+                  <Body>
+                    <option name="offset" value="2303" />
+                    <option name="source" value="tb_top.v" />
+                  </Body>
+                </list>
+              </option>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="conditionalCompilationSource" value="true" />
+                    <option name="file" value="tb_top.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="d">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="macros.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="macros.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="de">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="macros.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="macros.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="def">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="macros.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="macros.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="defi">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="macros.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="macros.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="defin">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="macros.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="macros.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="defu">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="macros.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="defui">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="macros.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="deu">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="macros.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="deuf">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="macros.sv" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="i">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="top.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="in">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="top.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="inc">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="top.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="incl">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="top.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="inclu">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="top.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+        <entry key="includ">
+          <value>
+            <Define>
+              <option name="dependencies">
+                <set>
+                  <DefineDependency>
+                    <option name="file" value="TLC5957.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="top.v" />
+                  </DefineDependency>
+                  <DefineDependency>
+                    <option name="file" value="testbench.v" />
+                  </DefineDependency>
+                </set>
+              </option>
+            </Define>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="status" value="NORMAL" />
+  </component>
+</project>
